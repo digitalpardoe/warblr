@@ -27,11 +27,36 @@
 		FA8E1CCE0ECA2CB8003D74C4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E1CCC0ECA2CB7003D74C4 /* Security.framework */; };
 		FA8E1F1A0ECA2D2E003D74C4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */; };
 		FA8E1F1B0ECA2D2E003D74C4 /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */; };
+		FAC2BEC80ECCD69500265115 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BEC70ECCD69500265115 /* MenuController.m */; };
+		FAC2BECB0ECCD6B200265115 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BECA0ECCD6B200265115 /* WindowController.m */; };
+		FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */; };
+		FAC2BF180ECCE72B00265115 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */; };
+		FAC2BF190ECCE72C00265115 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF160ECCE72B00265115 /* Growl.framework */; };
+		FAC2BF1A0ECCE72C00265115 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF170ECCE72B00265115 /* Sparkle.framework */; };
+		FAC2BF680ECCE75600265115 /* BGHUDAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */; };
+		FAC2BF690ECCE75600265115 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF160ECCE72B00265115 /* Growl.framework */; };
+		FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF170ECCE72B00265115 /* Sparkle.framework */; };
 		FAE052760ECA2EB00088D9AC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE052750ECA2EB00088D9AC /* libxml2.dylib */; };
 		FAE052910ECA2F6E0088D9AC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */; };
 		FAE052920ECA2F7A0088D9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1660FE840EACC02AAC07 /* InfoPlist.strings */; };
 		FAE052940ECA2F920088D9AC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582B0DA1D0D100B32029 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAC2BF900ECCE75C00265115 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAC2BF680ECCE75600265115 /* BGHUDAppKit.framework in Copy Frameworks */,
+				FAC2BF690ECCE75600265115 /* Growl.framework in Copy Frameworks */,
+				FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
@@ -80,6 +105,14 @@
 		FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainItem.m; sourceTree = "<group>"; };
 		FA8E1F180ECA2D2E003D74C4 /* EMKeychainProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainProxy.h; sourceTree = "<group>"; };
 		FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainProxy.m; sourceTree = "<group>"; };
+		FAC2BEC60ECCD69500265115 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		FAC2BEC70ECCD69500265115 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
+		FAC2BEC90ECCD6B200265115 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		FAC2BECA0ECCD6B200265115 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetHUD.xib; sourceTree = "<group>"; };
+		FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
+		FAC2BF160ECCE72B00265115 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		FAC2BF170ECCE72B00265115 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		FAE052750ECA2EB00088D9AC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +125,9 @@
 				FA8E1CCD0ECA2CB7003D74C4 /* Carbon.framework in Frameworks */,
 				FA8E1CCE0ECA2CB8003D74C4 /* Security.framework in Frameworks */,
 				FAE052760ECA2EB00088D9AC /* libxml2.dylib in Frameworks */,
+				FAC2BF180ECCE72B00265115 /* BGHUDAppKit.framework in Frameworks */,
+				FAC2BF190ECCE72C00265115 /* Growl.framework in Frameworks */,
+				FAC2BF1A0ECCE72C00265115 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +157,7 @@
 		2A37F4ABFDCFA73011CA2CEA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FAC2BEC50ECCD66B00265115 /* Application */,
 				FA8E1F140ECA2CF0003D74C4 /* Misc */,
 			);
 			name = Sources;
@@ -133,6 +170,7 @@
 				8D15AC360486D014006FF6A4 /* Info.plist */,
 				089C1660FE840EACC02AAC07 /* InfoPlist.strings */,
 				1DDD582B0DA1D0D100B32029 /* MainMenu.xib */,
+				FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -140,6 +178,9 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */,
+				FAC2BF160ECCE72B00265115 /* Growl.framework */,
+				FAC2BF170ECCE72B00265115 /* Sparkle.framework */,
 				FAE052750ECA2EB00088D9AC /* libxml2.dylib */,
 				FA8E1CCB0ECA2CB7003D74C4 /* Carbon.framework */,
 				FA8E1CCC0ECA2CB7003D74C4 /* Security.framework */,
@@ -216,6 +257,17 @@
 			name = Keychain;
 			sourceTree = "<group>";
 		};
+		FAC2BEC50ECCD66B00265115 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2BEC60ECCD69500265115 /* MenuController.h */,
+				FAC2BEC70ECCD69500265115 /* MenuController.m */,
+				FAC2BEC90ECCD6B200265115 /* WindowController.h */,
+				FAC2BECA0ECCD6B200265115 /* WindowController.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,6 +278,8 @@
 				8D15AC2B0486D014006FF6A4 /* Resources */,
 				8D15AC300486D014006FF6A4 /* Sources */,
 				8D15AC330486D014006FF6A4 /* Frameworks */,
+				FAC2BF900ECCE75C00265115 /* Copy Frameworks */,
+				FAC2BF920ECCE78900265115 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -262,10 +316,28 @@
 				FAE052910ECA2F6E0088D9AC /* Credits.rtf in Resources */,
 				FAE052920ECA2F7A0088D9AC /* InfoPlist.strings in Resources */,
 				FAE052940ECA2F920088D9AC /* MainMenu.xib in Resources */,
+				FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FAC2BF920ECCE78900265115 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -fR \"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}/Contents/Frameworks/BGHUDAppKit.framework/Versions/Current/Resources\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D15AC300486D014006FF6A4 /* Sources */ = {
@@ -289,6 +361,8 @@
 				FA8E1CCA0ECA2C76003D74C4 /* NSString+UUID.m in Sources */,
 				FA8E1F1A0ECA2D2E003D74C4 /* EMKeychainItem.m in Sources */,
 				FA8E1F1B0ECA2D2E003D74C4 /* EMKeychainProxy.m in Sources */,
+				FAC2BEC80ECCD69500265115 /* MenuController.m in Sources */,
+				FAC2BECB0ECCD6B200265115 /* WindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +374,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -317,6 +395,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Warblr_Prefix.pch;
