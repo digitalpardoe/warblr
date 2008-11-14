@@ -30,6 +30,7 @@
 		FA8E1CCE0ECA2CB8003D74C4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E1CCC0ECA2CB7003D74C4 /* Security.framework */; };
 		FA8E1F1A0ECA2D2E003D74C4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */; };
 		FA8E1F1B0ECA2D2E003D74C4 /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */; };
+		FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */; };
 		FAC2BEC80ECCD69500265115 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BEC70ECCD69500265115 /* MenuController.m */; };
 		FAC2BECB0ECCD6B200265115 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BECA0ECCD6B200265115 /* WindowController.m */; };
 		FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */; };
@@ -115,6 +116,8 @@
 		FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainItem.m; sourceTree = "<group>"; };
 		FA8E1F180ECA2D2E003D74C4 /* EMKeychainProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainProxy.h; sourceTree = "<group>"; };
 		FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainProxy.m; sourceTree = "<group>"; };
+		FA908E990ECD5D720057CC67 /* TweetHUDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetHUDController.h; sourceTree = "<group>"; };
+		FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetHUDController.m; sourceTree = "<group>"; };
 		FAC2BEC60ECCD69500265115 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
 		FAC2BEC70ECCD69500265115 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		FAC2BEC90ECCD6B200265115 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
@@ -313,6 +316,8 @@
 				FAC2BEC70ECCD69500265115 /* MenuController.m */,
 				FAC2BEC90ECCD6B200265115 /* WindowController.h */,
 				FAC2BECA0ECCD6B200265115 /* WindowController.m */,
+				FA908E990ECD5D720057CC67 /* TweetHUDController.h */,
+				FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -415,6 +420,7 @@
 				FA00BBB90ECCEEFD00D99FE2 /* SS_PrefsController.m in Sources */,
 				FA00BBBF0ECCEF2100D99FE2 /* DPGrowl.m in Sources */,
 				FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */,
+				FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
