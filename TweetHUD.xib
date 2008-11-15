@@ -52,13 +52,14 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="BGHUDTextFieldCell" key="NSCell" id="604423742">
 								<int key="NSCellFlags">-1805517311</int>
-								<int key="NSCellFlags2">4194304</int>
-								<string key="NSContents">This is some text that again I am not going to post but I am going to use in order to fill a box full of at least 140 characters of text tha</string>
+								<int key="NSCellFlags2">1077936128</int>
+								<string key="NSContents"/>
 								<object class="NSFont" key="NSSupport" id="948290805">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">1.300000e+01</double>
 									<int key="NSfFlags">1044</int>
 								</object>
+								<string key="NSPlaceholderString">This is some text that again I am not going to post but I am going to use in order to fill a box full of at least 140 characters of text tha</string>
 								<reference key="NSControlView" ref="561944083"/>
 								<object class="NSColor" key="NSBackgroundColor">
 									<int key="NSColorSpace">6</int>
@@ -159,6 +160,62 @@
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<object class="NSMutableArray" key="connectionRecords">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="561944083"/>
+						<reference key="destination" ref="101487588"/>
+					</object>
+					<int key="connectionID">488</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">characterCount</string>
+						<reference key="source" ref="101487588"/>
+						<reference key="destination" ref="669491364"/>
+					</object>
+					<int key="connectionID">489</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">messageArea</string>
+						<reference key="source" ref="101487588"/>
+						<reference key="destination" ref="561944083"/>
+					</object>
+					<int key="connectionID">490</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">cancelButton</string>
+						<reference key="source" ref="101487588"/>
+						<reference key="destination" ref="253503339"/>
+					</object>
+					<int key="connectionID">491</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">tweetButton</string>
+						<reference key="source" ref="101487588"/>
+						<reference key="destination" ref="1014503696"/>
+					</object>
+					<int key="connectionID">492</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">cancel:</string>
+						<reference key="source" ref="101487588"/>
+						<reference key="destination" ref="253503339"/>
+					</object>
+					<int key="connectionID">493</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">tweet:</string>
+						<reference key="source" ref="101487588"/>
+						<reference key="destination" ref="1014503696"/>
+					</object>
+					<int key="connectionID">494</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -310,9 +367,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{162, 627}, {500, 87}}</string>
+					<string>{{79, 627}, {500, 87}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{162, 627}, {500, 87}}</string>
+					<string>{{79, 627}, {500, 87}}</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<real value="0.000000e+00" id="110248809"/>
@@ -353,7 +410,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">487</int>
+			<int key="maxID">494</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -367,11 +424,9 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>cancel:</string>
 							<string>tweet:</string>
-							<string>typing:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -382,7 +437,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>cancelButton</string>
 							<string>characterCount</string>
-							<string>messagePane</string>
+							<string>messageArea</string>
 							<string>tweetButton</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">

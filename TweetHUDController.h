@@ -11,14 +11,13 @@
 
 
 @interface TweetHUDController : NSObject {
-	IBOutlet NSTextField *messagePane;
+	IBOutlet NSTextField *messageArea;
 	IBOutlet BGHUDLabel *characterCount;
 	IBOutlet NSButton *cancelButton;
 	IBOutlet NSButton *tweetButton;
 }
 
-- (IBAction)typing : (id)sender;
-- (IBAction)cancel : (id)sender;
-- (IBAction)tweet : (id)sender;
+- (IBAction)cancel:(id)sender;
+- (IBAction)tweet:(id)sender;
 
 @end
