@@ -7,11 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "WindowController.h"
 
 
 @interface MenuController : NSObject {
 	IBOutlet NSMenu *menu;
 	NSStatusItem *statusBarItem;
 }
+
+- (IBAction)showTweetHUD:(id)sender;
 
 @end

@@ -21,4 +21,9 @@
 	[statusBarItem setTitle:@"A"];
 }
 
+- (IBAction)showTweetHUD:(id)sender {
+	WindowController *tweetHUD = [[WindowController alloc] initWithWindowNibName:@"TweetHUD"];
+	[tweetHUD showWindow:self];
+}
+
 @end

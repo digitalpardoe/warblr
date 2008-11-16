@@ -12,6 +12,8 @@
 @implementation TweetHUDController
 
 - (void)awakeFromNib {
+	[window center];
+	[window makeKeyAndOrderFront:nil];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
 	[messageArea becomeFirstResponder];
 }

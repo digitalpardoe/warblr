@@ -11,6 +11,7 @@
 
 
 @interface TweetHUDController : NSObject {
+	IBOutlet NSWindow *window;
 	IBOutlet NSTextField *messageArea;
 	IBOutlet BGHUDLabel *characterCount;
 	IBOutlet NSButton *cancelButton;
