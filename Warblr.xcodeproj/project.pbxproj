@@ -12,6 +12,7 @@
 		FA00BBB90ECCEEFD00D99FE2 /* SS_PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBB80ECCEEFD00D99FE2 /* SS_PrefsController.m */; };
 		FA00BBBF0ECCEF2100D99FE2 /* DPGrowl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */; };
 		FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */; };
+		FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8C82780ED042F200BF56F9 /* MainMenu.xib */; };
 		FA8E1CBD0ECA2C76003D74C4 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1C9E0ECA2C75003D74C4 /* MGTwitterEngine.m */; };
 		FA8E1CBE0ECA2C76003D74C4 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1CA20ECA2C75003D74C4 /* MGTwitterHTTPURLConnection.m */; };
 		FA8E1CBF0ECA2C76003D74C4 /* MGTwitterLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1CA40ECA2C75003D74C4 /* MGTwitterLibXMLParser.m */; };
@@ -43,7 +44,6 @@
 		FAE052760ECA2EB00088D9AC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE052750ECA2EB00088D9AC /* libxml2.dylib */; };
 		FAE052910ECA2F6E0088D9AC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */; };
 		FAE052920ECA2F7A0088D9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1660FE840EACC02AAC07 /* InfoPlist.strings */; };
-		FAE052940ECA2F920088D9AC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582B0DA1D0D100B32029 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,7 +65,6 @@
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		1DDD582B0DA1D0D100B32029 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		32DBCF750370BD2300C91783 /* Warblr_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warblr_Prefix.pch; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGrowl.m; sourceTree = "<group>"; };
 		FA00BBBD0ECCEF2100D99FE2 /* DPLoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLoginItem.h; sourceTree = "<group>"; };
 		FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLoginItem.m; sourceTree = "<group>"; };
+		FA8C82780ED042F200BF56F9 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		FA8E1C9D0ECA2C75003D74C4 /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngine.h; sourceTree = "<group>"; };
 		FA8E1C9E0ECA2C75003D74C4 /* MGTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterEngine.m; sourceTree = "<group>"; };
 		FA8E1C9F0ECA2C75003D74C4 /* MGTwitterEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngineDelegate.h; sourceTree = "<group>"; };
@@ -234,8 +234,8 @@
 		FA5F77020ECCF008005310D4 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				1DDD582B0DA1D0D100B32029 /* MainMenu.xib */,
 				FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */,
+				FA8C82780ED042F200BF56F9 /* MainMenu.xib */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -369,8 +369,8 @@
 			files = (
 				FAE052910ECA2F6E0088D9AC /* Credits.rtf in Resources */,
 				FAE052920ECA2F7A0088D9AC /* InfoPlist.strings in Resources */,
-				FAE052940ECA2F920088D9AC /* MainMenu.xib in Resources */,
 				FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */,
+				FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

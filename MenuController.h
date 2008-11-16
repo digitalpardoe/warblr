@@ -7,14 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <Carbon/Carbon.h>
 #import "WindowController.h"
 
 
 @interface MenuController : NSObject {
-	IBOutlet NSMenu *menu;
+	IBOutlet NSMenu *statusMenu;
 	NSStatusItem *statusBarItem;
 }
 
 - (IBAction)showTweetHUD:(id)sender;
+
+OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *userData);
 
 @end

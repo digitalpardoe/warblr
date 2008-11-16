@@ -12,6 +12,7 @@
 @implementation TweetHUDController
 
 - (void)awakeFromNib {
+	[NSApp activateIgnoringOtherApps:YES];
 	[window center];
 	[window makeKeyAndOrderFront:nil];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
@@ -19,9 +20,11 @@
 }
 
 - (IBAction)cancel:(id)sender {
+	[window orderOut:nil];
 }
 
 - (IBAction)tweet:(id)sender {
+	[window orderOut:nil];
 }
 
 - (void)controlTextDidChange:(NSNotification *)notification {
@@ -35,6 +38,22 @@
 	} else if (theLength <= 140) {
 		[characterCount setTextColor:[NSColor whiteColor]];
 	}
+	
+	// http://tinyurl.com/api-create.php?url=
+}
+
+- (BOOL)control:(NSControl *)control textView:(NSTextView *)textView doCommandBySelector:(SEL)command {
+	if (command == @selector(cancelOperation:)) {
+		[window orderOut:nil];
+		return YES;
+	} else if (command == @selector(insertNewline:)) {
+		[window orderOut:nil];
+		return YES;
+	}
+	
+//	NSLog(@"Command = %@", NSStringFromSelector(command));
+	
+	return NO;
 }
 
 - (void)dealloc
