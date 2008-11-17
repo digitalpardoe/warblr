@@ -47,7 +47,7 @@
 		[window orderOut:nil];
 		return YES;
 	} else if (command == @selector(insertNewline:)) {
-		[window orderOut:nil];
+		[self tweet:nil];
 		return YES;
 	}
 	

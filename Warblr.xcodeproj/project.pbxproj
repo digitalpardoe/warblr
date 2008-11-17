@@ -32,6 +32,8 @@
 		FA8E1F1A0ECA2D2E003D74C4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */; };
 		FA8E1F1B0ECA2D2E003D74C4 /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */; };
 		FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */; };
+		FA987B560ED21E47001758C1 /* DPTransparentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987B550ED21E47001758C1 /* DPTransparentWindow.m */; };
+		FA987B5B0ED21EF1001758C1 /* DPRoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987B5A0ED21EF1001758C1 /* DPRoundedView.m */; };
 		FAC2BEC80ECCD69500265115 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BEC70ECCD69500265115 /* MenuController.m */; };
 		FAC2BECB0ECCD6B200265115 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BECA0ECCD6B200265115 /* WindowController.m */; };
 		FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */; };
@@ -118,6 +120,10 @@
 		FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainProxy.m; sourceTree = "<group>"; };
 		FA908E990ECD5D720057CC67 /* TweetHUDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetHUDController.h; sourceTree = "<group>"; };
 		FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetHUDController.m; sourceTree = "<group>"; };
+		FA987B540ED21E47001758C1 /* DPTransparentWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTransparentWindow.h; sourceTree = "<group>"; };
+		FA987B550ED21E47001758C1 /* DPTransparentWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTransparentWindow.m; sourceTree = "<group>"; };
+		FA987B590ED21EF1001758C1 /* DPRoundedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRoundedView.h; sourceTree = "<group>"; };
+		FA987B5A0ED21EF1001758C1 /* DPRoundedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRoundedView.m; sourceTree = "<group>"; };
 		FAC2BEC60ECCD69500265115 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
 		FAC2BEC70ECCD69500265115 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		FAC2BEC90ECCD6B200265115 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
@@ -217,6 +223,10 @@
 				FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */,
 				FA00BBBD0ECCEF2100D99FE2 /* DPLoginItem.h */,
 				FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */,
+				FA987B540ED21E47001758C1 /* DPTransparentWindow.h */,
+				FA987B550ED21E47001758C1 /* DPTransparentWindow.m */,
+				FA987B590ED21EF1001758C1 /* DPRoundedView.h */,
+				FA987B5A0ED21EF1001758C1 /* DPRoundedView.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -421,6 +431,8 @@
 				FA00BBBF0ECCEF2100D99FE2 /* DPGrowl.m in Sources */,
 				FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */,
 				FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */,
+				FA987B560ED21E47001758C1 /* DPTransparentWindow.m in Sources */,
+				FA987B5B0ED21EF1001758C1 /* DPRoundedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
