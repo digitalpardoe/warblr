@@ -19,7 +19,7 @@
 	[messageArea becomeFirstResponder];
 }
 
-- (IBAction)cancel:(id)sender {
+- (IBAction)close:(id)sender {
 	[window orderOut:nil];
 }
 
@@ -60,7 +60,7 @@
 {
 	[messageArea release];
 	[characterCount release];
-	[cancelButton release];
+	[closeButton release];
 	[tweetButton release];
 	[super dealloc];
 }

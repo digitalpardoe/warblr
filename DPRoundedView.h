@@ -10,7 +10,6 @@
 
 
 @interface DPRoundedView : NSView {
-
 }
 
 @end

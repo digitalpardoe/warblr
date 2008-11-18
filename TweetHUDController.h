@@ -14,11 +14,11 @@
 	IBOutlet NSWindow *window;
 	IBOutlet NSTextField *messageArea;
 	IBOutlet BGHUDLabel *characterCount;
-	IBOutlet NSButton *cancelButton;
+	IBOutlet NSButton *closeButton;
 	IBOutlet NSButton *tweetButton;
 }
 
-- (IBAction)cancel:(id)sender;
+- (IBAction)close:(id)sender;
 - (IBAction)tweet:(id)sender;
 
 @end
