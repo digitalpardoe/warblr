@@ -21,4 +21,6 @@
 - (IBAction)close:(id)sender;
 - (IBAction)tweet:(id)sender;
 
+- (void)showTweetHUD;
+
 @end

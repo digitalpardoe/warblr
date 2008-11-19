@@ -27,6 +27,10 @@
 	[window orderOut:nil];
 }
 
+- (void)showTweetHUD {
+	[window makeKeyAndOrderFront:nil];
+}
+
 - (void)controlTextDidChange:(NSNotification *)notification {
 	NSString *contents = [messageArea stringValue];
 	int theLength = [contents length];

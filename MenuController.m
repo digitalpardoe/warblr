@@ -53,8 +53,7 @@
 }
 
 - (IBAction)showTweetHUD:(id)sender {
-	WindowController *tweetHUD = [[WindowController alloc] initWithWindowNibName:@"TweetHUD"];
-	[tweetHUD showWindow:self];
+	[[WindowController singleInstanceWindowController] showWindow:self];
 }
 
 // Method that actually handles the hot keys.
