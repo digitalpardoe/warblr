@@ -11,18 +11,4 @@
 
 @implementation WindowController
 
-+ (id)singleInstanceWindowController {
-    static WindowController *singleInstanceWindowController = nil;
-	
-    if (!singleInstanceWindowController) {
-        singleInstanceWindowController = [[WindowController allocWithZone:NULL] init];
-    }
-	
-    return singleInstanceWindowController;
-}
-
-- (id)init {
-    return [self initWithWindowNibName:@"TweetHUD"];
-}
-
 @end

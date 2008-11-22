@@ -12,6 +12,4 @@
 @interface WindowController : NSWindowController {
 }
 
-+ (id)singleInstanceWindowController;
-
 @end
