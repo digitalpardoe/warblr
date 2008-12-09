@@ -20,11 +20,11 @@
 }
 
 - (IBAction)close:(id)sender {
-	[window orderOut:nil];
+	[window close];
 }
 
 - (IBAction)tweet:(id)sender {
-	[window orderOut:nil];
+	[window close];
 }
 
 - (void)showTweetHUD {
@@ -48,7 +48,7 @@
 
 - (BOOL)control:(NSControl *)control textView:(NSTextView *)textView doCommandBySelector:(SEL)command {
 	if (command == @selector(cancelOperation:)) {
-		[window orderOut:nil];
+		[self close:nil];
 		return YES;
 	} else if (command == @selector(insertNewline:)) {
 		[self tweet:nil];

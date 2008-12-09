@@ -12,4 +12,8 @@
 @interface WindowController : NSWindowController {
 }
 
++ (WindowController *)sharedController;
+
+- (void)show;
+
 @end

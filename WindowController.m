@@ -8,7 +8,27 @@
 
 #import "WindowController.h"
 
+static WindowController *windowController;
 
 @implementation WindowController
+
++ (WindowController *)sharedController
+{
+    if (windowController == nil) {
+        windowController = [[WindowController alloc] initWithWindowNibName: @"TweetHUD"];
+    }
+	
+    return (windowController);
+}
+
+- (void)show
+{
+    [self showWindow:self];
+}
+
+- (void)dealloc
+{
+    [super dealloc];	
+}
 
 @end
