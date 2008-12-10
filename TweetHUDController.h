@@ -8,10 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 #import <BGHUDAppKit/BGHUDAppKit.h>
+#import "WindowController.h"
 
 
 @interface TweetHUDController : NSObject {
-	IBOutlet NSWindow *window;
 	IBOutlet NSTextField *messageArea;
 	IBOutlet BGHUDLabel *characterCount;
 	IBOutlet NSButton *closeButton;
@@ -20,7 +20,5 @@
 
 - (IBAction)close:(id)sender;
 - (IBAction)tweet:(id)sender;
-
-- (void)showTweetHUD;
 
 @end

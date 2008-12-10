@@ -13,23 +13,19 @@
 
 - (void)awakeFromNib {
 	[NSApp activateIgnoringOtherApps:YES];
-	[window center];
-	[window makeKeyAndOrderFront:nil];
+	[[[WindowController sharedController] window] center];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
 	[messageArea becomeFirstResponder];
 }
 
 - (IBAction)close:(id)sender {
-	[window close];
+	[[WindowController sharedController] close];
 }
 
 - (IBAction)tweet:(id)sender {
-	[window close];
+	[[WindowController sharedController] close];
 }
 
-- (void)showTweetHUD {
-	[window makeKeyAndOrderFront:nil];
-}
 
 - (void)controlTextDidChange:(NSNotification *)notification {
 	NSString *contents = [messageArea stringValue];
