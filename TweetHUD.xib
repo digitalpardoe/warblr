@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.02">
+<archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.03">
 	<data>
 		<int key="IBDocument.SystemTarget">1050</int>
 		<string key="IBDocument.SystemVersion">9F33</string>
-		<string key="IBDocument.InterfaceBuilderVersion">672</string>
+		<string key="IBDocument.InterfaceBuilderVersion">677</string>
 		<string key="IBDocument.AppKitVersion">949.34</string>
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
@@ -15,6 +15,15 @@
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string>com.apple.InterfaceBuilderKit</string>
 			<string>com.binarymethod.BGHUDAppKitPlugin</string>
+		</object>
+		<object class="NSMutableDictionary" key="IBDocument.Metadata">
+			<bool key="EncodedWithXMLCoder">YES</bool>
+			<object class="NSArray" key="dict.sortedKeys">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+			</object>
+			<object class="NSMutableArray" key="dict.values">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+			</object>
 		</object>
 		<object class="NSMutableArray" key="IBDocument.RootObjects" id="1048">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -36,7 +45,7 @@
 			<object class="NSWindowTemplate" id="562233365">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 240}, {515, 102}}</string>
+				<string key="NSWindowRect">{{196, 247}, {508, 95}}</string>
 				<int key="NSWTFlags">603979776</int>
 				<string key="NSWindowTitle">Window</string>
 				<string key="NSWindowClass">DPTransparentWindow</string>
@@ -154,22 +163,12 @@
 									</object>
 								</object>
 							</object>
-							<string key="NSFrame">{{4, 11}, {500, 87}}</string>
+							<string key="NSFrame">{{4, 4}, {500, 87}}</string>
 							<reference key="NSSuperview" ref="188068045"/>
-							<bool key="NSViewIsLayerTreeHost">YES</bool>
-							<object class="NSShadow" key="NSViewShadow">
-								<double key="NSShadowHoriz">2.000000e+00</double>
-								<double key="NSShadowVert">-2.000000e+00</double>
-								<double key="NSShadowBlurRadius">3.000000e+00</double>
-								<object class="NSColor" key="NSShadowColor" id="755926804">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MAA</bytes>
-								</object>
-							</object>
 							<string key="NSClassName">DPRoundedView</string>
 						</object>
 					</object>
-					<string key="NSFrameSize">{515, 102}</string>
+					<string key="NSFrameSize">{508, 95}</string>
 					<reference key="NSSuperview"/>
 					<bool key="NSViewIsLayerTreeHost">YES</bool>
 				</object>
@@ -406,14 +405,17 @@
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{29, 467}, {515, 102}}</string>
+					<string>{{247, 577}, {508, 95}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{29, 467}, {515, 102}}</string>
+					<string>{{247, 577}, {508, 95}}</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<real value="3.000000e+00"/>
-					<reference ref="755926804"/>
+					<object class="NSColor">
+						<int key="NSColorSpace">3</int>
+						<bytes key="NSWhite">MAA</bytes>
+					</object>
 					<real value="-2.000000e+00"/>
 					<real value="2.000000e+00"/>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
