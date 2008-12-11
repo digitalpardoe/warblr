@@ -15,7 +15,8 @@
 	[NSApp activateIgnoringOtherApps:YES];
 	[[[WindowController sharedController] window] center];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
-	[messageArea becomeFirstResponder];
+	[messageArea setFont:[NSFont fontWithName:@"Lucida Grande" size:14]];
+	[messageArea setTextColor:[NSColor whiteColor]];
 }
 
 - (IBAction)close:(id)sender {
@@ -27,8 +28,9 @@
 }
 
 
-- (void)controlTextDidChange:(NSNotification *)notification {
-	NSString *contents = [messageArea stringValue];
+- (void)textDidChange:(NSNotification *)notification {
+	NSString *contents = [messageArea string];
+	
 	int theLength = [contents length];
 	
 	[characterCount setStringValue:[NSString stringWithFormat:@"%d/140", theLength]];
@@ -42,7 +44,7 @@
 	// http://tinyurl.com/api-create.php?url=
 }
 
-- (BOOL)control:(NSControl *)control textView:(NSTextView *)textView doCommandBySelector:(SEL)command {
+- (BOOL)textView:(NSTextView *)textView doCommandBySelector:(SEL)command {
 	if (command == @selector(cancelOperation:)) {
 		[self close:nil];
 		return YES;

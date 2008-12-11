@@ -12,7 +12,7 @@
 @implementation DPRoundedView
 
 - (void)drawRect:(NSRect)rect {
-    NSColor *bgColor = [NSColor colorWithCalibratedWhite:0.0 alpha:0.80];
+    NSColor *bgColor = [NSColor colorWithCalibratedWhite:0.0 alpha:0.60];
     NSRect bgRect = rect;
     int minX = NSMinX(bgRect);
     int midX = NSMidX(bgRect);
