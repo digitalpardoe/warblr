@@ -21,6 +21,15 @@ static WindowController *windowController;
     return (windowController);
 }
 
+- (void)windowWillClose:(NSNotification *)notification
+{
+	[self autorelease];
+	
+	if (windowController == self) {
+		windowController = nil;
+	}
+}
+
 - (void)show
 {
     [self showWindow:self];

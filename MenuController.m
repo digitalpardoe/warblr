@@ -74,4 +74,8 @@ OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler, EventRef theEvent, voi
 	return noErr;
 }
 
+- (void)dealloc {
+	[super dealloc];
+}
+
 @end
