@@ -68,8 +68,7 @@
 	return NO;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
 	[messageArea release];
 	[characterCount release];
 	[closeButton release];

@@ -12,8 +12,7 @@ static WindowController *windowController;
 
 @implementation WindowController
 
-+ (WindowController *)sharedController
-{
++ (WindowController *)sharedController {
     if (windowController == nil) {
         windowController = [[WindowController alloc] initWithWindowNibName: @"TweetHUD"];
     }
@@ -21,8 +20,7 @@ static WindowController *windowController;
     return (windowController);
 }
 
-- (void)windowWillClose:(NSNotification *)notification
-{
+- (void)windowWillClose:(NSNotification *)notification {
 	[self autorelease];
 	
 	if (windowController == self) {
@@ -30,13 +28,11 @@ static WindowController *windowController;
 	}
 }
 
-- (void)show
-{
+- (void)show {
     [self showWindow:self];
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     [super dealloc];	
 }
 

@@ -57,8 +57,7 @@
 }
 
 // Method that actually handles the hot keys.
-OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler, EventRef theEvent, void *userData)
-{
+OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler, EventRef theEvent, void *userData) {
 	EventHotKeyID hkCom;
 	GetEventParameter(theEvent,kEventParamDirectObject,typeEventHotKeyID,NULL,sizeof(hkCom),NULL,&hkCom);
 	int l = hkCom.id;
