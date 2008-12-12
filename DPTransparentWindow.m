@@ -33,14 +33,12 @@
 }
 
 
-- (BOOL) canBecomeKeyWindow
-{
+- (BOOL) canBecomeKeyWindow {
     return YES;
 }
 
 
-- (void)mouseDragged:(NSEvent *)theEvent
-{
+- (void)mouseDragged:(NSEvent *)theEvent {
     NSPoint currentLocation;
     NSPoint newOrigin;
     NSRect  screenFrame = [[NSScreen mainScreen] frame];
@@ -73,8 +71,7 @@
 }
 
 
-- (void)mouseDown:(NSEvent *)theEvent
-{    
+- (void)mouseDown:(NSEvent *)theEvent {    
     NSRect windowFrame = [self frame];
     
     // Get mouse location in global coordinates

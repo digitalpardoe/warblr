@@ -9,8 +9,7 @@
 
 @implementation DPLoginItem
 
-+ (BOOL)inLoginItems
-{
++ (BOOL)inLoginItems {
 	NSString *appName = [[[NSBundle mainBundle] bundlePath] lastPathComponent];
 	NSString *loginWindowPlistPath = [@"~/Library/Preferences/loginwindow.plist" stringByExpandingTildeInPath]; 
 	NSMutableDictionary *loginWindowPrefsDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:loginWindowPlistPath];
@@ -27,8 +26,7 @@
 	return NO;
 }
 
-+ (void)removeFromLoginItems
-{
++ (void)removeFromLoginItems {
 	NSString *appName = [[[NSBundle mainBundle] bundlePath] lastPathComponent];
 	NSString *loginWindowPlistPath = [@"~/Library/Preferences/loginwindow.plist" stringByExpandingTildeInPath]; 
 	NSMutableDictionary *loginWindowPrefsDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:loginWindowPlistPath];
@@ -46,8 +44,7 @@
 	}
 }
 
-+ (void)addToLoginItems
-{
++ (void)addToLoginItems {
 	NSString *fullPath = [[NSBundle mainBundle] bundlePath];
 	NSString *script = [NSString stringWithFormat:@"set appPath to \"%@\" \ntell application \"System Events\" \nmake login item at end with properties {path:appPath, hidden:false} \nend tell", fullPath];
 	NSAppleScript *appleScript = [[NSAppleScript alloc] initWithSource:script];
