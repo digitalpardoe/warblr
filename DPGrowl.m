@@ -7,6 +7,7 @@
 
 #import "DPGrowl.h"
 
+
 @implementation DPGrowl
 
 static DPGrowl *singleton;

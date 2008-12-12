@@ -7,8 +7,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface DPLoginItem : NSObject
-{
+
+@interface DPLoginItem : NSObject {
 }
 
 + (BOOL)inLoginItems;
