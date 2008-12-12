@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <BGHUDAppKit/BGHUDAppKit.h>
 #import "WindowController.h"
+#import "MGTwitterEngine.h"
 
 
 @interface TweetHUDController : NSObject {
