@@ -8,15 +8,19 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Carbon/Carbon.h>
+#import "SS_PrefsController.h"
 #import "WindowController.h"
 
 
 @interface MenuController : NSObject {
 	IBOutlet NSMenu *statusMenu;
 	NSStatusItem *statusBarItem;
+	
+	SS_PrefsController *prefs;
 }
 
 - (IBAction)showTweetHUD:(id)sender;
+- (IBAction)showPreferences:(id)sender;
 
 OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *userData);
 

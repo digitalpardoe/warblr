@@ -43,10 +43,23 @@
 		FAC2BF680ECCE75600265115 /* BGHUDAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */; };
 		FAC2BF690ECCE75600265115 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF160ECCE72B00265115 /* Growl.framework */; };
 		FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF170ECCE72B00265115 /* Sparkle.framework */; };
+		FACC12510EF46D7100D702D1 /* Account.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FACC12490EF46CD300D702D1 /* Account.preferencePane */; };
+		FACC12650EF46DF000D702D1 /* AccountPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACC12640EF46DF000D702D1 /* AccountPrefController.m */; };
+		FACC12730EF46EA800D702D1 /* AccountPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC12720EF46EA800D702D1 /* AccountPrefPane.xib */; };
 		FAE052760ECA2EB00088D9AC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE052750ECA2EB00088D9AC /* libxml2.dylib */; };
 		FAE052910ECA2F6E0088D9AC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */; };
 		FAE052920ECA2F7A0088D9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1660FE840EACC02AAC07 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FACC127A0EF46F9500D702D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACC12480EF46CD300D702D1 /* Account */;
+			remoteInfo = Account;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FAC2BF900ECCE75C00265115 /* Copy Frameworks */ = {
@@ -60,6 +73,17 @@
 				FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACC117E0EF4622F00D702D1 /* Copy Preference Panes */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "../Preference Panes";
+			dstSubfolderSpec = 7;
+			files = (
+				FACC12510EF46D7100D702D1 /* Account.preferencePane in Copy Preference Panes */,
+			);
+			name = "Copy Preference Panes";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -132,6 +156,11 @@
 		FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
 		FAC2BF160ECCE72B00265115 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		FAC2BF170ECCE72B00265115 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		FACC12490EF46CD300D702D1 /* Account.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Account.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACC124A0EF46CD300D702D1 /* Account-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Account-Info.plist"; sourceTree = "<group>"; };
+		FACC12630EF46DF000D702D1 /* AccountPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountPrefController.h; sourceTree = "<group>"; };
+		FACC12640EF46DF000D702D1 /* AccountPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountPrefController.m; sourceTree = "<group>"; };
+		FACC12720EF46EA800D702D1 /* AccountPrefPane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountPrefPane.xib; sourceTree = "<group>"; };
 		FAE052750ECA2EB00088D9AC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +179,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FACC12470EF46CD300D702D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -157,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				8D15AC370486D014006FF6A4 /* Warblr.app */,
+				FACC12490EF46CD300D702D1 /* Account.preferencePane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +203,7 @@
 			children = (
 				FA8E1C990ECA2B7D003D74C4 /* Third Party Classes */,
 				2A37F4ABFDCFA73011CA2CEA /* Sources */,
+				FACC11520EF4611E00D702D1 /* Preference Panes */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
@@ -332,6 +370,25 @@
 			name = Application;
 			sourceTree = "<group>";
 		};
+		FACC11520EF4611E00D702D1 /* Preference Panes */ = {
+			isa = PBXGroup;
+			children = (
+				FACC124E0EF46D0B00D702D1 /* Account */,
+			);
+			name = "Preference Panes";
+			sourceTree = "<group>";
+		};
+		FACC124E0EF46D0B00D702D1 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FACC124A0EF46CD300D702D1 /* Account-Info.plist */,
+				FACC12630EF46DF000D702D1 /* AccountPrefController.h */,
+				FACC12640EF46DF000D702D1 /* AccountPrefController.m */,
+				FACC12720EF46EA800D702D1 /* AccountPrefPane.xib */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,16 +401,35 @@
 				8D15AC330486D014006FF6A4 /* Frameworks */,
 				FAC2BF900ECCE75C00265115 /* Copy Frameworks */,
 				FAC2BF920ECCE78900265115 /* Run Script */,
+				FACC117E0EF4622F00D702D1 /* Copy Preference Panes */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FACC127B0EF46F9500D702D1 /* PBXTargetDependency */,
 			);
 			name = Warblr;
 			productInstallPath = "$(HOME)/Applications";
 			productName = Warblr;
 			productReference = 8D15AC370486D014006FF6A4 /* Warblr.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FACC12480EF46CD300D702D1 /* Account */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACC124D0EF46CD600D702D1 /* Build configuration list for PBXNativeTarget "Account" */;
+			buildPhases = (
+				FACC12450EF46CD300D702D1 /* Resources */,
+				FACC12460EF46CD300D702D1 /* Sources */,
+				FACC12470EF46CD300D702D1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Account;
+			productName = Account;
+			productReference = FACC12490EF46CD300D702D1 /* Account.preferencePane */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -368,6 +444,7 @@
 			projectRoot = "";
 			targets = (
 				8D15AC270486D014006FF6A4 /* Warblr */,
+				FACC12480EF46CD300D702D1 /* Account */,
 			);
 		};
 /* End PBXProject section */
@@ -381,6 +458,14 @@
 				FAE052920ECA2F7A0088D9AC /* InfoPlist.strings in Resources */,
 				FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */,
 				FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACC12450EF46CD300D702D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACC12730EF46EA800D702D1 /* AccountPrefPane.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +521,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FACC12460EF46CD300D702D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACC12650EF46DF000D702D1 /* AccountPrefController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FACC127B0EF46F9500D702D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACC12480EF46CD300D702D1 /* Account */;
+			targetProxy = FACC127A0EF46F9500D702D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C05733C808A9546B00998B17 /* Debug */ = {
@@ -508,6 +609,56 @@
 			};
 			name = Release;
 		};
+		FACC124B0EF46CD600D702D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Account-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Account;
+				WRAPPER_EXTENSION = preferencePane;
+			};
+			name = Debug;
+		};
+		FACC124C0EF46CD600D702D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Account-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Account;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -525,6 +676,15 @@
 			buildConfigurations = (
 				C05733CC08A9546B00998B17 /* Debug */,
 				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACC124D0EF46CD600D702D1 /* Build configuration list for PBXNativeTarget "Account" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACC124B0EF46CD600D702D1 /* Debug */,
+				FACC124C0EF46CD600D702D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

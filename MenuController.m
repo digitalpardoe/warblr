@@ -56,6 +56,27 @@
 	[[WindowController sharedController] show];
 }
 
+- (IBAction)showPreferences:(id)sender
+{
+	[NSApp activateIgnoringOtherApps:YES];
+	
+	if (!prefs)
+	{
+		NSString *pathToPanes = [NSString stringWithFormat:@"%@/../Preference Panes", [[NSBundle mainBundle] resourcePath]];
+		
+		prefs = [[SS_PrefsController alloc] initWithPanesSearchPath:pathToPanes];
+		
+		[prefs setAlwaysShowsToolbar:YES];
+		[prefs setDebug:YES];
+		
+		[prefs setAlwaysOpensCentered:YES];
+		
+		[prefs setPanesOrder:[NSArray arrayWithObjects:@"Account", nil]];
+	}
+    
+	[prefs showPreferencesWindow];
+}
+
 // Method that actually handles the hot keys.
 OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler, EventRef theEvent, void *userData) {
 	EventHotKeyID hkCom;

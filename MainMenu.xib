@@ -167,6 +167,15 @@
 						<reference key="NSOnImage" ref="90941078"/>
 						<reference key="NSMixedImage" ref="675015698"/>
 					</object>
+					<object class="NSMenuItem" id="592154609">
+						<reference key="NSMenu" ref="816512260"/>
+						<string type="base64-UTF8" key="NSTitle">UHJlZmVyZW5jZXPigKY</string>
+						<string key="NSKeyEquiv">,</string>
+						<int key="NSKeyEquivModMask">1048576</int>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="90941078"/>
+						<reference key="NSMixedImage" ref="675015698"/>
+					</object>
 					<object class="NSMenuItem" id="860601669">
 						<reference key="NSMenu" ref="816512260"/>
 						<bool key="NSIsDisabled">YES</bool>
@@ -283,6 +292,22 @@
 					</object>
 					<int key="connectionID">503</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showPreferences:</string>
+						<reference key="source" ref="909812198"/>
+						<reference key="destination" ref="609285721"/>
+					</object>
+					<int key="connectionID">505</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showPreferences:</string>
+						<reference key="source" ref="909812198"/>
+						<reference key="destination" ref="592154609"/>
+					</object>
+					<int key="connectionID">507</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -357,6 +382,7 @@
 							<reference ref="108786400"/>
 							<reference ref="860601669"/>
 							<reference ref="627785484"/>
+							<reference ref="592154609"/>
 						</object>
 						<reference key="parent" ref="1049"/>
 						<string key="objectName">Status Menu</string>
@@ -450,6 +476,11 @@
 						<reference key="object" ref="1041667034"/>
 						<reference key="parent" ref="832076910"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">506</int>
+						<reference key="object" ref="592154609"/>
+						<reference key="parent" ref="816512260"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -484,6 +515,7 @@
 					<string>476.IBPluginDependency</string>
 					<string>477.IBPluginDependency</string>
 					<string>480.IBPluginDependency</string>
+					<string>506.IBPluginDependency</string>
 					<string>56.IBPluginDependency</string>
 					<string>56.ImportedFromIB2</string>
 					<string>57.IBEditorWindowLastContentRect</string>
@@ -501,7 +533,7 @@
 					<integer value="1" id="9"/>
 					<string>{74, 862}</string>
 					<string>{{11, 977}, {478, 20}}</string>
-					<string>{{708, 446}, {157, 53}}</string>
+					<string>{{411, 421}, {172, 73}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -514,6 +546,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{452, 478}, {154, 123}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -549,7 +582,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">504</int>
+			<int key="maxID">507</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -558,8 +591,17 @@
 					<string key="className">MenuController</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">showTweetHUD:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSMutableArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>showPreferences:</string>
+							<string>showTweetHUD:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<string key="NS.key.0">statusMenu</string>
