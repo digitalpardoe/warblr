@@ -12,6 +12,8 @@
 
 @interface AccountPrefController : NSObject <SS_PreferencePaneProtocol> {
 	IBOutlet NSView *prefsView;
+	IBOutlet NSTextField *username;
+	IBOutlet NSSecureTextField *password;
 }
 
 @end
