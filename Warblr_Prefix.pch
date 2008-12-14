@@ -4,4 +4,8 @@
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
+	#define APP_NAME		[[NSFileManager defaultManager] displayNameAtPath:[[NSBundle mainBundle] bundlePath]]
+	#define APP_VERSION		[[[NSBundle bundleForClass:[self class]] infoDictionary] objectForKey:@"CFBundleVersion"]
+	#define APP_URL			@"http://digitalpardoe.co.uk/"
+	#define APP_TOKEN		@"warblr"
 #endif

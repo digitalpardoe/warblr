@@ -12,39 +12,31 @@
 @implementation AccountPrefController
 
 - (NSString *)username {
-	return [[NSUserDefaults standardUserDefaults] stringForKey:@"Twitter Username"];
+	return [[AccountDetails instance] currentUsername];
 }
 
 - (NSString *)password {
-	return [[[EMKeychainProxy sharedProxy] genericKeychainItemForService:@"Warblr" withUsername:[[NSUserDefaults standardUserDefaults] stringForKey:@"Twitter Username"]] password];
+	return [[AccountDetails instance] currentPassword];
 }
 
 - (IBAction)login:(id)sender {
-	BOOL oldUser = [[[NSUserDefaults standardUserDefaults] stringForKey:@"Twitter Username"] isEqualToString:[usernameField stringValue]];
-	EMKeychainItem *keychainItem = [[EMKeychainProxy sharedProxy] genericKeychainItemForService:@"Warblr" withUsername:[[NSUserDefaults standardUserDefaults] stringForKey:@"Twitter Username"]];
-	
-	[[NSUserDefaults standardUserDefaults] setObject:[usernameField stringValue] forKey:@"Twitter Username"];
-	[[NSUserDefaults standardUserDefaults] synchronize];
-	
-	if (keychainItem == nil || !oldUser) {
-		[[EMKeychainProxy sharedProxy] addGenericKeychainItemForService:@"Warblr" withUsername:[usernameField stringValue] password:[passwordField stringValue]];
-	} else {
-		[keychainItem setPassword:[passwordField stringValue]];
-	}
-	
 	MGTwitterEngine *twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
-	[twitterEngine setUsername:[self username] password:[self password]];
-	[twitterEngine checkUserCredentials];
+	[twitterEngine setUsername:[usernameField stringValue] password:[passwordField stringValue]];
 	
 	[progressIndicator startAnimation:self];
 	[resultText setHidden:YES];
 	[progressText setStringValue:@"Checking credentials…"];
 	[progressText setHidden:NO];
+	
+	[twitterEngine checkUserCredentials];
 }
 	
 #pragma mark MGTwitterEngineDelegate methods
 	
 - (void)requestSucceeded:(NSString *)requestIdentifier {
+	[[AccountDetails instance] setUsername:[usernameField stringValue]];
+	[[AccountDetails instance] setPassword:[passwordField stringValue]];
+	
 	[progressIndicator stopAnimation:self];
 	[resultText setStringValue:@"\u2713"];
 	[resultText setHidden:NO];
@@ -112,8 +104,6 @@
 	[progressIndicator release];
 	[progressText release];
 	[resultText release];
-	[username release];
-	[password release];
 	[super dealloc];
 }
 

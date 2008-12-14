@@ -10,7 +10,7 @@
 #import <BGHUDAppKit/BGHUDAppKit.h>
 #import "WindowController.h"
 #import "MGTwitterEngine.h"
-
+#import "AccountDetails.h"
 
 @interface TweetHUDController : NSObject {
 	IBOutlet NSTextView *messageArea;

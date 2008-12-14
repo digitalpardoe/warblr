@@ -8,8 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SS_PreferencePaneProtocol.h"
-#import "EMKeychainProxy.h"
 #import "MGTwitterEngine.h"
+#import "AccountDetails.h"
 
 
 @interface AccountPrefController : NSObject <SS_PreferencePaneProtocol> {
@@ -20,9 +20,6 @@
 	IBOutlet NSProgressIndicator *progressIndicator;
 	IBOutlet NSTextField *progressText;
 	IBOutlet NSTextField *resultText;
-	
-	NSString *username;
-	NSString *password;
 }
 
 - (IBAction)login:(id)sender;
