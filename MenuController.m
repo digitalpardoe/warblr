@@ -60,17 +60,13 @@
 {
 	[NSApp activateIgnoringOtherApps:YES];
 	
-	if (!prefs)
-	{
+	if (!prefs) {
 		NSString *pathToPanes = [NSString stringWithFormat:@"%@/../Preference Panes", [[NSBundle mainBundle] resourcePath]];
-		
 		prefs = [[SS_PrefsController alloc] initWithPanesSearchPath:pathToPanes];
 		
 		[prefs setAlwaysShowsToolbar:YES];
 		[prefs setDebug:NO];
-		
 		[prefs setAlwaysOpensCentered:YES];
-		
 		[prefs setPanesOrder:[NSArray arrayWithObjects:@"Account", nil]];
 	}
     

@@ -37,7 +37,6 @@
 //	[messageArea setString:@""];
 }
 
-
 - (void)textDidChange:(NSNotification *)notification {
 	NSString *contents = [messageArea string];
 	
