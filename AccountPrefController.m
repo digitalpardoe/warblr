@@ -107,6 +107,13 @@
 - (void)dealloc
 {
 	[prefsView release];
+	[usernameField release];
+	[passwordField release];
+	[progressIndicator release];
+	[progressText release];
+	[resultText release];
+	[username release];
+	[password release];
 	[super dealloc];
 }
 
