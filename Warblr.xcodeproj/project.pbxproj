@@ -12,6 +12,8 @@
 		FA00BBB90ECCEEFD00D99FE2 /* SS_PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBB80ECCEEFD00D99FE2 /* SS_PrefsController.m */; };
 		FA00BBBF0ECCEF2100D99FE2 /* DPGrowl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */; };
 		FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */; };
+		FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */; };
+		FA5AA94B0EF9A8A900391976 /* AutoHyperlinks.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */; };
 		FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8C82780ED042F200BF56F9 /* MainMenu.xib */; };
 		FA8E1CBD0ECA2C76003D74C4 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1C9E0ECA2C75003D74C4 /* MGTwitterEngine.m */; };
 		FA8E1CBE0ECA2C76003D74C4 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1CA20ECA2C75003D74C4 /* MGTwitterHTTPURLConnection.m */; };
@@ -89,6 +91,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA5AA94B0EF9A8A900391976 /* AutoHyperlinks.framework in Copy Frameworks */,
 				FAC2BF680ECCE75600265115 /* BGHUDAppKit.framework in Copy Frameworks */,
 				FAC2BF690ECCE75600265115 /* Growl.framework in Copy Frameworks */,
 				FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */,
@@ -124,6 +127,8 @@
 		FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGrowl.m; sourceTree = "<group>"; };
 		FA00BBBD0ECCEF2100D99FE2 /* DPLoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLoginItem.h; sourceTree = "<group>"; };
 		FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLoginItem.m; sourceTree = "<group>"; };
+		FA5AA9270EF9A79200391976 /* AutoHyperlinks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoHyperlinks.txt; sourceTree = "<group>"; };
+		FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoHyperlinks.framework; sourceTree = "<group>"; };
 		FA8C82780ED042F200BF56F9 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		FA8E1C9D0ECA2C75003D74C4 /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngine.h; sourceTree = "<group>"; };
 		FA8E1C9E0ECA2C75003D74C4 /* MGTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterEngine.m; sourceTree = "<group>"; };
@@ -199,6 +204,7 @@
 				FAC2BF180ECCE72B00265115 /* BGHUDAppKit.framework in Frameworks */,
 				FAC2BF190ECCE72C00265115 /* Growl.framework in Frameworks */,
 				FAC2BF1A0ECCE72C00265115 /* Sparkle.framework in Frameworks */,
+				FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +265,7 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */,
 				FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */,
 				FAC2BF160ECCE72B00265115 /* Growl.framework */,
 				FAC2BF170ECCE72B00265115 /* Sparkle.framework */,
@@ -295,9 +302,18 @@
 			name = Custom;
 			sourceTree = "<group>";
 		};
+		FA5AA9240EF9A76F00391976 /* Other Copyright */ = {
+			isa = PBXGroup;
+			children = (
+				FA5AA9270EF9A79200391976 /* AutoHyperlinks.txt */,
+			);
+			name = "Other Copyright";
+			sourceTree = "<group>";
+		};
 		FA5F76FF0ECCEFFC005310D4 /* Text & Property List */ = {
 			isa = PBXGroup;
 			children = (
+				FA5AA9240EF9A76F00391976 /* Other Copyright */,
 				2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
 				089C1660FE840EACC02AAC07 /* InfoPlist.strings */,
