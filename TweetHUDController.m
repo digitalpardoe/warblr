@@ -23,6 +23,7 @@
 	[[WindowController sharedController] close];
 	[messageArea setString:@""];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
+	[characterCount setTextColor:[NSColor whiteColor]];
 }
 
 - (IBAction)tweet:(id)sender {	
@@ -39,6 +40,15 @@
 	NSString *contents = [messageArea string];
 	
 	int theLength = [contents length];
+	
+	AHHyperlinkScanner *hyperlinkScanner = [AHHyperlinkScanner hyperlinkScannerWithString:contents];
+	NSArray *urls = [hyperlinkScanner allURIs];
+	
+	NSEnumerator *enumerator = [urls objectEnumerator];
+	id url;
+	while ( url = [enumerator nextObject] ) {
+		theLength = theLength - [url range].length;
+	}
 	
 	[characterCount setStringValue:[NSString stringWithFormat:@"%d/140", theLength]];
 	
