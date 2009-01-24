@@ -16,6 +16,7 @@
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
 	[messageArea setFont:[NSFont fontWithName:@"Lucida Grande" size:14]];
 	[messageArea setTextColor:[NSColor whiteColor]];	
+	[messageArea setRichText:NO];
 }
 
 - (IBAction)close:(id)sender {
@@ -35,7 +36,7 @@
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
 }
 
-// NSTextView Delegate Methods
+#pragma mark NSTextView Delegate Methods
 
 - (void)textDidChange:(NSNotification *)notification {
 	NSString *contents = [messageArea string];
@@ -48,10 +49,14 @@
 	NSEnumerator *enumerator = [urls objectEnumerator];
 	id url;
 	while ( url = [enumerator nextObject] ) {
-		theLength = theLength - [url range].length;
+		theLength = (theLength - [url range].length) + 25;
 	}
 	
-	[characterCount setStringValue:[NSString stringWithFormat:@"%d/140", theLength]];
+	if ([urls count] > 0) {
+		[characterCount setStringValue:[NSString stringWithFormat:@"~%d/140", theLength]];
+	} else {
+		[characterCount setStringValue:[NSString stringWithFormat:@"%d/140", theLength]];
+	}
 	
 	if (theLength > 140) {
 		[characterCount setTextColor:[NSColor redColor]];
