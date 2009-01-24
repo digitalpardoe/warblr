@@ -12,11 +12,10 @@
 @implementation TweetHUDController
 
 - (void)awakeFromNib {
-	[NSApp activateIgnoringOtherApps:YES];
 	[[[WindowController sharedController] window] center];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
 	[messageArea setFont:[NSFont fontWithName:@"Lucida Grande" size:14]];
-	[messageArea setTextColor:[NSColor whiteColor]];
+	[messageArea setTextColor:[NSColor whiteColor]];	
 }
 
 - (IBAction)close:(id)sender {
@@ -35,6 +34,8 @@
 	[messageArea setString:@""];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
 }
+
+// NSTextView Delegate Methods
 
 - (void)textDidChange:(NSNotification *)notification {
 	NSString *contents = [messageArea string];

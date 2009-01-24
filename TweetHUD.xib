@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.03">
 	<data>
 		<int key="IBDocument.SystemTarget">1050</int>
-		<string key="IBDocument.SystemVersion">9F33</string>
+		<string key="IBDocument.SystemVersion">9G55</string>
 		<string key="IBDocument.InterfaceBuilderVersion">677</string>
-		<string key="IBDocument.AppKitVersion">949.34</string>
-		<string key="IBDocument.HIToolboxVersion">352.00</string>
+		<string key="IBDocument.AppKitVersion">949.43</string>
+		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="596"/>
+			<integer value="515"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -177,7 +177,7 @@
 															<string>WebURLsWithTitlesPboardType</string>
 														</object>
 													</object>
-													<string key="NSFrameSize">{478, 36}</string>
+													<string key="NSFrameSize">{478, 14}</string>
 													<reference key="NSSuperview" ref="171146881"/>
 													<object class="NSTextContainer" key="NSTextContainer" id="682949901">
 														<object class="NSLayoutManager" key="NSLayoutManager">
@@ -254,8 +254,8 @@
 														<nil key="NSDefaultParagraphStyle"/>
 													</object>
 													<int key="NSTVFlags">6</int>
-													<string key="NSMaxSize">{478, 1e+07}</string>
-													<string key="NSMinize">{197, 36}</string>
+													<string key="NSMaxSize">{958, 1e+07}</string>
+													<string key="NSMinize">{197, 0}</string>
 													<nil key="NSDelegate"/>
 												</object>
 											</object>
@@ -270,16 +270,16 @@
 											</object>
 											<int key="NScvFlags">2</int>
 										</object>
-										<object class="BGHUDScroller" id="26945302">
+										<object class="BGHUDScroller" id="502291035">
 											<reference key="NSNextResponder" ref="176193815"/>
 											<int key="NSvFlags">256</int>
-											<string key="NSFrame">{{-100, -100}, {15, 105}}</string>
+											<string key="NSFrameSize">{0, 0}</string>
 											<reference key="NSSuperview" ref="176193815"/>
 											<reference key="NSTarget" ref="176193815"/>
 											<string key="NSAction">_doScroller:</string>
 											<string key="themeKey">gradientTheme</string>
 										</object>
-										<object class="BGHUDScroller" id="502291035">
+										<object class="BGHUDScroller" id="862970576">
 											<reference key="NSNextResponder" ref="176193815"/>
 											<int key="NSvFlags">256</int>
 											<string key="NSFrameSize">{0, 0}</string>
@@ -293,8 +293,8 @@
 									<reference key="NSSuperview" ref="276661236"/>
 									<reference key="NSNextKeyView" ref="171146881"/>
 									<int key="NSsFlags">2</int>
-									<reference key="NSVScroller" ref="26945302"/>
-									<reference key="NSHScroller" ref="502291035"/>
+									<reference key="NSVScroller" ref="502291035"/>
+									<reference key="NSHScroller" ref="862970576"/>
 									<reference key="NSContentView" ref="171146881"/>
 									<string key="themeKey">gradientTheme</string>
 								</object>
@@ -503,41 +503,25 @@
 						<reference key="object" ref="176193815"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="BGHUDScroller" id="945926760">
-								<nil key="NSNextResponder"/>
-								<int key="NSvFlags">256</int>
-								<string key="NSFrameSize">{0, 0}</string>
-								<bool key="NSEnabled">YES</bool>
-								<reference key="NSTarget" ref="176193815"/>
-								<string key="NSAction">_doScroller:</string>
-								<double key="NSPercent">5.147059e-01</double>
-								<string key="themeKey">gradientTheme</string>
-							</object>
-							<object class="BGHUDScroller" id="804799101">
-								<nil key="NSNextResponder"/>
-								<int key="NSvFlags">256</int>
-								<string key="NSFrameSize">{0, 0}</string>
-								<reference key="NSTarget" ref="176193815"/>
-								<string key="NSAction">_doScroller:</string>
-								<string key="themeKey">gradientTheme</string>
-							</object>
 							<reference ref="732177964"/>
+							<reference ref="502291035"/>
+							<reference ref="862970576"/>
 						</object>
 						<reference key="parent" ref="276661236"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">594</int>
-						<reference key="object" ref="945926760"/>
-						<reference key="parent" ref="176193815"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">595</int>
-						<reference key="object" ref="804799101"/>
-						<reference key="parent" ref="176193815"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">596</int>
 						<reference key="object" ref="732177964"/>
+						<reference key="parent" ref="176193815"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">603</int>
+						<reference key="object" ref="502291035"/>
+						<reference key="parent" ref="176193815"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">604</int>
+						<reference key="object" ref="862970576"/>
 						<reference key="parent" ref="176193815"/>
 					</object>
 				</object>
@@ -567,9 +551,9 @@
 					<string>538.IBPluginDependency</string>
 					<string>539.IBPluginDependency</string>
 					<string>593.IBPluginDependency</string>
-					<string>594.IBPluginDependency</string>
-					<string>595.IBPluginDependency</string>
 					<string>596.IBPluginDependency</string>
+					<string>603.IBShouldRemoveOnLegacySave</string>
+					<string>604.IBShouldRemoveOnLegacySave</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -595,8 +579,8 @@
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
-					<string>com.binarymethod.BGHUDAppKitPlugin</string>
-					<string>com.binarymethod.BGHUDAppKitPlugin</string>
+					<boolean value="YES" id="5"/>
+					<reference ref="5"/>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -619,7 +603,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">598</int>
+			<int key="maxID">604</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

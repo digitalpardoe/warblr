@@ -30,6 +30,7 @@ static WindowController *windowController;
 }
 
 - (void)show {
+	[NSApp activateIgnoringOtherApps:YES];
     [self showWindow:self];
 }
 
