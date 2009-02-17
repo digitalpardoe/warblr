@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="515"/>
+			<integer value="516"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -279,7 +279,7 @@
 											<string key="NSAction">_doScroller:</string>
 											<string key="themeKey">gradientTheme</string>
 										</object>
-										<object class="BGHUDScroller" id="862970576">
+										<object class="BGHUDScroller" id="613743611">
 											<reference key="NSNextResponder" ref="176193815"/>
 											<int key="NSvFlags">256</int>
 											<string key="NSFrameSize">{0, 0}</string>
@@ -294,19 +294,13 @@
 									<reference key="NSNextKeyView" ref="171146881"/>
 									<int key="NSsFlags">2</int>
 									<reference key="NSVScroller" ref="502291035"/>
-									<reference key="NSHScroller" ref="862970576"/>
+									<reference key="NSHScroller" ref="613743611"/>
 									<reference key="NSContentView" ref="171146881"/>
 									<string key="themeKey">gradientTheme</string>
 								</object>
 							</object>
 							<string key="NSFrame">{{4, 9}, {500, 87}}</string>
 							<reference key="NSSuperview" ref="188068045"/>
-							<object class="NSShadow" key="NSViewShadow">
-								<double key="NSShadowHoriz">2.000000e+00</double>
-								<double key="NSShadowVert">-2.000000e+00</double>
-								<double key="NSShadowBlurRadius">3.000000e+00</double>
-								<reference key="NSShadowColor" ref="630015799"/>
-							</object>
 							<string key="NSClassName">DPRoundedView</string>
 						</object>
 					</object>
@@ -505,7 +499,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="732177964"/>
 							<reference ref="502291035"/>
-							<reference ref="862970576"/>
+							<reference ref="613743611"/>
 						</object>
 						<reference key="parent" ref="276661236"/>
 					</object>
@@ -515,13 +509,13 @@
 						<reference key="parent" ref="176193815"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">603</int>
+						<int key="objectID">605</int>
 						<reference key="object" ref="502291035"/>
 						<reference key="parent" ref="176193815"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">604</int>
-						<reference key="object" ref="862970576"/>
+						<int key="objectID">606</int>
+						<reference key="object" ref="613743611"/>
 						<reference key="parent" ref="176193815"/>
 					</object>
 				</object>
@@ -552,8 +546,8 @@
 					<string>539.IBPluginDependency</string>
 					<string>593.IBPluginDependency</string>
 					<string>596.IBPluginDependency</string>
-					<string>603.IBShouldRemoveOnLegacySave</string>
-					<string>604.IBShouldRemoveOnLegacySave</string>
+					<string>605.IBShouldRemoveOnLegacySave</string>
+					<string>606.IBShouldRemoveOnLegacySave</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -561,9 +555,9 @@
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{41, 512}, {513, 100}}</string>
+					<string>{{20, 407}, {513, 100}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{41, 512}, {513, 100}}</string>
+					<string>{{20, 407}, {513, 100}}</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -603,7 +597,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">604</int>
+			<int key="maxID">606</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
