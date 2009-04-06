@@ -43,20 +43,20 @@
 	
 	int theLength = [contents length];
 	
-	AHHyperlinkScanner *hyperlinkScanner = [AHHyperlinkScanner hyperlinkScannerWithString:contents];
-	NSArray *urls = [hyperlinkScanner allURIs];
-	
-	NSEnumerator *enumerator = [urls objectEnumerator];
-	id url;
-	while ( url = [enumerator nextObject] ) {
-		theLength = (theLength - [url range].length) + 25;
-	}
-	
-	if ([urls count] > 0) {
-		[characterCount setStringValue:[NSString stringWithFormat:@"~%d/140", theLength]];
-	} else {
+//	AHHyperlinkScanner *hyperlinkScanner = [AHHyperlinkScanner hyperlinkScannerWithString:contents];
+//	NSArray *urls = [hyperlinkScanner allURIs];
+//	
+//	NSEnumerator *enumerator = [urls objectEnumerator];
+//	id url;
+//	while ( url = [enumerator nextObject] ) {
+//		theLength = (theLength - [url range].length) + 25;
+//	}
+//	
+//	if ([urls count] > 0) {
+//		[characterCount setStringValue:[NSString stringWithFormat:@"~%d/140", theLength]];
+//	} else {
 		[characterCount setStringValue:[NSString stringWithFormat:@"%d/140", theLength]];
-	}
+//	}
 	
 	if (theLength > 140) {
 		[characterCount setTextColor:[NSColor redColor]];
