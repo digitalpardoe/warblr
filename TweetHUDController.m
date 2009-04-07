@@ -50,6 +50,7 @@
 	id url;
 	while ( url = [enumerator nextObject] ) {
 //		theLength = (theLength - [url range].length) + 25;
+		NSLog(@"[ Warblr ] - Found URL: %@, in input.", url);
 	}
 	
 //	if ([urls count] > 0) {

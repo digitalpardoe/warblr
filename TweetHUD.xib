@@ -8,6 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="612"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -44,14 +45,14 @@
 			<object class="NSWindowTemplate" id="927612947">
 				<int key="NSWindowStyleMask">8211</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 328}, {500, 82}}</string>
+				<string key="NSWindowRect">{{196, 328}, {500, 83}}</string>
 				<int key="NSWTFlags">603980800</int>
 				<string key="NSWindowTitle">Warblr</string>
 				<string key="NSWindowClass">NSPanel</string>
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="182959773">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -68,6 +69,29 @@
 										<object class="NSTextView" id="461824758">
 											<reference key="NSNextResponder" ref="337779843"/>
 											<int key="NSvFlags">2322</int>
+											<object class="NSMutableSet" key="NSDragTypes">
+												<bool key="EncodedWithXMLCoder">YES</bool>
+												<object class="NSMutableArray" key="set.sortedObjects">
+													<bool key="EncodedWithXMLCoder">YES</bool>
+													<string>Apple HTML pasteboard type</string>
+													<string>Apple PDF pasteboard type</string>
+													<string>Apple PICT pasteboard type</string>
+													<string>Apple PNG pasteboard type</string>
+													<string>Apple URL pasteboard type</string>
+													<string>CorePasteboardFlavorType 0x6D6F6F76</string>
+													<string>CorePasteboardFlavorType 0x75726C20</string>
+													<string>NSColor pasteboard type</string>
+													<string>NSFilenamesPboardType</string>
+													<string>NSStringPboardType</string>
+													<string>NeXT Encapsulated PostScript v1.2 pasteboard type</string>
+													<string>NeXT RTFD pasteboard type</string>
+													<string>NeXT Rich Text Format v1.0 pasteboard type</string>
+													<string>NeXT TIFF v4.0 pasteboard type</string>
+													<string>NeXT font pasteboard type</string>
+													<string>NeXT ruler pasteboard type</string>
+													<string>WebURLsWithTitlesPboardType</string>
+												</object>
+											</object>
 											<string key="NSFrameSize">{478, 14}</string>
 											<reference key="NSSuperview" ref="337779843"/>
 											<object class="NSTextContainer" key="NSTextContainer" id="699047020">
@@ -158,6 +182,7 @@
 									</object>
 									<string key="NSFrame">{{1, 1}, {478, 36}}</string>
 									<reference key="NSSuperview" ref="994137457"/>
+									<reference key="NSNextKeyView" ref="461824758"/>
 									<reference key="NSDocView" ref="461824758"/>
 									<reference key="NSBGColor" ref="138907101"/>
 									<object class="NSCursor" key="NSCursor">
@@ -175,7 +200,7 @@
 									<string key="NSAction">_doScroller:</string>
 									<string key="themeKey">gradientTheme</string>
 								</object>
-								<object class="BGHUDScroller" id="900270303">
+								<object class="BGHUDScroller" id="57482872">
 									<reference key="NSNextResponder" ref="994137457"/>
 									<int key="NSvFlags">256</int>
 									<string key="NSFrameSize">{0, 0}</string>
@@ -185,11 +210,12 @@
 									<string key="themeKey">gradientTheme</string>
 								</object>
 							</object>
-							<string key="NSFrame">{{10, 36}, {480, 38}}</string>
+							<string key="NSFrame">{{11, 36}, {480, 38}}</string>
 							<reference key="NSSuperview" ref="182959773"/>
+							<reference key="NSNextKeyView" ref="337779843"/>
 							<int key="NSsFlags">2</int>
 							<reference key="NSVScroller" ref="806426936"/>
-							<reference key="NSHScroller" ref="900270303"/>
+							<reference key="NSHScroller" ref="57482872"/>
 							<reference key="NSContentView" ref="337779843"/>
 							<string key="themeKey">gradientTheme</string>
 						</object>
@@ -268,7 +294,8 @@
 							<string key="themeKey">gradientTheme</string>
 						</object>
 					</object>
-					<string key="NSFrameSize">{500, 82}</string>
+					<string key="NSFrameSize">{500, 83}</string>
+					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -396,10 +423,10 @@
 						<reference key="object" ref="182959773"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="994137457"/>
 							<reference ref="216507324"/>
 							<reference ref="385560238"/>
 							<reference ref="137203801"/>
+							<reference ref="994137457"/>
 						</object>
 						<reference key="parent" ref="927612947"/>
 					</object>
@@ -410,7 +437,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="461824758"/>
 							<reference ref="806426936"/>
-							<reference ref="900270303"/>
+							<reference ref="57482872"/>
 						</object>
 						<reference key="parent" ref="182959773"/>
 					</object>
@@ -462,13 +489,13 @@
 						<reference key="parent" ref="216507324"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">638</int>
+						<int key="objectID">640</int>
 						<reference key="object" ref="806426936"/>
 						<reference key="parent" ref="994137457"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">639</int>
-						<reference key="object" ref="900270303"/>
+						<int key="objectID">641</int>
+						<reference key="object" ref="57482872"/>
 						<reference key="parent" ref="994137457"/>
 					</object>
 				</object>
@@ -494,8 +521,8 @@
 					<string>624.IBPluginDependency</string>
 					<string>625.IBPluginDependency</string>
 					<string>626.IBPluginDependency</string>
-					<string>638.IBShouldRemoveOnLegacySave</string>
-					<string>639.IBShouldRemoveOnLegacySave</string>
+					<string>640.IBShouldRemoveOnLegacySave</string>
+					<string>641.IBShouldRemoveOnLegacySave</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -503,9 +530,9 @@
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{212, 465}, {500, 82}}</string>
+					<string>{{233, 496}, {500, 83}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{212, 465}, {500, 82}}</string>
+					<string>{{233, 496}, {500, 83}}</string>
 					<boolean value="YES" id="5"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
@@ -540,7 +567,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">639</int>
+			<int key="maxID">642</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
