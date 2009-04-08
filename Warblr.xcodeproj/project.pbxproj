@@ -34,6 +34,8 @@
 		FA8E1F1A0ECA2D2E003D74C4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */; };
 		FA8E1F1B0ECA2D2E003D74C4 /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */; };
 		FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */; };
+		FAB4CF440F8D560C0005AC0B /* Warblr.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FAB4CF430F8D560C0005AC0B /* Warblr.xcdatamodel */; };
+		FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CF450F8D565E0005AC0B /* CoreData.framework */; };
 		FAC2BEC80ECCD69500265115 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BEC70ECCD69500265115 /* MenuController.m */; };
 		FAC2BECB0ECCD6B200265115 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BECA0ECCD6B200265115 /* WindowController.m */; };
 		FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */; };
@@ -168,6 +170,8 @@
 		FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainProxy.m; sourceTree = "<group>"; };
 		FA908E990ECD5D720057CC67 /* TweetHUDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetHUDController.h; sourceTree = "<group>"; };
 		FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetHUDController.m; sourceTree = "<group>"; };
+		FAB4CF430F8D560C0005AC0B /* Warblr.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Warblr.xcdatamodel; sourceTree = "<group>"; };
+		FAB4CF450F8D565E0005AC0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		FAC2BEC60ECCD69500265115 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
 		FAC2BEC70ECCD69500265115 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		FAC2BEC90ECCD6B200265115 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				FAC2BF190ECCE72C00265115 /* Growl.framework in Frameworks */,
 				FAC2BF1A0ECCE72C00265115 /* Sparkle.framework in Frameworks */,
 				FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */,
+				FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +232,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* Warblr */ = {
 			isa = PBXGroup;
 			children = (
+				FAB4CF2E0F8D55720005AC0B /* Data Models */,
 				FA8E1C990ECA2B7D003D74C4 /* Third Party Classes */,
 				2A37F4ABFDCFA73011CA2CEA /* Sources */,
 				FACC11520EF4611E00D702D1 /* Preference Panes */,
@@ -259,6 +265,7 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAB4CF450F8D565E0005AC0B /* CoreData.framework */,
 				FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */,
 				FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */,
 				FAC2BF160ECCE72B00265115 /* Growl.framework */,
@@ -387,6 +394,14 @@
 				FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */,
 			);
 			name = Keychain;
+			sourceTree = "<group>";
+		};
+		FAB4CF2E0F8D55720005AC0B /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAB4CF430F8D560C0005AC0B /* Warblr.xcdatamodel */,
+			);
+			name = "Data Models";
 			sourceTree = "<group>";
 		};
 		FAC2BEC50ECCD66B00265115 /* Application */ = {
@@ -551,6 +566,7 @@
 				FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */,
 				FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */,
 				FAD978BF0EF5875200A0A924 /* AccountDetails.m in Sources */,
+				FAB4CF440F8D560C0005AC0B /* Warblr.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
