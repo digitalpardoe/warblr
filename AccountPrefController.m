@@ -51,6 +51,8 @@
 	[progressText setStringValue:@"Login failed…"];
 }
 
+#pragma mark PrefsController methods
+
 + (NSArray *)preferencePanes
 {
     return [NSArray arrayWithObjects:[[[AccountPrefController alloc] init] autorelease], nil];
