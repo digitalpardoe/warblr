@@ -35,8 +35,8 @@
 		FA8E1F1A0ECA2D2E003D74C4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */; };
 		FA8E1F1B0ECA2D2E003D74C4 /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */; };
 		FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */; };
-		FAB4CF440F8D560C0005AC0B /* Warblr.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FAB4CF430F8D560C0005AC0B /* Warblr.xcdatamodel */; };
 		FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CF450F8D565E0005AC0B /* CoreData.framework */; };
+		FABB185D0F8FF1BD003AF1DB /* Warblr.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */; };
 		FAC04D7B0F8E67DE00449A01 /* TweetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC04D7A0F8E67DE00449A01 /* TweetManager.m */; };
 		FAC2BEC80ECCD69500265115 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BEC70ECCD69500265115 /* MenuController.m */; };
 		FAC2BECB0ECCD6B200265115 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BECA0ECCD6B200265115 /* WindowController.m */; };
@@ -174,8 +174,8 @@
 		FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainProxy.m; sourceTree = "<group>"; };
 		FA908E990ECD5D720057CC67 /* TweetHUDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetHUDController.h; sourceTree = "<group>"; };
 		FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetHUDController.m; sourceTree = "<group>"; };
-		FAB4CF430F8D560C0005AC0B /* Warblr.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Warblr.xcdatamodel; sourceTree = "<group>"; };
 		FAB4CF450F8D565E0005AC0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Warblr.xcdatamodel; sourceTree = "<group>"; };
 		FAC04D790F8E67DE00449A01 /* TweetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetManager.h; sourceTree = "<group>"; };
 		FAC04D7A0F8E67DE00449A01 /* TweetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetManager.m; sourceTree = "<group>"; };
 		FAC2BEC60ECCD69500265115 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
@@ -415,7 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				FA09BD9F0F8F96A000A6C0DE /* Management */,
-				FAB4CF430F8D560C0005AC0B /* Warblr.xcdatamodel */,
+				FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */,
 			);
 			name = "Data Models";
 			sourceTree = "<group>";
@@ -584,9 +584,9 @@
 				FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */,
 				FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */,
 				FAD978BF0EF5875200A0A924 /* AccountDetails.m in Sources */,
-				FAB4CF440F8D560C0005AC0B /* Warblr.xcdatamodel in Sources */,
 				FAC04D7B0F8E67DE00449A01 /* TweetManager.m in Sources */,
 				FA09BD9D0F8F961E00A6C0DE /* CoreData.m in Sources */,
+				FABB185D0F8FF1BD003AF1DB /* Warblr.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

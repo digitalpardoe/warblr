@@ -80,16 +80,28 @@
 	//			"utc_offset" = 0;
 	//		};
 	//	}
-		
+
+	CoreData *coreData = [[CoreData alloc] init];
+	NSManagedObjectContext *managedObjectContext = [coreData managedObjectContext];
+	
+	NSManagedObjectModel *managedObjectModel = [coreData managedObjectModel];	
+	
+	NSEntityDescription *entityDescription;
+	entityDescription = [[managedObjectModel entitiesByName] objectForKey:@"Tweet"];
+	
+	NSManagedObject *managedObject = [[NSManagedObject alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:managedObjectContext];
+				
+	NSLog(@"%@", [managedObject valueForKey:@"body"]);
+	
 	NSEnumerator *enumerator = [statuses objectEnumerator];
 	id status;
 	while ( status = [enumerator nextObject] ) {
-		NSLog(@"Next Tweet ---------------------------------------------------------");
-		NSLog(@"ID: %@", [status objectForKey:@"id"]);
-		NSLog(@"Created: %@", [status objectForKey:@"created_at"]);
-		NSLog(@"Text: %@", [status objectForKey:@"text"]);
-		NSLog(@"User ID: %@", [[status objectForKey:@"user"] objectForKey:@"id"]);
-		NSLog(@"User Name: %@", [[status objectForKey:@"user"] objectForKey:@"name"]);
+//		NSLog(@"Next Tweet ---------------------------------------------------------");
+//		NSLog(@"ID: %@", [status objectForKey:@"id"]);
+//		NSLog(@"Created: %@", [status objectForKey:@"created_at"]);
+//		NSLog(@"Text: %@", [status objectForKey:@"text"]);
+//		NSLog(@"User ID: %@", [[status objectForKey:@"user"] objectForKey:@"id"]);
+//		NSLog(@"User Name: %@", [[status objectForKey:@"user"] objectForKey:@"name"]);
 	}
 }
 
