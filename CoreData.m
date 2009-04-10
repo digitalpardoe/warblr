@@ -8,8 +8,18 @@
 
 #import "CoreData.h"
 
+static CoreData *coreData;
 
 @implementation CoreData
+
++ (CoreData *)instance {
+    if (coreData == nil) {
+        coreData = [[CoreData alloc] init];
+    }
+	
+    return (coreData);
+}
+
 
 - (NSString *)applicationSupportFolder {
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);

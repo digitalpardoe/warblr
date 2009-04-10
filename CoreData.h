@@ -15,6 +15,8 @@
     NSManagedObjectContext *managedObjectContext;
 }
 
++ (CoreData *)instance;
+
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
 - (NSManagedObjectModel *)managedObjectModel;
 - (NSManagedObjectContext *)managedObjectContext;
