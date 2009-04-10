@@ -36,6 +36,7 @@
 		FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */; };
 		FAB4CF440F8D560C0005AC0B /* Warblr.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FAB4CF430F8D560C0005AC0B /* Warblr.xcdatamodel */; };
 		FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CF450F8D565E0005AC0B /* CoreData.framework */; };
+		FAC04D7B0F8E67DE00449A01 /* TweetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC04D7A0F8E67DE00449A01 /* TweetManager.m */; };
 		FAC2BEC80ECCD69500265115 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BEC70ECCD69500265115 /* MenuController.m */; };
 		FAC2BECB0ECCD6B200265115 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BECA0ECCD6B200265115 /* WindowController.m */; };
 		FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */; };
@@ -172,6 +173,8 @@
 		FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetHUDController.m; sourceTree = "<group>"; };
 		FAB4CF430F8D560C0005AC0B /* Warblr.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Warblr.xcdatamodel; sourceTree = "<group>"; };
 		FAB4CF450F8D565E0005AC0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		FAC04D790F8E67DE00449A01 /* TweetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetManager.h; sourceTree = "<group>"; };
+		FAC04D7A0F8E67DE00449A01 /* TweetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetManager.m; sourceTree = "<group>"; };
 		FAC2BEC60ECCD69500265115 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
 		FAC2BEC70ECCD69500265115 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		FAC2BEC90ECCD6B200265115 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
@@ -415,6 +418,8 @@
 				FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */,
 				FAD978BD0EF5875200A0A924 /* AccountDetails.h */,
 				FAD978BE0EF5875200A0A924 /* AccountDetails.m */,
+				FAC04D790F8E67DE00449A01 /* TweetManager.h */,
+				FAC04D7A0F8E67DE00449A01 /* TweetManager.m */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -567,6 +572,7 @@
 				FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */,
 				FAD978BF0EF5875200A0A924 /* AccountDetails.m in Sources */,
 				FAB4CF440F8D560C0005AC0B /* Warblr.xcdatamodel in Sources */,
+				FAC04D7B0F8E67DE00449A01 /* TweetManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
