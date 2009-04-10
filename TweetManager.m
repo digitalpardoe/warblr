@@ -85,25 +85,30 @@
 	NSManagedObjectModel *managedObjectModel = [[CoreData instance] managedObjectModel];	
 	NSEntityDescription *entityDescription = [[managedObjectModel entitiesByName] objectForKey:@"tweet"];
 	
-	NSEnumerator *enumerator = [statuses objectEnumerator];
-	id status;
-	while ( status = [enumerator nextObject] ) {
-		NSManagedObject *managedObject = [[NSManagedObject alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:managedObjectContext];
-		[managedObject setValue:[status objectForKey:@"id"] forKey:@"tweetId"];
-		[managedObject setValue:[status objectForKey:@"text"] forKey:@"body"];
-		[managedObject setValue:[status objectForKey:@"created_at"] forKey:@"createdAt"];
+//	NSEnumerator *enumerator = [statuses objectEnumerator];
+//	id status;
+//	while ( status = [enumerator nextObject] ) {
+//		NSManagedObject *managedObject = [[NSManagedObject alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:managedObjectContext];
+//		[managedObject setValue:[status objectForKey:@"id"] forKey:@"tweetId"];
+//		[managedObject setValue:[status objectForKey:@"text"] forKey:@"body"];
+//		[managedObject setValue:[status objectForKey:@"created_at"] forKey:@"createdAt"];
 //		NSLog(@"Next Tweet ---------------------------------------------------------");
 //		NSLog(@"ID: %@", [status objectForKey:@"id"]);
 //		NSLog(@"Created: %@", [status objectForKey:@"created_at"]);
 //		NSLog(@"Text: %@", [status objectForKey:@"text"]);
 //		NSLog(@"User ID: %@", [[status objectForKey:@"user"] objectForKey:@"id"]);
 //		NSLog(@"User Name: %@", [[status objectForKey:@"user"] objectForKey:@"name"]);
-	}
+//	}
+//	
+//	NSError *error;
+//	[managedObjectContext save:&error];
+//	
+//	NSLog(@"%@", error);
 	
-	NSError *error;
-	[managedObjectContext save:&error];
+	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+	[fetchRequest setEntity:entityDescription];
 	
-	NSLog(@"%@", error);
+	NSLog(@"%@", [[managedObjectContext executeFetchRequest:fetchRequest error:nil] valueForKey:@"createdAt"]);
 }
 
 
