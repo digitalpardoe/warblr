@@ -13,6 +13,7 @@
 #import "MGTwitterEngine.h"
 #import "AccountDetails.h"
 
+#import "TweetManager.h"
 
 @interface TweetHUDController : NSObject {
 	IBOutlet NSTextView *messageArea;

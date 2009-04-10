@@ -31,6 +31,7 @@
 //	[twitterEngine setUsername:[[AccountDetails instance] currentUsername] password:[[AccountDetails instance] currentPassword]];
 //	[twitterEngine setClientName:APP_NAME version:APP_VERSION URL:APP_URL token:APP_TOKEN];
 //	[twitterEngine sendUpdate:[messageArea string]];
+	[[[TweetManager alloc] init] testClass];
 	[[WindowController sharedController] close];
 	[messageArea setString:@""];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];

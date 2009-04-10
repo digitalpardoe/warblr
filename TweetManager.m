@@ -11,6 +11,11 @@
 
 @implementation TweetManager
 
+- (void)testClass {
+	[twitterEngine setUsername:[[AccountDetails instance] currentUsername] password:[[AccountDetails instance] currentPassword]];
+	[twitterEngine getFollowedTimelineFor:[[AccountDetails instance] currentUsername] since:nil startingAtPage:0];
+}
+
 - (TweetManager *)init {
 	if (self = [super init]) {
 		twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
@@ -75,7 +80,7 @@
 	//			"utc_offset" = 0;
 	//		};
 	//	}
-	
+		
 	NSEnumerator *enumerator = [statuses objectEnumerator];
 	id status;
 	while ( status = [enumerator nextObject] ) {

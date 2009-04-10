@@ -15,6 +15,7 @@
 	MGTwitterEngine *twitterEngine;
 }
 
+- (void)testClass;
 - (TweetManager *)init;
 
 @end
