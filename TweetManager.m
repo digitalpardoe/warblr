@@ -88,10 +88,12 @@
 //	NSEnumerator *enumerator = [statuses objectEnumerator];
 //	id status;
 //	while ( status = [enumerator nextObject] ) {
+//
 //		NSManagedObject *managedObject = [[NSManagedObject alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:managedObjectContext];
 //		[managedObject setValue:[status objectForKey:@"id"] forKey:@"tweetId"];
 //		[managedObject setValue:[status objectForKey:@"text"] forKey:@"body"];
 //		[managedObject setValue:[status objectForKey:@"created_at"] forKey:@"createdAt"];
+//	
 //		NSLog(@"Next Tweet ---------------------------------------------------------");
 //		NSLog(@"ID: %@", [status objectForKey:@"id"]);
 //		NSLog(@"Created: %@", [status objectForKey:@"created_at"]);
