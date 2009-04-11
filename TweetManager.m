@@ -26,14 +26,12 @@
 
 #pragma mark MGTwitterEngineDelegate methods
 
-- (void)requestSucceeded:(NSString *)requestIdentifier
-{
+- (void)requestSucceeded:(NSString *)requestIdentifier {
     NSLog(@"Request succeeded (%@)", requestIdentifier);
 }
 
 
-- (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error
-{
+- (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error {
     NSLog(@"Twitter request failed! (%@) Error: %@ (%@)", 
           requestIdentifier, 
           [error localizedDescription], 
@@ -41,8 +39,7 @@
 }
 
 
-- (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)identifier
-{
+- (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)identifier {
 	//	Example returned request object.
 	//
 	//	{
@@ -83,39 +80,44 @@
 
 	NSManagedObjectContext *managedObjectContext = [[CoreData instance] managedObjectContext];
 	NSManagedObjectModel *managedObjectModel = [[CoreData instance] managedObjectModel];	
-	NSEntityDescription *entityDescription = [[managedObjectModel entitiesByName] objectForKey:@"tweet"];
+	NSEntityDescription *tweetEntityDescription = [[managedObjectModel entitiesByName] objectForKey:@"tweet"];
+	NSEntityDescription *userEntityDescription = [[managedObjectModel entitiesByName] objectForKey:@"user"];
 	
-//	NSEnumerator *enumerator = [statuses objectEnumerator];
-//	id status;
-//	while ( status = [enumerator nextObject] ) {
-//
+	NSEnumerator *enumerator = [statuses objectEnumerator];
+	id status;
+	while ( status = [enumerator nextObject] ) {
 //		NSManagedObject *managedObject = [[NSManagedObject alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:managedObjectContext];
 //		[managedObject setValue:[status objectForKey:@"id"] forKey:@"tweetId"];
 //		[managedObject setValue:[status objectForKey:@"text"] forKey:@"body"];
 //		[managedObject setValue:[status objectForKey:@"created_at"] forKey:@"createdAt"];
 //	
-//		NSLog(@"Next Tweet ---------------------------------------------------------");
-//		NSLog(@"ID: %@", [status objectForKey:@"id"]);
-//		NSLog(@"Created: %@", [status objectForKey:@"created_at"]);
-//		NSLog(@"Text: %@", [status objectForKey:@"text"]);
-//		NSLog(@"User ID: %@", [[status objectForKey:@"user"] objectForKey:@"id"]);
-//		NSLog(@"User Name: %@", [[status objectForKey:@"user"] objectForKey:@"name"]);
-//	}
-//	
+		NSLog(@"Next Tweet ---------------------------------------------------------");
+		NSLog(@"ID: %@", [status objectForKey:@"id"]);
+		NSLog(@"Created: %@", [status objectForKey:@"created_at"]);
+		NSLog(@"Text: %@", [status objectForKey:@"text"]);
+		NSLog(@"User ID: %@", [[status objectForKey:@"user"] objectForKey:@"id"]);
+		NSLog(@"User Name: %@", [[status objectForKey:@"user"] objectForKey:@"name"]);
+		
+		NSPredicate *predicate = [NSPredicate predicateWithFormat:@"userId == %@", [[status objectForKey:@"user"] objectForKey:@"id"]];
+		NSFetchRequest *userFetchRequest = [[NSFetchRequest alloc] init];
+		[userFetchRequest setEntity:userEntityDescription];
+		[userFetchRequest setPredicate:predicate];
+		NSArray *results = [managedObjectContext executeFetchRequest:userFetchRequest error:nil];
+	}
+
 //	NSError *error;
 //	[managedObjectContext save:&error];
 //	
 //	NSLog(@"%@", error);
-	
-	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-	[fetchRequest setEntity:entityDescription];
-	
-	NSLog(@"%@", [[managedObjectContext executeFetchRequest:fetchRequest error:nil] valueForKey:@"createdAt"]);
+//	
+//	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+//	[fetchRequest setEntity:tweetEntityDescription];
+//	
+//	NSLog(@"%@", [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableSetValueForKey:@"createdAt"]);
 }
 
 
-- (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)identifier
-{
+- (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)identifier {
     NSLog(@"Got direct messages:\r%@", messages);
 }
 
