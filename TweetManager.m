@@ -115,17 +115,19 @@
 		[tweetManagedObject setValue:[status objectForKey:@"created_at"] forKey:@"createdAt"];
 		[tweetManagedObject setValue:userManagedObject forKey:@"user"];
 	
-		NSLog(@"Next Tweet ---------------------------------------------------------");
-		NSLog(@"ID: %@", [status objectForKey:@"id"]);
-		NSLog(@"Created: %@", [status objectForKey:@"created_at"]);
-		NSLog(@"Text: %@", [status objectForKey:@"text"]);
-		NSLog(@"User ID: %@", [[status objectForKey:@"user"] objectForKey:@"id"]);
-		NSLog(@"User Name: %@", [[status objectForKey:@"user"] objectForKey:@"name"]);
+//		NSLog(@"Next Tweet ---------------------------------------------------------");
+//		NSLog(@"ID: %@", [status objectForKey:@"id"]);
+//		NSLog(@"Created: %@", [status objectForKey:@"created_at"]);
+//		NSLog(@"Text: %@", [status objectForKey:@"text"]);
+//		NSLog(@"User ID: %@", [[status objectForKey:@"user"] objectForKey:@"id"]);
+//		NSLog(@"User Name: %@", [[status objectForKey:@"user"] objectForKey:@"name"]);
+		
+		NSLog(@"--------------------\rTweet: %@\rUser: %@", tweetManagedObject, [tweetManagedObject valueForKey:@"user"]);
 	}
 
-	NSError *error;
-	[managedObjectContext save:&error];	
-	NSLog(@"%@", error);
+	NSError *theError;
+	[managedObjectContext save:&theError];	
+	NSLog(@"%@", theError);
 	
 //	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
 //	[fetchRequest setEntity:tweetEntityDescription];
