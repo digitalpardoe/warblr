@@ -90,7 +90,7 @@
 //		[managedObject setValue:[status objectForKey:@"id"] forKey:@"tweetId"];
 //		[managedObject setValue:[status objectForKey:@"text"] forKey:@"body"];
 //		[managedObject setValue:[status objectForKey:@"created_at"] forKey:@"createdAt"];
-//	
+	
 		NSLog(@"Next Tweet ---------------------------------------------------------");
 		NSLog(@"ID: %@", [status objectForKey:@"id"]);
 		NSLog(@"Created: %@", [status objectForKey:@"created_at"]);
@@ -98,10 +98,9 @@
 		NSLog(@"User ID: %@", [[status objectForKey:@"user"] objectForKey:@"id"]);
 		NSLog(@"User Name: %@", [[status objectForKey:@"user"] objectForKey:@"name"]);
 		
-		NSPredicate *predicate = [NSPredicate predicateWithFormat:@"userId == %@", [[status objectForKey:@"user"] objectForKey:@"id"]];
 		NSFetchRequest *userFetchRequest = [[NSFetchRequest alloc] init];
 		[userFetchRequest setEntity:userEntityDescription];
-		[userFetchRequest setPredicate:predicate];
+		[userFetchRequest setPredicate:[NSPredicate predicateWithFormat:@"userId == %@", [[status objectForKey:@"user"] objectForKey:@"id"]]];
 		NSArray *results = [managedObjectContext executeFetchRequest:userFetchRequest error:nil];
 	}
 
