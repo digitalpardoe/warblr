@@ -12,7 +12,7 @@
 		FA00BBB90ECCEEFD00D99FE2 /* SS_PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBB80ECCEEFD00D99FE2 /* SS_PrefsController.m */; };
 		FA00BBBF0ECCEF2100D99FE2 /* DPGrowl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */; };
 		FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */; };
-		FA09BD9D0F8F961E00A6C0DE /* CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA09BD9C0F8F961E00A6C0DE /* CoreData.m */; };
+		FA09BD9D0F8F961E00A6C0DE /* DPCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA09BD9C0F8F961E00A6C0DE /* DPCoreData.m */; };
 		FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */; };
 		FA5AA94B0EF9A8A900391976 /* AutoHyperlinks.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */; };
 		FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8C82780ED042F200BF56F9 /* MainMenu.xib */; };
@@ -129,8 +129,8 @@
 		FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGrowl.m; sourceTree = "<group>"; };
 		FA00BBBD0ECCEF2100D99FE2 /* DPLoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLoginItem.h; sourceTree = "<group>"; };
 		FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLoginItem.m; sourceTree = "<group>"; };
-		FA09BD9B0F8F961E00A6C0DE /* CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreData.h; sourceTree = "<group>"; };
-		FA09BD9C0F8F961E00A6C0DE /* CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreData.m; sourceTree = "<group>"; };
+		FA09BD9B0F8F961E00A6C0DE /* DPCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCoreData.h; sourceTree = "<group>"; };
+		FA09BD9C0F8F961E00A6C0DE /* DPCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCoreData.m; sourceTree = "<group>"; };
 		FA5AA9270EF9A79200391976 /* AutoHyperlinks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoHyperlinks.txt; sourceTree = "<group>"; };
 		FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoHyperlinks.framework; sourceTree = "<group>"; };
 		FA8C82780ED042F200BF56F9 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -308,8 +308,8 @@
 		FA09BD9F0F8F96A000A6C0DE /* Management */ = {
 			isa = PBXGroup;
 			children = (
-				FA09BD9B0F8F961E00A6C0DE /* CoreData.h */,
-				FA09BD9C0F8F961E00A6C0DE /* CoreData.m */,
+				FA09BD9B0F8F961E00A6C0DE /* DPCoreData.h */,
+				FA09BD9C0F8F961E00A6C0DE /* DPCoreData.m */,
 			);
 			name = Management;
 			sourceTree = "<group>";
@@ -585,7 +585,7 @@
 				FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */,
 				FAD978BF0EF5875200A0A924 /* AccountDetails.m in Sources */,
 				FAC04D7B0F8E67DE00449A01 /* TweetManager.m in Sources */,
-				FA09BD9D0F8F961E00A6C0DE /* CoreData.m in Sources */,
+				FA09BD9D0F8F961E00A6C0DE /* DPCoreData.m in Sources */,
 				FABB185D0F8FF1BD003AF1DB /* Warblr.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

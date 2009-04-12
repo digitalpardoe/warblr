@@ -6,15 +6,15 @@
 //  Copyright 2009 digital:pardoe. All rights reserved.
 //
 
-#import "CoreData.h"
+#import "DPCoreData.h"
 
-static CoreData *coreData;
+static DPCoreData *coreData;
 
-@implementation CoreData
+@implementation DPCoreData
 
-+ (CoreData *)instance {
++ (DPCoreData *)instance {
     if (coreData == nil) {
-        coreData = [[CoreData alloc] init];
+        coreData = [[DPCoreData alloc] init];
     }
 	
     return (coreData);
@@ -23,7 +23,7 @@ static CoreData *coreData;
 - (NSString *)applicationSupportFolder {
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
     NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : NSTemporaryDirectory();
-    return [basePath stringByAppendingPathComponent:@"Warblr"];
+    return [basePath stringByAppendingPathComponent:[[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey]];
 }
 
 
@@ -52,7 +52,7 @@ static CoreData *coreData;
         [fileManager createDirectoryAtPath:applicationSupportFolder attributes:nil];
     }
     
-    url = [NSURL fileURLWithPath: [applicationSupportFolder stringByAppendingPathComponent: @"Warblr.data"]];
+    url = [NSURL fileURLWithPath: [applicationSupportFolder stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.data", [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey]]]];
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
     if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:url options:nil error:&error]){
         [[NSApplication sharedApplication] presentError:error];

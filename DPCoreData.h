@@ -9,13 +9,13 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface CoreData : NSObject {
+@interface DPCoreData : NSObject {
 	NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectModel *managedObjectModel;
     NSManagedObjectContext *managedObjectContext;
 }
 
-+ (CoreData *)instance;
++ (DPCoreData *)instance;
 
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
 - (NSManagedObjectModel *)managedObjectModel;

@@ -31,9 +31,9 @@
 	if (self = [super init]) {
 		twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
 		
-		managedObjectContext = [[CoreData instance] managedObjectContext];
-		tweetEntityDescription = [[[[CoreData instance] managedObjectModel] entitiesByName] objectForKey:@"tweet"];
-		userEntityDescription = [[[[CoreData instance] managedObjectModel] entitiesByName] objectForKey:@"user"];
+		managedObjectContext = [[DPCoreData instance] managedObjectContext];
+		tweetEntityDescription = [[[[DPCoreData instance] managedObjectModel] entitiesByName] objectForKey:@"tweet"];
+		userEntityDescription = [[[[DPCoreData instance] managedObjectModel] entitiesByName] objectForKey:@"user"];
     }
 	
     return self;

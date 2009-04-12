@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "AccountDetails.h"
 #import "MGTwitterEngine.h"
-#import "CoreData.h"
+#import "DPCoreData.h"
 
 
 @interface TweetManager : NSObject {
