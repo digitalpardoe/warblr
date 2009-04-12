@@ -12,8 +12,19 @@
 @implementation TweetManager
 
 - (void)testClass {
+	NSFetchRequest *mostRecentFetchRequest = [[NSFetchRequest alloc] init];
+	[mostRecentFetchRequest setEntity:tweetEntityDescription];
+	[mostRecentFetchRequest setSortDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"tweetId" ascending:NO]]];
+	[mostRecentFetchRequest setFetchLimit:1];
+	NSArray *results = [managedObjectContext executeFetchRequest:mostRecentFetchRequest error:nil];
+		
 	[twitterEngine setUsername:[[AccountDetails instance] currentUsername] password:[[AccountDetails instance] currentPassword]];
-	[twitterEngine getFollowedTimelineFor:[[AccountDetails instance] currentUsername] since:nil startingAtPage:0];
+	
+	if (results == nil || [results count] == 0) {
+		[twitterEngine getFollowedTimelineFor:[[AccountDetails instance] currentUsername] since:nil startingAtPage:0];
+	} else {
+		[twitterEngine getFollowedTimelineFor:[[AccountDetails instance] currentUsername] sinceID:[[[results objectAtIndex:0] valueForKey:@"tweetId"] intValue] startingAtPage:0 count:0];
+	}
 }
 
 - (TweetManager *)init {
@@ -114,7 +125,7 @@
 		[tweetManagedObject setValue:[status objectForKey:@"created_at"] forKey:@"createdAt"];
 		[tweetManagedObject setValue:userManagedObject forKey:@"user"];
 		
-		NSLog(@"\rTweet: %@\rUser: %@", tweetManagedObject, [tweetManagedObject valueForKey:@"user"]);
+		NSLog(@"\r\rTweet: %@\r\rUser: %@\r\r", tweetManagedObject, [tweetManagedObject valueForKey:@"user"]);
 	}
 
 	NSError *error;
