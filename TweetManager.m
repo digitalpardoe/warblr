@@ -91,8 +91,9 @@
 		[userFetchRequest setPredicate:[NSPredicate predicateWithFormat:@"userId == %@", [[status objectForKey:@"user"] objectForKey:@"id"]]];
 		NSArray *results = [managedObjectContext executeFetchRequest:userFetchRequest error:nil];
 		
-		NSManagedObject *userManagedObject = [[NSManagedObject alloc] initWithEntity:userEntityDescription insertIntoManagedObjectContext:managedObjectContext];
+		NSManagedObject *userManagedObject;
 		if (results == nil || [results count] == 0) {
+			userManagedObject = [[NSManagedObject alloc] initWithEntity:userEntityDescription insertIntoManagedObjectContext:managedObjectContext];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"id"] forKey:@"userId"];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"screen_name"] forKey:@"screenName"];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"name"] forKey:@"name"];
@@ -100,7 +101,6 @@
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"location"] forKey:@"location"];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"description"] forKey:@"desc"];
 		} else {
-			userManagedObject = nil;
 			userManagedObject = [results objectAtIndex:0];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"screen_name"] forKey:@"screenName"];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"name"] forKey:@"name"];
@@ -114,25 +114,14 @@
 		[tweetManagedObject setValue:[status objectForKey:@"text"] forKey:@"body"];
 		[tweetManagedObject setValue:[status objectForKey:@"created_at"] forKey:@"createdAt"];
 		[tweetManagedObject setValue:userManagedObject forKey:@"user"];
-	
-//		NSLog(@"Next Tweet ---------------------------------------------------------");
-//		NSLog(@"ID: %@", [status objectForKey:@"id"]);
-//		NSLog(@"Created: %@", [status objectForKey:@"created_at"]);
-//		NSLog(@"Text: %@", [status objectForKey:@"text"]);
-//		NSLog(@"User ID: %@", [[status objectForKey:@"user"] objectForKey:@"id"]);
-//		NSLog(@"User Name: %@", [[status objectForKey:@"user"] objectForKey:@"name"]);
 		
-		NSLog(@"--------------------\rTweet: %@\rUser: %@", tweetManagedObject, [tweetManagedObject valueForKey:@"user"]);
+		NSLog(@"\rTweet: %@\rUser: %@", tweetManagedObject, [tweetManagedObject valueForKey:@"user"]);
 	}
 
-	NSError *theError;
-	[managedObjectContext save:&theError];	
-	NSLog(@"%@", theError);
-	
-//	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-//	[fetchRequest setEntity:tweetEntityDescription];
-//	
-//	NSLog(@"%@", [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableSetValueForKey:@"createdAt"]);
+	NSError *error;
+	if (![managedObjectContext save:&error]) {
+		NSLog(@"%@", error);
+	}
 }
 
 
