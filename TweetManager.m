@@ -19,6 +19,10 @@
 - (TweetManager *)init {
 	if (self = [super init]) {
 		twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
+		
+		managedObjectContext = [[CoreData instance] managedObjectContext];
+		tweetEntityDescription = [[[[CoreData instance] managedObjectModel] entitiesByName] objectForKey:@"tweet"];
+		userEntityDescription = [[[[CoreData instance] managedObjectModel] entitiesByName] objectForKey:@"user"];
     }
 	
     return self;
@@ -78,11 +82,6 @@
 	//		};
 	//	}
 
-	NSManagedObjectContext *managedObjectContext = [[CoreData instance] managedObjectContext];
-	NSManagedObjectModel *managedObjectModel = [[CoreData instance] managedObjectModel];	
-	NSEntityDescription *tweetEntityDescription = [[managedObjectModel entitiesByName] objectForKey:@"tweet"];
-	NSEntityDescription *userEntityDescription = [[managedObjectModel entitiesByName] objectForKey:@"user"];
-	
 	NSEnumerator *enumerator = [statuses objectEnumerator];
 	id status;
 	while ( status = [enumerator nextObject] ) {
@@ -122,11 +121,6 @@
 	if (![managedObjectContext save:&error]) {
 		NSLog(@"%@", error);
 	}
-}
-
-
-- (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)identifier {
-    NSLog(@"Got direct messages:\r%@", messages);
 }
 
 @end

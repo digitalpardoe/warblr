@@ -14,6 +14,10 @@
 
 @interface TweetManager : NSObject {
 	MGTwitterEngine *twitterEngine;
+	
+	NSManagedObjectContext *managedObjectContext;
+	NSEntityDescription *tweetEntityDescription;
+	NSEntityDescription *userEntityDescription;
 }
 
 - (void)testClass;
