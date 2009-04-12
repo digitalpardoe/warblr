@@ -124,8 +124,6 @@
 		[tweetManagedObject setValue:[status objectForKey:@"text"] forKey:@"body"];
 		[tweetManagedObject setValue:[status objectForKey:@"created_at"] forKey:@"createdAt"];
 		[tweetManagedObject setValue:userManagedObject forKey:@"user"];
-		
-		NSLog(@"\r\rTweet: %@\r\rUser: %@\r\r", tweetManagedObject, [tweetManagedObject valueForKey:@"user"]);
 	}
 
 	NSError *error;

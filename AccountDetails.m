@@ -50,7 +50,7 @@ static AccountDetails *accDetails;
 	EMKeychainItem *keychainItem = [[EMKeychainProxy sharedProxy] genericKeychainItemForService:SERVICE_NAME withUsername:[self currentUsername]];
 	
 	if (keychainItem == nil) {
-		NSLog(@"[ Warblr ] - Keychain item for: %@ does not exist, create it first.", [self currentUsername]);
+		NSLog(@"Keychain item for: %@ does not exist, create it first", [self currentUsername]);
 	} else {
 		[keychainItem setPassword:password];
 	}
