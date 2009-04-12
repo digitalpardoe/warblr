@@ -20,7 +20,6 @@ static CoreData *coreData;
     return (coreData);
 }
 
-
 - (NSString *)applicationSupportFolder {
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
     NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : NSTemporaryDirectory();
@@ -36,7 +35,6 @@ static CoreData *coreData;
     managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
     return managedObjectModel;
 }
-
 
 - (NSPersistentStoreCoordinator *) persistentStoreCoordinator {
     if (persistentStoreCoordinator != nil) {
@@ -63,7 +61,6 @@ static CoreData *coreData;
     return persistentStoreCoordinator;
 }
 
-
 - (NSManagedObjectContext *) managedObjectContext {
     if (managedObjectContext != nil) {
         return managedObjectContext;
@@ -77,7 +74,6 @@ static CoreData *coreData;
     
     return managedObjectContext;
 }
-
 
 - (void) dealloc {
     [managedObjectContext release], managedObjectContext = nil;

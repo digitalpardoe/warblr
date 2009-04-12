@@ -134,4 +134,13 @@
 	}
 }
 
+-(void)dealloc {
+	[twitterEngine release];
+	[managedObjectContext release];
+	[tweetEntityDescription release];
+	[userEntityDescription release];
+	
+	[super dealloc];
+}
+
 @end
