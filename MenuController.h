@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <Carbon/Carbon.h>
 #import "SS_PrefsController.h"
-#import "WindowController.h"
+#import "TweetHUDWindowController.h"
 
 
 @interface MenuController : NSObject {

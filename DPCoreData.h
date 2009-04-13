@@ -1,5 +1,5 @@
 //
-//  CoreData.h
+//  DPCoreData.h
 //  Warblr
 //
 //  Created by Alex on 10/04/2009.

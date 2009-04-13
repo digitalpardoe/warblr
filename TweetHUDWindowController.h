@@ -1,5 +1,5 @@
 //
-//  WindowController.h
+//  TweetHUDWindowController.h
 //  Warblr
 //
 //  Created by Alex on 13/11/2008.
@@ -9,10 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface WindowController : NSWindowController {
+@interface TweetHUDWindowController : NSWindowController {
 }
 
-+ (WindowController *)sharedController;
++ (TweetHUDWindowController *)sharedController;
 
 - (void)show;
 

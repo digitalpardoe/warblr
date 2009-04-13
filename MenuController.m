@@ -53,7 +53,7 @@
 }
 
 - (IBAction)showTweetHUD:(id)sender {
-	[[WindowController sharedController] show];
+	[[TweetHUDWindowController sharedController] show];
 }
 
 - (IBAction)showPreferences:(id)sender

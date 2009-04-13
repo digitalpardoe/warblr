@@ -12,7 +12,7 @@
 @implementation TweetHUDController
 
 - (void)awakeFromNib {
-	[[[WindowController sharedController] window] center];
+	[[[TweetHUDWindowController sharedController] window] center];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
 	[messageArea setFont:[NSFont fontWithName:@"Lucida Grande" size:14]];
 	[messageArea setTextColor:[NSColor whiteColor]];	
@@ -20,7 +20,7 @@
 }
 
 - (IBAction)close:(id)sender {
-	[[WindowController sharedController] close];
+	[[TweetHUDWindowController sharedController] close];
 	[messageArea setString:@""];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
 	[characterCount setTextColor:[NSColor whiteColor]];
@@ -31,7 +31,7 @@
 //	[twitterEngine setUsername:[[AccountDetails instance] currentUsername] password:[[AccountDetails instance] currentPassword]];
 //	[twitterEngine setClientName:APP_NAME version:APP_VERSION URL:APP_URL token:APP_TOKEN];
 //	[twitterEngine sendUpdate:[messageArea string]];
-	[[WindowController sharedController] close];
+	[[TweetHUDWindowController sharedController] close];
 	[messageArea setString:@""];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
 }

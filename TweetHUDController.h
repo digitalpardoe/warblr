@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <BGHUDAppKit/BGHUDAppKit.h>
 #import <AutoHyperlinks/AutoHyperlinks.h>
-#import "WindowController.h"
+#import "TweetHUDWindowController.h"
 #import "MGTwitterEngine.h"
 #import "AccountDetails.h"
 

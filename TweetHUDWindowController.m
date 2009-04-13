@@ -6,16 +6,16 @@
 //  Copyright 2008 digital:pardoe. All rights reserved.
 //
 
-#import "WindowController.h"
+#import "TweetHUDWindowController.h"
 
 
-static WindowController *windowController;
+static TweetHUDWindowController *windowController;
 
-@implementation WindowController
+@implementation TweetHUDWindowController
 
-+ (WindowController *)sharedController {
++ (TweetHUDWindowController *)sharedController {
     if (windowController == nil) {
-        windowController = [[WindowController alloc] initWithWindowNibName: @"TweetHUD"];
+        windowController = [[TweetHUDWindowController alloc] initWithWindowNibName: @"TweetHUD"];
     }
 	
     return (windowController);
