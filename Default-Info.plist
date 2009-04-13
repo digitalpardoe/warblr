@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Designer</key>
+	<string>digital:pardoe</string>
+	<key>URL</key>
+	<string>http://digitalpardoe.co.uk/</string>
+	<key>ThemeName</key>
+	<string>Default</string>
+	<key>Version</key>
+	<string>0.1</string>
+	<key>Identifier</key>
+	<string>uk.co.digitalpardoe.warblr.theme.Default</string>
+</dict>
+</plist>

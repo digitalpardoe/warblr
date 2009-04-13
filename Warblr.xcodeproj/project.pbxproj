@@ -52,6 +52,10 @@
 		FAC2BF680ECCE75600265115 /* BGHUDAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */; };
 		FAC2BF690ECCE75600265115 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF160ECCE72B00265115 /* Growl.framework */; };
 		FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF170ECCE72B00265115 /* Sparkle.framework */; };
+		FAC952D70F93ED470011FFE9 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FAC952C30F93EC710011FFE9 /* index.html */; };
+		FAC952D80F93ED470011FFE9 /* tweet.html in Resources */ = {isa = PBXBuildFile; fileRef = FAC952C50F93EC800011FFE9 /* tweet.html */; };
+		FAC952D90F93ED470011FFE9 /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = FAC952C70F93EC8D0011FFE9 /* main.css */; };
+		FAC952E10F93ED730011FFE9 /* Default.warblrTheme in Copy Themes */ = {isa = PBXBuildFile; fileRef = FAC952D20F93ECF90011FFE9 /* Default.warblrTheme */; };
 		FACA988F0EF522B20085F34F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E1CCB0ECA2CB7003D74C4 /* Carbon.framework */; };
 		FACA98900EF522B20085F34F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E1CCC0ECA2CB7003D74C4 /* Security.framework */; };
 		FACA98930EF522BF0085F34F /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */; };
@@ -82,6 +86,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FAC952DC0F93ED670011FFE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC952D10F93ECF90011FFE9 /* Default */;
+			remoteInfo = Default;
+		};
 		FACC127A0EF46F9500D702D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -104,6 +115,17 @@
 				FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC952CD0F93ECE00011FFE9 /* Copy Themes */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../Themes;
+			dstSubfolderSpec = 7;
+			files = (
+				FAC952E10F93ED730011FFE9 /* Default.warblrTheme in Copy Themes */,
+			);
+			name = "Copy Themes";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FACC117E0EF4622F00D702D1 /* Copy Preference Panes */ = {
@@ -199,6 +221,11 @@
 		FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
 		FAC2BF160ECCE72B00265115 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		FAC2BF170ECCE72B00265115 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		FAC952C30F93EC710011FFE9 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FAC952C50F93EC800011FFE9 /* tweet.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tweet.html; sourceTree = "<group>"; };
+		FAC952C70F93EC8D0011FFE9 /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
+		FAC952D20F93ECF90011FFE9 /* Default.warblrTheme */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Default.warblrTheme; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC952D30F93ECF90011FFE9 /* Default-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Default-Info.plist"; sourceTree = "<group>"; };
 		FACC12490EF46CD300D702D1 /* Account.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Account.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACC124A0EF46CD300D702D1 /* Account-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Account-Info.plist"; sourceTree = "<group>"; };
 		FACC12630EF46DF000D702D1 /* AccountPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountPrefController.h; sourceTree = "<group>"; };
@@ -245,6 +272,7 @@
 			children = (
 				8D15AC370486D014006FF6A4 /* Warblr.app */,
 				FACC12490EF46CD300D702D1 /* Account.preferencePane */,
+				FAC952D20F93ECF90011FFE9 /* Default.warblrTheme */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,6 +280,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* Warblr */ = {
 			isa = PBXGroup;
 			children = (
+				FAC952C10F93EC440011FFE9 /* Themes */,
 				FA8E1C990ECA2B7D003D74C4 /* Third Party Classes */,
 				2A37F4ABFDCFA73011CA2CEA /* Sources */,
 				FACC11520EF4611E00D702D1 /* Preference Panes */,
@@ -475,6 +504,25 @@
 			name = Application;
 			sourceTree = "<group>";
 		};
+		FAC952C10F93EC440011FFE9 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				FAC952C20F93EC4A0011FFE9 /* Default */,
+			);
+			name = Themes;
+			sourceTree = "<group>";
+		};
+		FAC952C20F93EC4A0011FFE9 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				FAC952C30F93EC710011FFE9 /* index.html */,
+				FAC952C50F93EC800011FFE9 /* tweet.html */,
+				FAC952C70F93EC8D0011FFE9 /* main.css */,
+				FAC952D30F93ECF90011FFE9 /* Default-Info.plist */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
 		FACC11520EF4611E00D702D1 /* Preference Panes */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,17 +555,34 @@
 				FAC2BF900ECCE75C00265115 /* Copy Frameworks */,
 				FAC2BF920ECCE78900265115 /* Run Script */,
 				FACC117E0EF4622F00D702D1 /* Copy Preference Panes */,
+				FAC952CD0F93ECE00011FFE9 /* Copy Themes */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				FACC127B0EF46F9500D702D1 /* PBXTargetDependency */,
+				FAC952DD0F93ED670011FFE9 /* PBXTargetDependency */,
 			);
 			name = Warblr;
 			productInstallPath = "$(HOME)/Applications";
 			productName = Warblr;
 			productReference = 8D15AC370486D014006FF6A4 /* Warblr.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FAC952D10F93ECF90011FFE9 /* Default */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC952D60F93ECFD0011FFE9 /* Build configuration list for PBXNativeTarget "Default" */;
+			buildPhases = (
+				FAC952CE0F93ECF90011FFE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Default;
+			productName = Default;
+			productReference = FAC952D20F93ECF90011FFE9 /* Default.warblrTheme */;
+			productType = "com.apple.product-type.bundle";
 		};
 		FACC12480EF46CD300D702D1 /* Account */ = {
 			isa = PBXNativeTarget;
@@ -550,6 +615,7 @@
 			targets = (
 				8D15AC270486D014006FF6A4 /* Warblr */,
 				FACC12480EF46CD300D702D1 /* Account */,
+				FAC952D10F93ECF90011FFE9 /* Default */,
 			);
 		};
 /* End PBXProject section */
@@ -564,6 +630,16 @@
 				FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */,
 				FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */,
 				FA1326240F9353F700D76C9E /* TimelineWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC952CE0F93ECF90011FFE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC952D70F93ED470011FFE9 /* index.html in Resources */,
+				FAC952D80F93ED470011FFE9 /* tweet.html in Resources */,
+				FAC952D90F93ED470011FFE9 /* main.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +736,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FAC952DD0F93ED670011FFE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC952D10F93ECF90011FFE9 /* Default */;
+			targetProxy = FAC952DC0F93ED670011FFE9 /* PBXContainerItemProxy */;
+		};
 		FACC127B0EF46F9500D702D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FACC12480EF46CD300D702D1 /* Account */;
@@ -737,6 +818,56 @@
 			};
 			name = Release;
 		};
+		FAC952D40F93ECFD0011FFE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Default-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Default;
+				WRAPPER_EXTENSION = warblrTheme;
+			};
+			name = Debug;
+		};
+		FAC952D50F93ECFD0011FFE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Default-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Default;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		FACC124B0EF46CD600D702D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -804,6 +935,15 @@
 			buildConfigurations = (
 				C05733CC08A9546B00998B17 /* Debug */,
 				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC952D60F93ECFD0011FFE9 /* Build configuration list for PBXNativeTarget "Default" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC952D40F93ECFD0011FFE9 /* Debug */,
+				FAC952D50F93ECFD0011FFE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
