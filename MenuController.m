@@ -73,6 +73,10 @@
 	[prefs showPreferencesWindow];
 }
 
+- (IBAction)showTimeline:(id)sender {
+	[[TimelineWindowController sharedController] show];
+}
+
 // Method that actually handles the hot keys.
 OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler, EventRef theEvent, void *userData) {
 	EventHotKeyID hkCom;

@@ -10,6 +10,7 @@
 #import <Carbon/Carbon.h>
 #import "SS_PrefsController.h"
 #import "TweetHUDWindowController.h"
+#import "TimelineWindowController.h"
 
 
 @interface MenuController : NSObject {
@@ -21,6 +22,7 @@
 
 - (IBAction)showTweetHUD:(id)sender;
 - (IBAction)showPreferences:(id)sender;
+- (IBAction)showTimeline:(id)sender;
 
 OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *userData);
 
