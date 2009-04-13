@@ -10,6 +10,7 @@
 #import "AccountDetails.h"
 #import "MGTwitterEngine.h"
 #import "DPCoreData.h"
+#import "DPUtility.h"
 
 
 @interface TweetManager : NSObject {

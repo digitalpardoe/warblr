@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "DPUtility.h"
 
 
 @interface DPCoreData : NSObject {

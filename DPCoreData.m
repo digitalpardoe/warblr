@@ -20,13 +20,6 @@ static DPCoreData *coreData;
     return (coreData);
 }
 
-- (NSString *)applicationSupportFolder {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
-    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : NSTemporaryDirectory();
-    return [basePath stringByAppendingPathComponent:[[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey]];
-}
-
-
 - (NSManagedObjectModel *)managedObjectModel {
     if (managedObjectModel != nil) {
         return managedObjectModel;
@@ -47,7 +40,7 @@ static DPCoreData *coreData;
     NSError *error;
     
     fileManager = [NSFileManager defaultManager];
-    applicationSupportFolder = [self applicationSupportFolder];
+	applicationSupportFolder = [[DPUtility instance] applicationSupportFolder];
     if ( ![fileManager fileExistsAtPath:applicationSupportFolder isDirectory:NULL] ) {
         [fileManager createDirectoryAtPath:applicationSupportFolder attributes:nil];
     }

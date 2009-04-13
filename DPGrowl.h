@@ -13,7 +13,7 @@
 {
 }
 
-+ (DPGrowl *)theGrowl;
++ (DPGrowl *)instance;
 
 - (void)initializeGrowl;
 - (void)showGrowlNotification:(NSString *)growlName:(NSString *)growlTitle:(NSString *)gowlDescription;

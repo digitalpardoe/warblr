@@ -10,18 +10,14 @@
 
 @implementation DPGrowl
 
-static DPGrowl *singleton;
+static DPGrowl *growl;
 
-+ (DPGrowl *)theGrowl {
-	if (!singleton)
-		singleton = [[DPGrowl alloc] init];
++ (DPGrowl *)instance {
+	if (growl == nil) {
+		growl = [[DPGrowl alloc] init];
+	}
 	
-	return singleton;
-}
-
-+ (id)alloc {
-	singleton = [super alloc];
-	return singleton;
+	return growl;
 }
 
 - (void)initializeGrowl {

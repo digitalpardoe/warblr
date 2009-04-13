@@ -110,6 +110,7 @@
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"url"] forKey:@"url"];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"location"] forKey:@"location"];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"description"] forKey:@"desc"];
+			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"profile_image_url"] forKey:@"profileImageURL"];
 		} else {
 			userManagedObject = [results objectAtIndex:0];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"screen_name"] forKey:@"screenName"];
@@ -117,6 +118,7 @@
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"url"] forKey:@"url"];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"location"] forKey:@"location"];
 			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"description"] forKey:@"desc"];
+			[userManagedObject setValue:[[status objectForKey:@"user"] objectForKey:@"profile_image_url"] forKey:@"profileImageURL"];
 		}
 		
 		NSManagedObject *tweetManagedObject = [[NSManagedObject alloc] initWithEntity:tweetEntityDescription insertIntoManagedObjectContext:managedObjectContext];
