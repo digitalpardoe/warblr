@@ -14,6 +14,7 @@
 		FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */; };
 		FA09BD9D0F8F961E00A6C0DE /* DPCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA09BD9C0F8F961E00A6C0DE /* DPCoreData.m */; };
 		FA1325980F934C8C00D76C9E /* DPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1325970F934C8C00D76C9E /* DPUtility.m */; };
+		FA1326240F9353F700D76C9E /* TweetWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1326230F9353F700D76C9E /* TweetWindow.xib */; };
 		FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */; };
 		FA5AA94B0EF9A8A900391976 /* AutoHyperlinks.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */; };
 		FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8C82780ED042F200BF56F9 /* MainMenu.xib */; };
@@ -134,6 +135,7 @@
 		FA09BD9C0F8F961E00A6C0DE /* DPCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCoreData.m; sourceTree = "<group>"; };
 		FA1325960F934C8C00D76C9E /* DPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUtility.h; sourceTree = "<group>"; };
 		FA1325970F934C8C00D76C9E /* DPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUtility.m; sourceTree = "<group>"; };
+		FA1326230F9353F700D76C9E /* TweetWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetWindow.xib; sourceTree = "<group>"; };
 		FA5AA9270EF9A79200391976 /* AutoHyperlinks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoHyperlinks.txt; sourceTree = "<group>"; };
 		FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoHyperlinks.framework; sourceTree = "<group>"; };
 		FA8C82780ED042F200BF56F9 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 			children = (
 				FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */,
 				FA8C82780ED042F200BF56F9 /* MainMenu.xib */,
+				FA1326230F9353F700D76C9E /* TweetWindow.xib */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				FAE052920ECA2F7A0088D9AC /* InfoPlist.strings in Resources */,
 				FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */,
 				FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */,
+				FA1326240F9353F700D76C9E /* TweetWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
