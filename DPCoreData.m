@@ -68,11 +68,4 @@ static DPCoreData *coreData;
     return managedObjectContext;
 }
 
-- (void) dealloc {
-    [managedObjectContext release], managedObjectContext = nil;
-    [persistentStoreCoordinator release], persistentStoreCoordinator = nil;
-    [managedObjectModel release], managedObjectModel = nil;
-    [super dealloc];
-}
-
 @end
