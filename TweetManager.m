@@ -45,14 +45,12 @@
     NSLog(@"Request succeeded (%@)", requestIdentifier);
 }
 
-
 - (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error {
     NSLog(@"Twitter request failed! (%@) Error: %@ (%@)", 
           requestIdentifier, 
           [error localizedDescription], 
           [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
 }
-
 
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)identifier {
 	//	Example returned request object.

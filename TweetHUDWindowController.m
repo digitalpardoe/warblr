@@ -8,7 +8,6 @@
 
 #import "TweetHUDWindowController.h"
 
-
 static TweetHUDWindowController *windowController;
 
 @implementation TweetHUDWindowController

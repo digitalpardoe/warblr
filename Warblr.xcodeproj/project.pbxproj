@@ -14,7 +14,7 @@
 		FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */; };
 		FA09BD9D0F8F961E00A6C0DE /* DPCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA09BD9C0F8F961E00A6C0DE /* DPCoreData.m */; };
 		FA1325980F934C8C00D76C9E /* DPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1325970F934C8C00D76C9E /* DPUtility.m */; };
-		FA1326240F9353F700D76C9E /* TweetWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1326230F9353F700D76C9E /* TweetWindow.xib */; };
+		FA1326240F9353F700D76C9E /* TimelineWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1326230F9353F700D76C9E /* TimelineWindow.xib */; };
 		FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */; };
 		FA5AA94B0EF9A8A900391976 /* AutoHyperlinks.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */; };
 		FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8C82780ED042F200BF56F9 /* MainMenu.xib */; };
@@ -37,6 +37,9 @@
 		FA8E1F1A0ECA2D2E003D74C4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */; };
 		FA8E1F1B0ECA2D2E003D74C4 /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */; };
 		FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */; };
+		FAA9B3B60F939E3500838141 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA9B3B50F939E3500838141 /* WebKit.framework */; };
+		FAA9B3BC0F93A0CA00838141 /* TimelineController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B3BB0F93A0CA00838141 /* TimelineController.m */; };
+		FAA9B3BF0F93A10100838141 /* TimelineWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */; };
 		FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CF450F8D565E0005AC0B /* CoreData.framework */; };
 		FABB185D0F8FF1BD003AF1DB /* Warblr.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */; };
 		FAC04D7B0F8E67DE00449A01 /* TweetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC04D7A0F8E67DE00449A01 /* TweetManager.m */; };
@@ -135,7 +138,7 @@
 		FA09BD9C0F8F961E00A6C0DE /* DPCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCoreData.m; sourceTree = "<group>"; };
 		FA1325960F934C8C00D76C9E /* DPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUtility.h; sourceTree = "<group>"; };
 		FA1325970F934C8C00D76C9E /* DPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUtility.m; sourceTree = "<group>"; };
-		FA1326230F9353F700D76C9E /* TweetWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetWindow.xib; sourceTree = "<group>"; };
+		FA1326230F9353F700D76C9E /* TimelineWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineWindow.xib; sourceTree = "<group>"; };
 		FA5AA9270EF9A79200391976 /* AutoHyperlinks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoHyperlinks.txt; sourceTree = "<group>"; };
 		FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoHyperlinks.framework; sourceTree = "<group>"; };
 		FA8C82780ED042F200BF56F9 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -179,6 +182,11 @@
 		FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainProxy.m; sourceTree = "<group>"; };
 		FA908E990ECD5D720057CC67 /* TweetHUDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetHUDController.h; sourceTree = "<group>"; };
 		FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetHUDController.m; sourceTree = "<group>"; };
+		FAA9B3B50F939E3500838141 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		FAA9B3BA0F93A0CA00838141 /* TimelineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineController.h; sourceTree = "<group>"; };
+		FAA9B3BB0F93A0CA00838141 /* TimelineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineController.m; sourceTree = "<group>"; };
+		FAA9B3BD0F93A10100838141 /* TimelineWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineWindowController.h; sourceTree = "<group>"; };
+		FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineWindowController.m; sourceTree = "<group>"; };
 		FAB4CF450F8D565E0005AC0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Warblr.xcdatamodel; sourceTree = "<group>"; };
 		FAC04D790F8E67DE00449A01 /* TweetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetManager.h; sourceTree = "<group>"; };
@@ -215,6 +223,7 @@
 				FAC2BF1A0ECCE72C00265115 /* Sparkle.framework in Frameworks */,
 				FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */,
 				FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */,
+				FAA9B3B60F939E3500838141 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +285,7 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAA9B3B50F939E3500838141 /* WebKit.framework */,
 				FAB4CF450F8D565E0005AC0B /* CoreData.framework */,
 				FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */,
 				FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */,
@@ -356,7 +366,7 @@
 			children = (
 				FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */,
 				FA8C82780ED042F200BF56F9 /* MainMenu.xib */,
-				FA1326230F9353F700D76C9E /* TweetWindow.xib */,
+				FA1326230F9353F700D76C9E /* TimelineWindow.xib */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -430,6 +440,17 @@
 			name = Keychain;
 			sourceTree = "<group>";
 		};
+		FAA9B3B90F93A0B900838141 /* TimelineWindow */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9B3BA0F93A0CA00838141 /* TimelineController.h */,
+				FAA9B3BB0F93A0CA00838141 /* TimelineController.m */,
+				FAA9B3BD0F93A10100838141 /* TimelineWindowController.h */,
+				FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */,
+			);
+			name = TimelineWindow;
+			sourceTree = "<group>";
+		};
 		FAB4CF2E0F8D55720005AC0B /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +463,7 @@
 		FAC2BEC50ECCD66B00265115 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				FAA9B3B90F93A0B900838141 /* TimelineWindow */,
 				FA1326260F9357B900D76C9E /* TweetHUD */,
 				FAC2BEC60ECCD69500265115 /* MenuController.h */,
 				FAC2BEC70ECCD69500265115 /* MenuController.m */,
@@ -541,7 +563,7 @@
 				FAE052920ECA2F7A0088D9AC /* InfoPlist.strings in Resources */,
 				FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */,
 				FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */,
-				FA1326240F9353F700D76C9E /* TweetWindow.xib in Resources */,
+				FA1326240F9353F700D76C9E /* TimelineWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +627,8 @@
 				FA09BD9D0F8F961E00A6C0DE /* DPCoreData.m in Sources */,
 				FABB185D0F8FF1BD003AF1DB /* Warblr.xcdatamodel in Sources */,
 				FA1325980F934C8C00D76C9E /* DPUtility.m in Sources */,
+				FAA9B3BC0F93A0CA00838141 /* TimelineController.m in Sources */,
+				FAA9B3BF0F93A10100838141 /* TimelineWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
