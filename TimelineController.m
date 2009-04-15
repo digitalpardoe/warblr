@@ -18,7 +18,7 @@
 	[webView setDrawsBackground:NO];
 	[webView setUIDelegate:self];
 	[webView setFrameLoadDelegate:self];
-	[[webView windowScriptObject] setValue:self forKey:@"TimelineController"]; // can be any unique name you want
+	[[webView windowScriptObject] setValue:self forKey:@"TimelineController"];
     
 	NSBundle *themeBundle = [NSBundle bundleWithPath:[[NSBundle pathsForResourcesOfType:@"warblrTheme" inDirectory:[NSString stringWithFormat:@"%@/../Themes", [[NSBundle mainBundle] resourcePath]]] objectAtIndex:0]];
 	NSString *htmlPath = [[themeBundle resourcePath] stringByAppendingPathComponent:@"index.html"];
