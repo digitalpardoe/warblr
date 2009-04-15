@@ -24,6 +24,7 @@
 	NSString *htmlPath = [[themeBundle resourcePath] stringByAppendingPathComponent:@"index.html"];
 	[[webView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]]];
 	
+	[[[TemplateProcessor alloc] initWithTemplatePath:@"Path Name" content:nil] result];
     //	Notes: 
 	//	1. In JavaScript, you can now talk to this object using "window.AppController".
 	//

@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
 #import "TimelineWindowController.h"
+#import "TemplateProcessor.h"
 
 
 @interface TimelineController : NSObject {

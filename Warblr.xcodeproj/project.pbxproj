@@ -37,6 +37,7 @@
 		FA8E1F1A0ECA2D2E003D74C4 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */; };
 		FA8E1F1B0ECA2D2E003D74C4 /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */; };
 		FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */; };
+		FA9685660F96239900572E01 /* TemplateProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9685650F96239900572E01 /* TemplateProcessor.m */; };
 		FAA9B3B60F939E3500838141 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA9B3B50F939E3500838141 /* WebKit.framework */; };
 		FAA9B3BC0F93A0CA00838141 /* TimelineController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B3BB0F93A0CA00838141 /* TimelineController.m */; };
 		FAA9B3BF0F93A10100838141 /* TimelineWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */; };
@@ -204,6 +205,8 @@
 		FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainProxy.m; sourceTree = "<group>"; };
 		FA908E990ECD5D720057CC67 /* TweetHUDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetHUDController.h; sourceTree = "<group>"; };
 		FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetHUDController.m; sourceTree = "<group>"; };
+		FA9685640F96239900572E01 /* TemplateProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateProcessor.h; sourceTree = "<group>"; };
+		FA9685650F96239900572E01 /* TemplateProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateProcessor.m; sourceTree = "<group>"; };
 		FAA9B3B50F939E3500838141 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		FAA9B3BA0F93A0CA00838141 /* TimelineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineController.h; sourceTree = "<group>"; };
 		FAA9B3BB0F93A0CA00838141 /* TimelineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineController.m; sourceTree = "<group>"; };
@@ -294,6 +297,7 @@
 		2A37F4ABFDCFA73011CA2CEA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FA9685630F96235D00572E01 /* Templating */,
 				FAB4CF2E0F8D55720005AC0B /* Data Models */,
 				FA00BBBA0ECCEF0D00D99FE2 /* Custom */,
 				FAC2BEC50ECCD66B00265115 /* Application */,
@@ -467,6 +471,15 @@
 				FA8E1F190ECA2D2E003D74C4 /* EMKeychainProxy.m */,
 			);
 			name = Keychain;
+			sourceTree = "<group>";
+		};
+		FA9685630F96235D00572E01 /* Templating */ = {
+			isa = PBXGroup;
+			children = (
+				FA9685640F96239900572E01 /* TemplateProcessor.h */,
+				FA9685650F96239900572E01 /* TemplateProcessor.m */,
+			);
+			name = Templating;
 			sourceTree = "<group>";
 		};
 		FAA9B3B90F93A0B900838141 /* TimelineWindow */ = {
@@ -705,6 +718,7 @@
 				FA1325980F934C8C00D76C9E /* DPUtility.m in Sources */,
 				FAA9B3BC0F93A0CA00838141 /* TimelineController.m in Sources */,
 				FAA9B3BF0F93A10100838141 /* TimelineWindowController.m in Sources */,
+				FA9685660F96239900572E01 /* TemplateProcessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
