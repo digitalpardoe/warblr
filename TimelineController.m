@@ -22,10 +22,11 @@
     
 	NSBundle *themeBundle = [NSBundle bundleWithPath:[[NSBundle pathsForResourcesOfType:@"warblrTheme" inDirectory:[NSString stringWithFormat:@"%@/../Themes", [[NSBundle mainBundle] resourcePath]]] objectAtIndex:0]];
 	NSString *htmlPath = [[themeBundle resourcePath] stringByAppendingPathComponent:@"index.html"];
-	[[webView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]]];
 	
-	[[[TemplateProcessor alloc] initWithTemplatePath:@"Path Name" content:nil] result];
-    //	Notes: 
+	NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:htmlPath content:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObject:@"This is some content."] forKeys:[NSArray arrayWithObject:@"content"]]] result];
+	[[webView mainFrame] loadHTMLString:content baseURL:[NSURL URLWithString:htmlPath]];
+	
+	//	Notes: 
 	//	1. In JavaScript, you can now talk to this object using "window.AppController".
 	//
 	//	2. You must explicitly allow methods to be called from JavaScript;

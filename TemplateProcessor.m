@@ -20,8 +20,13 @@
     return self;
 }
 
-- (NSString *)result {	
-	return @"";
+- (NSString *)result {
+	NSString *fileContent = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
+	NSString *identifier;
+	for (identifier in templateContent) {
+		fileContent = [fileContent stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"(%% %@ %%)", identifier] withString:[templateContent valueForKey:identifier]];
+	}
+	return fileContent;
 }
 
 @end
