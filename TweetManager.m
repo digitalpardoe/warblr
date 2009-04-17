@@ -27,8 +27,9 @@
 	}
 }
 
-- (TweetManager *)init {
+- (TweetManager *)initWithDelegate:(NSObject *)theDelegate {
 	if (self = [super init]) {
+		delegate = theDelegate;
 		twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
 		
 		managedObjectContext = [[DPCoreData instance] managedObjectContext];
@@ -37,6 +38,13 @@
     }
 	
     return self;
+}
+
+#pragma mark Deletegate implementation
+
+- (BOOL)isValidDelegateForSelector:(SEL)selector
+{
+	return ((delegate != nil) && [delegate respondsToSelector:selector]);
 }
 
 #pragma mark MGTwitterEngineDelegate methods
@@ -129,6 +137,10 @@
 	NSError *error;
 	if (![managedObjectContext save:&error]) {
 		NSLog(@"%@", error);
+	}
+	
+	if ([self isValidDelegateForSelector:@selector(tweetsProcessed)]) {
+		[delegate tweetsProcessed];
 	}
 }
 

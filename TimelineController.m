@@ -91,7 +91,7 @@
 }
 
 - (IBAction)getNewTweets:(id)sender {
-	[[[TweetManager alloc] init] getTweets];
+	[(TweetManager *)[[TweetManager alloc] initWithDelegate:self] getTweets];
 	[self showTweets];
 }
 
@@ -102,6 +102,12 @@
 //	}
 
 	return YES;
+}
+
+#pragma mark TweetManagerDelegate methods
+
+- (void)tweetsProcessed {
+	[self showTweets];
 }
 
 @end

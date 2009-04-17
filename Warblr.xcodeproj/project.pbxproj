@@ -162,6 +162,7 @@
 		FA1325960F934C8C00D76C9E /* DPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUtility.h; sourceTree = "<group>"; };
 		FA1325970F934C8C00D76C9E /* DPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUtility.m; sourceTree = "<group>"; };
 		FA1326230F9353F700D76C9E /* TimelineWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineWindow.xib; sourceTree = "<group>"; };
+		FA4F08580F98BC1C005028B4 /* TweetManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetManagerDelegate.h; sourceTree = "<group>"; };
 		FA5AA9270EF9A79200391976 /* AutoHyperlinks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoHyperlinks.txt; sourceTree = "<group>"; };
 		FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoHyperlinks.framework; sourceTree = "<group>"; };
 		FA8C82780ED042F200BF56F9 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -297,6 +298,7 @@
 		2A37F4ABFDCFA73011CA2CEA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FA4F08570F98BBFE005028B4 /* Tweet Manager */,
 				FA9685630F96235D00572E01 /* Templating */,
 				FAB4CF2E0F8D55720005AC0B /* Data Models */,
 				FA00BBBA0ECCEF0D00D99FE2 /* Custom */,
@@ -390,6 +392,16 @@
 				FAC2BECA0ECCD6B200265115 /* TweetHUDWindowController.m */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		FA4F08570F98BBFE005028B4 /* Tweet Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FAC04D790F8E67DE00449A01 /* TweetManager.h */,
+				FAC04D7A0F8E67DE00449A01 /* TweetManager.m */,
+				FA4F08580F98BC1C005028B4 /* TweetManagerDelegate.h */,
+			);
+			name = "Tweet Manager";
 			sourceTree = "<group>";
 		};
 		FA5AA9240EF9A76F00391976 /* Other Copyright */ = {
@@ -527,8 +539,6 @@
 				FAC2BEC70ECCD69500265115 /* MenuController.m */,
 				FAD978BD0EF5875200A0A924 /* AccountDetails.h */,
 				FAD978BE0EF5875200A0A924 /* AccountDetails.m */,
-				FAC04D790F8E67DE00449A01 /* TweetManager.h */,
-				FAC04D7A0F8E67DE00449A01 /* TweetManager.m */,
 			);
 			name = Application;
 			sourceTree = "<group>";

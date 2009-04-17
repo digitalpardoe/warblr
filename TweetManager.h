@@ -11,9 +11,12 @@
 #import "MGTwitterEngine.h"
 #import "DPCoreData.h"
 #import "DPUtility.h"
+#import "TweetManagerDelegate.h"
 
 
 @interface TweetManager : NSObject {
+	__weak NSObject <TweetManagerDelegate> *delegate;
+	
 	MGTwitterEngine *twitterEngine;
 	
 	NSManagedObjectContext *managedObjectContext;
@@ -22,6 +25,8 @@
 }
 
 - (void)getTweets;
-- (TweetManager *)init;
+- (TweetManager *)initWithDelegate:(NSObject *)theDelegate;
+
+- (BOOL)isValidDelegateForSelector:(SEL)selector;
 
 @end
