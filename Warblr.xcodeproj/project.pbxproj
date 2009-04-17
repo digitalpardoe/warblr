@@ -81,6 +81,7 @@
 		FACC12510EF46D7100D702D1 /* Account.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FACC12490EF46CD300D702D1 /* Account.preferencePane */; };
 		FACC12650EF46DF000D702D1 /* AccountPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACC12640EF46DF000D702D1 /* AccountPrefController.m */; };
 		FACC12730EF46EA800D702D1 /* AccountPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC12720EF46EA800D702D1 /* AccountPrefPane.xib */; };
+		FAD4D9A90F99321D00D008DA /* RKLMatchEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4D9A80F99321D00D008DA /* RKLMatchEnumerator.m */; };
 		FAD978BF0EF5875200A0A924 /* AccountDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD978BE0EF5875200A0A924 /* AccountDetails.m */; };
 		FAD978D10EF58E2200A0A924 /* AccountDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD978BE0EF5875200A0A924 /* AccountDetails.m */; };
 		FAE052760ECA2EB00088D9AC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE052750ECA2EB00088D9AC /* libxml2.dylib */; };
@@ -240,6 +241,8 @@
 		FACC12630EF46DF000D702D1 /* AccountPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountPrefController.h; sourceTree = "<group>"; };
 		FACC12640EF46DF000D702D1 /* AccountPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountPrefController.m; sourceTree = "<group>"; };
 		FACC12720EF46EA800D702D1 /* AccountPrefPane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountPrefPane.xib; sourceTree = "<group>"; };
+		FAD4D9A70F99321D00D008DA /* RKLMatchEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKLMatchEnumerator.h; sourceTree = "<group>"; };
+		FAD4D9A80F99321D00D008DA /* RKLMatchEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKLMatchEnumerator.m; sourceTree = "<group>"; };
 		FAD978BD0EF5875200A0A924 /* AccountDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountDetails.h; sourceTree = "<group>"; };
 		FAD978BE0EF5875200A0A924 /* AccountDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountDetails.m; sourceTree = "<group>"; };
 		FAE052750ECA2EB00088D9AC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
@@ -414,6 +417,7 @@
 		FA513BA40F98E20F00659410 /* Regex */ = {
 			isa = PBXGroup;
 			children = (
+				FAD4D94C0F992EEA00D008DA /* Enumerator */,
 				FA513BA50F98E22C00659410 /* RegexKitLite.h */,
 				FA513BA60F98E22C00659410 /* RegexKitLite.m */,
 			);
@@ -598,6 +602,15 @@
 			name = Account;
 			sourceTree = "<group>";
 		};
+		FAD4D94C0F992EEA00D008DA /* Enumerator */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4D9A70F99321D00D008DA /* RKLMatchEnumerator.h */,
+				FAD4D9A80F99321D00D008DA /* RKLMatchEnumerator.m */,
+			);
+			name = Enumerator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -763,6 +776,7 @@
 				FAA9B3BF0F93A10100838141 /* TimelineWindowController.m in Sources */,
 				FA9685660F96239900572E01 /* TemplateProcessor.m in Sources */,
 				FA513BA70F98E22C00659410 /* RegexKitLite.m in Sources */,
+				FAD4D9A90F99321D00D008DA /* RKLMatchEnumerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

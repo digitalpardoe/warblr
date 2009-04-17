@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RKLMatchEnumerator.h"
+#import "RegexKitLite.h"
 
 
 @interface TemplateProcessor : NSObject {

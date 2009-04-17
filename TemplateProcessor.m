@@ -22,10 +22,18 @@
 
 - (NSString *)result {
 	NSString *fileContent = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
-	NSString *identifier;
-	for (identifier in templateContent) {
-		fileContent = [fileContent stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"(%% %@ %%)", identifier] withString:[templateContent valueForKey:identifier]];
+	NSEnumerator *enumerator = [fileContent matchEnumeratorWithRegex:@"\\(% \\w+ %\\)"];
+	NSString *tag;
+	while ( tag = [enumerator nextObject] ) {
+		NSString *appendString = [templateContent valueForKey:[tag stringByMatching:@"\\w+"]];
+		if (!appendString) {
+			NSLog(@"Key not found, please check template.");
+			fileContent = [fileContent stringByReplacingOccurrencesOfString:tag withString:@"KEY_NOT_FOUND"];
+		} else {
+			fileContent = [fileContent stringByReplacingOccurrencesOfString:tag withString:appendString];
+		}
 	}
+	
 	return fileContent;
 }
 
