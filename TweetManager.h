@@ -21,7 +21,7 @@
 	NSEntityDescription *userEntityDescription;
 }
 
-- (void)testClass;
+- (void)getTweets;
 - (TweetManager *)init;
 
 @end

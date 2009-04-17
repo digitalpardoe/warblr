@@ -367,12 +367,29 @@
 		FA1326260F9357B900D76C9E /* TweetHUD */ = {
 			isa = PBXGroup;
 			children = (
-				FAC2BEC90ECCD6B200265115 /* TweetHUDWindowController.h */,
-				FAC2BECA0ECCD6B200265115 /* TweetHUDWindowController.m */,
+				FA4F068A0F989B4D005028B4 /* UI */,
 				FA908E990ECD5D720057CC67 /* TweetHUDController.h */,
 				FA908E9A0ECD5D720057CC67 /* TweetHUDController.m */,
 			);
 			name = TweetHUD;
+			sourceTree = "<group>";
+		};
+		FA4F06890F989B43005028B4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9B3BD0F93A10100838141 /* TimelineWindowController.h */,
+				FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FA4F068A0F989B4D005028B4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2BEC90ECCD6B200265115 /* TweetHUDWindowController.h */,
+				FAC2BECA0ECCD6B200265115 /* TweetHUDWindowController.m */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		FA5AA9240EF9A76F00391976 /* Other Copyright */ = {
@@ -485,10 +502,9 @@
 		FAA9B3B90F93A0B900838141 /* TimelineWindow */ = {
 			isa = PBXGroup;
 			children = (
+				FA4F06890F989B43005028B4 /* UI */,
 				FAA9B3BA0F93A0CA00838141 /* TimelineController.h */,
 				FAA9B3BB0F93A0CA00838141 /* TimelineController.m */,
-				FAA9B3BD0F93A10100838141 /* TimelineWindowController.h */,
-				FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */,
 			);
 			name = TimelineWindow;
 			sourceTree = "<group>";

@@ -10,10 +10,16 @@
 #import <WebKit/WebKit.h>
 #import "TimelineWindowController.h"
 #import "TemplateProcessor.h"
+#import "DPCoreData.h"
+#import "TweetManager.h"
 
 
 @interface TimelineController : NSObject {
 	IBOutlet WebView *webView;
 }
+
+- (void)showTweets;
+
+- (IBAction)getNewTweets:(id)sender;
 
 @end

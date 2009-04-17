@@ -4,6 +4,17 @@
 \************************************/
 
 html, body {
-	padding: 0px;
+	padding: 5px;
 	margin: 0px;
+	background-color: #FFFFFF;
+}
+
+.tweet {
+	margin-bottom: 5px;
+	padding: 5px;
+	border: 1px solid #000000;
+}
+
+.tweet .screen_name {
+	font-weight: bold;
 }

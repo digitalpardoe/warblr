@@ -11,7 +11,7 @@
 
 @implementation TweetManager
 
-- (void)testClass {
+- (void)getTweets {
 	NSFetchRequest *mostRecentFetchRequest = [[NSFetchRequest alloc] init];
 	[mostRecentFetchRequest setEntity:tweetEntityDescription];
 	[mostRecentFetchRequest setSortDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"tweetId" ascending:NO]]];

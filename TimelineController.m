@@ -20,12 +20,8 @@
 	[webView setFrameLoadDelegate:self];
 	[[webView windowScriptObject] setValue:self forKey:@"TimelineController"];
     
-	NSBundle *themeBundle = [NSBundle bundleWithPath:[[NSBundle pathsForResourcesOfType:@"warblrTheme" inDirectory:[NSString stringWithFormat:@"%@/../Themes", [[NSBundle mainBundle] resourcePath]]] objectAtIndex:0]];
-	NSString *htmlPath = [[themeBundle resourcePath] stringByAppendingPathComponent:@"index.html"];
-	
-	NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:htmlPath content:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObject:@"This is some content."] forKeys:[NSArray arrayWithObject:@"content"]]] result];
-	[[webView mainFrame] loadHTMLString:content baseURL:[NSURL URLWithString:htmlPath]];
-	
+	[self showTweets];
+		
 	//	Notes: 
 	//	1. In JavaScript, you can now talk to this object using "window.AppController".
 	//
@@ -66,6 +62,38 @@
 //    }
 }
 
+- (void)showTweets {
+	NSBundle *themeBundle = [NSBundle bundleWithPath:[[NSBundle pathsForResourcesOfType:@"warblrTheme" inDirectory:[NSString stringWithFormat:@"%@/../Themes", [[NSBundle mainBundle] resourcePath]]] objectAtIndex:0]];
+	
+	NSString *mainTemplate = [[themeBundle resourcePath] stringByAppendingPathComponent:@"index.html"];
+	NSString *tweetTemplate = [[themeBundle resourcePath] stringByAppendingPathComponent:@"tweet.html"];
+	
+	NSFetchRequest *tweetFetchRequest = [[NSFetchRequest alloc] init];
+	[tweetFetchRequest setEntity:[[[[DPCoreData instance] managedObjectModel] entitiesByName] objectForKey:@"tweet"]];
+	[tweetFetchRequest setSortDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:NO]]];
+	NSArray *results = [[[DPCoreData instance] managedObjectContext] executeFetchRequest:tweetFetchRequest error:nil];
+	
+	NSString *finalContent = @"";
+	
+	NSManagedObject *tweet;
+	for (tweet in results) {
+		NSArray *objectArray = [NSArray arrayWithObjects:[[tweet valueForKey:@"user"] valueForKey:@"screenName"], [tweet valueForKey:@"body"], nil];		
+		NSArray *keyArray = [NSArray arrayWithObjects:@"screenName", @"body", nil];
+		
+		NSDictionary *tweetContent = [NSDictionary dictionaryWithObjects:objectArray forKeys:keyArray];
+		
+		NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:tweetTemplate content:tweetContent] result];
+		finalContent = [finalContent stringByAppendingString:content];
+	}
+	
+	NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:mainTemplate content:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObject:finalContent] forKeys:[NSArray arrayWithObject:@"content"]]] result];
+	[[webView mainFrame] loadHTMLString:content baseURL:[NSURL fileURLWithPath:mainTemplate]];
+}
+
+- (IBAction)getNewTweets:(id)sender {
+	[[[TweetManager alloc] init] getTweets];
+	[self showTweets];
+}
 
 + (BOOL)isSelectorExcludedFromWebScript:(SEL)aSelector
 {    
