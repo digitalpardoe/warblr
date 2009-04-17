@@ -15,6 +15,8 @@
 		FA09BD9D0F8F961E00A6C0DE /* DPCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA09BD9C0F8F961E00A6C0DE /* DPCoreData.m */; };
 		FA1325980F934C8C00D76C9E /* DPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1325970F934C8C00D76C9E /* DPUtility.m */; };
 		FA1326240F9353F700D76C9E /* TimelineWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1326230F9353F700D76C9E /* TimelineWindow.xib */; };
+		FA513BA70F98E22C00659410 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = FA513BA60F98E22C00659410 /* RegexKitLite.m */; };
+		FA513BC80F98E3BC00659410 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA513BC70F98E3BC00659410 /* libicucore.dylib */; };
 		FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */; };
 		FA5AA94B0EF9A8A900391976 /* AutoHyperlinks.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */; };
 		FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8C82780ED042F200BF56F9 /* MainMenu.xib */; };
@@ -163,6 +165,9 @@
 		FA1325970F934C8C00D76C9E /* DPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUtility.m; sourceTree = "<group>"; };
 		FA1326230F9353F700D76C9E /* TimelineWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineWindow.xib; sourceTree = "<group>"; };
 		FA4F08580F98BC1C005028B4 /* TweetManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetManagerDelegate.h; sourceTree = "<group>"; };
+		FA513BA50F98E22C00659410 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		FA513BA60F98E22C00659410 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		FA513BC70F98E3BC00659410 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = /usr/lib/libicucore.dylib; sourceTree = "<absolute>"; };
 		FA5AA9270EF9A79200391976 /* AutoHyperlinks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoHyperlinks.txt; sourceTree = "<group>"; };
 		FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoHyperlinks.framework; sourceTree = "<group>"; };
 		FA8C82780ED042F200BF56F9 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -255,6 +260,7 @@
 				FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */,
 				FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */,
 				FAA9B3B60F939E3500838141 /* WebKit.framework in Frameworks */,
+				FA513BC80F98E3BC00659410 /* libicucore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +326,7 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA513BC70F98E3BC00659410 /* libicucore.dylib */,
 				FAA9B3B50F939E3500838141 /* WebKit.framework */,
 				FAB4CF450F8D565E0005AC0B /* CoreData.framework */,
 				FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */,
@@ -404,6 +411,15 @@
 			name = "Tweet Manager";
 			sourceTree = "<group>";
 		};
+		FA513BA40F98E20F00659410 /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				FA513BA50F98E22C00659410 /* RegexKitLite.h */,
+				FA513BA60F98E22C00659410 /* RegexKitLite.m */,
+			);
+			name = Regex;
+			sourceTree = "<group>";
+		};
 		FA5AA9240EF9A76F00391976 /* Other Copyright */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +452,7 @@
 		FA8E1C990ECA2B7D003D74C4 /* Third Party Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FA513BA40F98E20F00659410 /* Regex */,
 				FA00BBB50ECCEEE400D99FE2 /* Preferences */,
 				FA8E1F150ECA2D17003D74C4 /* Keychain */,
 				FA8E1C9A0ECA2B92003D74C4 /* Twitter */,
@@ -745,6 +762,7 @@
 				FAA9B3BC0F93A0CA00838141 /* TimelineController.m in Sources */,
 				FAA9B3BF0F93A10100838141 /* TimelineWindowController.m in Sources */,
 				FA9685660F96239900572E01 /* TemplateProcessor.m in Sources */,
+				FA513BA70F98E22C00659410 /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
