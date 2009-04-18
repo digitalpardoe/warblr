@@ -43,6 +43,16 @@
 		FAA9B3B60F939E3500838141 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA9B3B50F939E3500838141 /* WebKit.framework */; };
 		FAA9B3BC0F93A0CA00838141 /* TimelineController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B3BB0F93A0CA00838141 /* TimelineController.m */; };
 		FAA9B3BF0F93A10100838141 /* TimelineWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */; };
+		FAB1ADB00F9A8D030018507C /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1ADA50F9A8D030018507C /* CTGradient.m */; };
+		FAB1ADB10F9A8D030018507C /* SRCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1ADA70F9A8D030018507C /* SRCommon.m */; };
+		FAB1ADB20F9A8D030018507C /* SRKeyCodeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1ADA90F9A8D030018507C /* SRKeyCodeTransformer.m */; };
+		FAB1ADB30F9A8D030018507C /* SRRecorderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1ADAB0F9A8D030018507C /* SRRecorderCell.m */; };
+		FAB1ADB40F9A8D030018507C /* SRRecorderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1ADAD0F9A8D030018507C /* SRRecorderControl.m */; };
+		FAB1ADB50F9A8D030018507C /* SRValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1ADAF0F9A8D030018507C /* SRValidator.m */; };
+		FAB1ADBE0F9A8D9C0018507C /* ShortcutRecorder.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB1ADBD0F9A8D9C0018507C /* ShortcutRecorder.strings */; };
+		FAB1AE990F9A8DFE0018507C /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E1CCB0ECA2CB7003D74C4 /* Carbon.framework */; };
+		FAB1AE9A0F9A8DFE0018507C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		FAB1AE9C0F9A8E0C0018507C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1AE9B0F9A8E0C0018507C /* CoreServices.framework */; };
 		FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CF450F8D565E0005AC0B /* CoreData.framework */; };
 		FABB185D0F8FF1BD003AF1DB /* Warblr.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */; };
 		FABDD5A50F9A7D4E00669D25 /* Shortcuts.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FABDD5970F9A7CC400669D25 /* Shortcuts.preferencePane */; };
@@ -97,7 +107,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FABDD5960F9A7CC400669D25 /* Shortcuts */;
+			remoteGlobalIDString = FABDD5960F9A7CC400669D25;
 			remoteInfo = Shortcuts;
 		};
 		FAC952DC0F93ED670011FFE9 /* PBXContainerItemProxy */ = {
@@ -230,6 +240,20 @@
 		FAA9B3BB0F93A0CA00838141 /* TimelineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineController.m; sourceTree = "<group>"; };
 		FAA9B3BD0F93A10100838141 /* TimelineWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineWindowController.h; sourceTree = "<group>"; };
 		FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineWindowController.m; sourceTree = "<group>"; };
+		FAB1ADA40F9A8D030018507C /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient.h; sourceTree = "<group>"; };
+		FAB1ADA50F9A8D030018507C /* CTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGradient.m; sourceTree = "<group>"; };
+		FAB1ADA60F9A8D030018507C /* SRCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommon.h; sourceTree = "<group>"; };
+		FAB1ADA70F9A8D030018507C /* SRCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommon.m; sourceTree = "<group>"; };
+		FAB1ADA80F9A8D030018507C /* SRKeyCodeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKeyCodeTransformer.h; sourceTree = "<group>"; };
+		FAB1ADA90F9A8D030018507C /* SRKeyCodeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKeyCodeTransformer.m; sourceTree = "<group>"; };
+		FAB1ADAA0F9A8D030018507C /* SRRecorderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderCell.h; sourceTree = "<group>"; };
+		FAB1ADAB0F9A8D030018507C /* SRRecorderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderCell.m; sourceTree = "<group>"; };
+		FAB1ADAC0F9A8D030018507C /* SRRecorderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderControl.h; sourceTree = "<group>"; };
+		FAB1ADAD0F9A8D030018507C /* SRRecorderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderControl.m; sourceTree = "<group>"; };
+		FAB1ADAE0F9A8D030018507C /* SRValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRValidator.h; sourceTree = "<group>"; };
+		FAB1ADAF0F9A8D030018507C /* SRValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRValidator.m; sourceTree = "<group>"; };
+		FAB1ADBD0F9A8D9C0018507C /* ShortcutRecorder.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = ShortcutRecorder.strings; sourceTree = "<group>"; };
+		FAB1AE9B0F9A8E0C0018507C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		FAB4CF450F8D565E0005AC0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Warblr.xcdatamodel; sourceTree = "<group>"; };
 		FABDD5970F9A7CC400669D25 /* Shortcuts.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shortcuts.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -287,6 +311,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB1AE990F9A8DFE0018507C /* Carbon.framework in Frameworks */,
+				FAB1AE9A0F9A8DFE0018507C /* Cocoa.framework in Frameworks */,
+				FAB1AE9C0F9A8E0C0018507C /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +380,7 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAB1AE9B0F9A8E0C0018507C /* CoreServices.framework */,
 				FA513BC70F98E3BC00659410 /* libicucore.dylib */,
 				FAA9B3B50F939E3500838141 /* WebKit.framework */,
 				FAB4CF450F8D565E0005AC0B /* CoreData.framework */,
@@ -480,6 +508,7 @@
 		FA8E1C990ECA2B7D003D74C4 /* Third Party Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FAB1AD9E0F9A8CCB0018507C /* Shortcut Recorder */,
 				FA513BA40F98E20F00659410 /* Regex */,
 				FA00BBB50ECCEEE400D99FE2 /* Preferences */,
 				FA8E1F150ECA2D17003D74C4 /* Keychain */,
@@ -564,6 +593,26 @@
 				FAA9B3BB0F93A0CA00838141 /* TimelineController.m */,
 			);
 			name = TimelineWindow;
+			sourceTree = "<group>";
+		};
+		FAB1AD9E0F9A8CCB0018507C /* Shortcut Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1ADBD0F9A8D9C0018507C /* ShortcutRecorder.strings */,
+				FAB1ADA40F9A8D030018507C /* CTGradient.h */,
+				FAB1ADA50F9A8D030018507C /* CTGradient.m */,
+				FAB1ADA60F9A8D030018507C /* SRCommon.h */,
+				FAB1ADA70F9A8D030018507C /* SRCommon.m */,
+				FAB1ADA80F9A8D030018507C /* SRKeyCodeTransformer.h */,
+				FAB1ADA90F9A8D030018507C /* SRKeyCodeTransformer.m */,
+				FAB1ADAA0F9A8D030018507C /* SRRecorderCell.h */,
+				FAB1ADAB0F9A8D030018507C /* SRRecorderCell.m */,
+				FAB1ADAC0F9A8D030018507C /* SRRecorderControl.h */,
+				FAB1ADAD0F9A8D030018507C /* SRRecorderControl.m */,
+				FAB1ADAE0F9A8D030018507C /* SRValidator.h */,
+				FAB1ADAF0F9A8D030018507C /* SRValidator.m */,
+			);
+			name = "Shortcut Recorder";
 			sourceTree = "<group>";
 		};
 		FAB4CF2E0F8D55720005AC0B /* Data Models */ = {
@@ -762,6 +811,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABDD5C10F9A7E4C00669D25 /* ShortcutsPrefPane.xib in Resources */,
+				FAB1ADBE0F9A8D9C0018507C /* ShortcutRecorder.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,6 +898,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABDD5BF0F9A7D8D00669D25 /* ShortcutsPrefController.m in Sources */,
+				FAB1ADB00F9A8D030018507C /* CTGradient.m in Sources */,
+				FAB1ADB10F9A8D030018507C /* SRCommon.m in Sources */,
+				FAB1ADB20F9A8D030018507C /* SRKeyCodeTransformer.m in Sources */,
+				FAB1ADB30F9A8D030018507C /* SRRecorderCell.m in Sources */,
+				FAB1ADB40F9A8D030018507C /* SRRecorderControl.m in Sources */,
+				FAB1ADB50F9A8D030018507C /* SRValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -977,6 +1033,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "Shortcuts-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				OTHER_LDFLAGS = (
