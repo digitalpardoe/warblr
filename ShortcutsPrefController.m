@@ -13,13 +13,11 @@
 
 #pragma mark PrefsController methods
 
-+ (NSArray *)preferencePanes
-{
++ (NSArray *)preferencePanes {
     return [NSArray arrayWithObjects:[[[ShortcutsPrefController alloc] init] autorelease], nil];
 }
 
-- (NSView *)paneView
-{
+- (NSView *)paneView {
     BOOL loaded = YES;
     
     if (!prefsView) {
@@ -33,33 +31,27 @@
     return nil;
 }
 
-- (NSString *)paneName
-{
+- (NSString *)paneName {
     return @"Shortcuts";
 }
 
-- (NSImage *)paneIcon
-{
+- (NSImage *)paneIcon {
     return [[[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForImageResource:@"ShortcutsPrefIcon"]] autorelease];
 }
 
-- (NSString *)paneToolTip
-{
+- (NSString *)paneToolTip {
     return @"Keyboard Shortcut Preferences";
 }
 
-- (BOOL)allowsHorizontalResizing
-{
+- (BOOL)allowsHorizontalResizing {
     return NO;
 }
 
-- (BOOL)allowsVerticalResizing
-{
+- (BOOL)allowsVerticalResizing {
     return NO;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
 	[prefsView release];
 	[super dealloc];
 }

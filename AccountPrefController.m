@@ -53,13 +53,11 @@
 
 #pragma mark PrefsController methods
 
-+ (NSArray *)preferencePanes
-{
++ (NSArray *)preferencePanes {
     return [NSArray arrayWithObjects:[[[AccountPrefController alloc] init] autorelease], nil];
 }
 
-- (NSView *)paneView
-{
+- (NSView *)paneView {
     BOOL loaded = YES;
     
     if (!prefsView) {
@@ -73,33 +71,27 @@
     return nil;
 }
 
-- (NSString *)paneName
-{
+- (NSString *)paneName {
     return @"Account";
 }
 
-- (NSImage *)paneIcon
-{
+- (NSImage *)paneIcon {
     return [[[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForImageResource:@"AccountPrefIcon"]] autorelease];
 }
 
-- (NSString *)paneToolTip
-{
+- (NSString *)paneToolTip {
     return @"Twitter Account Preferences";
 }
 
-- (BOOL)allowsHorizontalResizing
-{
+- (BOOL)allowsHorizontalResizing {
     return NO;
 }
 
-- (BOOL)allowsVerticalResizing
-{
+- (BOOL)allowsVerticalResizing {
     return NO;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
 	[prefsView release];
 	[usernameField release];
 	[passwordField release];
