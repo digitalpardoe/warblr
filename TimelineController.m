@@ -104,7 +104,6 @@
 }
 
 - (void)openURL:(NSString *)url {
-	NSLog(@"%@", url);
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
 }
 
