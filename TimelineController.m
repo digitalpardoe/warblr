@@ -77,10 +77,18 @@
 	
 	NSManagedObject *tweet;
 	for (tweet in results) {
-		NSArray *objectArray = [NSArray arrayWithObjects:[[tweet valueForKey:@"user"] valueForKey:@"screenName"], [tweet valueForKey:@"body"], nil];		
-		NSArray *keyArray = [NSArray arrayWithObjects:@"screenName", @"body", nil];
 		
-		NSDictionary *tweetContent = [NSDictionary dictionaryWithObjects:objectArray forKeys:keyArray];
+		NSDictionary *tweetContent = [NSDictionary dictionaryWithObjectsAndKeys:
+												[tweet valueForKey:@"tweetId"], @"tweetId",
+												[tweet valueForKey:@"body"], @"body",
+												[tweet valueForKey:@"createdAt"], @"createdAt",
+												[[tweet valueForKey:@"user"] valueForKey:@"userId"], @"user.userId",
+												[[tweet valueForKey:@"user"] valueForKey:@"screenName"], @"user.screenName",
+												[[tweet valueForKey:@"user"] valueForKey:@"name"], @"user.name",
+												[[tweet valueForKey:@"user"] valueForKey:@"url"], @"user.url",
+												[[tweet valueForKey:@"user"] valueForKey:@"location"], @"user.location",
+												[[tweet valueForKey:@"user"] valueForKey:@"desc"], @"user.desc",
+												[[tweet valueForKey:@"user"] valueForKey:@"profileImageURL"], @"user.profileImageURL", nil];
 		
 		NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:tweetTemplate content:tweetContent] result];
 		finalContent = [finalContent stringByAppendingString:content];
