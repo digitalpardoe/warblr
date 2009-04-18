@@ -18,7 +18,7 @@
 	bool URLProcess;
 }
 
-- (TemplateProcessor *)initWithTemplatePath:(NSString *)templatePath content:(NSDictionary *)templateContent processURLs:(BOOL)process;
+- (TemplateProcessor *)initWithTemplatePath:(NSString *)templatePath content:(NSDictionary *)templateContent;
 
 - (NSString *)result;
 

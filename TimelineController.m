@@ -90,11 +90,11 @@
 												[[tweet valueForKey:@"user"] valueForKey:@"desc"], @"user.desc",
 												[[tweet valueForKey:@"user"] valueForKey:@"profileImageURL"], @"user.profileImageURL", nil];
 		
-		NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:tweetTemplate content:tweetContent processURLs:YES] result];
+		NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:tweetTemplate content:tweetContent] result];
 		finalContent = [finalContent stringByAppendingString:content];
 	}
 	
-	NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:mainTemplate content:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObject:finalContent] forKeys:[NSArray arrayWithObject:@"content"]] processURLs:NO] result];
+	NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:mainTemplate content:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObject:finalContent] forKeys:[NSArray arrayWithObject:@"content"]]] result];
 	[[webView mainFrame] loadHTMLString:content baseURL:[NSURL fileURLWithPath:mainTemplate]];
 }
 

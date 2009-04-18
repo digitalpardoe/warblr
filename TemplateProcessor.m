@@ -18,11 +18,10 @@
 
 @implementation TemplateProcessor
 
-- (TemplateProcessor *)initWithTemplatePath:(NSString *)path content:(NSDictionary *)content processURLs:(BOOL)process {
+- (TemplateProcessor *)initWithTemplatePath:(NSString *)path content:(NSDictionary *)content {
 	if (self = [super init]) {
 		templatePath = path;
 		templateContent = content;
-		URLProcess = process;
     }
 	
     return self;
@@ -32,23 +31,11 @@
 	NSString *fileContent = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
 	NSString *processed = [self processMarkup:fileContent];
 	
-	if (URLProcess) {
-		AHHyperlinkScanner *hyperlinkScanner = [AHHyperlinkScanner hyperlinkScannerWithString:processed];
-		NSArray *urls = [hyperlinkScanner allURIs];
-	
-		NSEnumerator *enumerator = [urls objectEnumerator];
-		id url;
-		while ( url = [enumerator nextObject] ) {
-			NSString *foundURL = [[url URL] absoluteString];
-			processed = [processed stringByReplacingOccurrencesOfString:foundURL withString:[self toLink:foundURL]];
-		}
-	}
-	
 	return processed;
 }
 
 - (NSString *)toLink:(NSString *)link {
-	return [NSString stringWithFormat:@"<a href=\"#\" onClick=\"window.TimelineController.openURL_('%@');\">%@</a>", link, link];
+	return [NSString stringWithFormat:@"<a onClick=\"window.TimelineController.openURL_('%@');\">%@</a>", link, link];
 }
 
 - (NSString *)processMarkup:(NSString *)input {
@@ -57,12 +44,25 @@
 	NSEnumerator *enumerator = [processed matchEnumeratorWithRegex:@"\\(% [\\p{Letter}\\.]+ %\\)"];
 	NSString *tag;
 	while ( tag = [enumerator nextObject] ) {
-		NSString *appendString = [templateContent valueForKey:[tag stringByMatching:@"[\\p{Letter}\\.]+"]];
+		NSString *tagContent = [tag stringByMatching:@"[\\p{Letter}\\.]+"];
+		NSString *appendString = [templateContent valueForKey:tagContent];
 		if (!appendString) {
 			NSLog(@"Key not found, please check template.");
 			processed = [processed stringByReplacingOccurrencesOfString:tag withString:@"KEY_NOT_FOUND"];
 		} else {
 			processed = [processed stringByReplacingOccurrencesOfString:tag withString:appendString];
+			
+			if ([tagContent isEqualToString:@"body"]) {
+				AHHyperlinkScanner *hyperlinkScanner = [AHHyperlinkScanner hyperlinkScannerWithString:processed];
+				NSArray *urls = [hyperlinkScanner allURIs];
+				
+				NSEnumerator *enumerator = [urls objectEnumerator];
+				id url;
+				while ( url = [enumerator nextObject] ) {
+					NSString *foundURL = [[url URL] absoluteString];
+					processed = [processed stringByReplacingOccurrencesOfString:foundURL withString:[self toLink:foundURL]];
+				}
+			}
 		}
 	}
 	
