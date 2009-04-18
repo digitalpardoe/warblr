@@ -67,7 +67,7 @@
 		[prefs setAlwaysShowsToolbar:YES];
 		[prefs setDebug:NO];
 		[prefs setAlwaysOpensCentered:YES];
-		[prefs setPanesOrder:[NSArray arrayWithObjects:@"Account", nil]];
+		[prefs setPanesOrder:[NSArray arrayWithObjects:@"Account", @"Shortcuts",nil]];
 	}
     
 	[prefs showPreferencesWindow];

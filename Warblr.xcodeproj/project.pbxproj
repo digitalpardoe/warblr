@@ -45,6 +45,9 @@
 		FAA9B3BF0F93A10100838141 /* TimelineWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */; };
 		FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CF450F8D565E0005AC0B /* CoreData.framework */; };
 		FABB185D0F8FF1BD003AF1DB /* Warblr.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */; };
+		FABDD5A50F9A7D4E00669D25 /* Shortcuts.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FABDD5970F9A7CC400669D25 /* Shortcuts.preferencePane */; };
+		FABDD5BF0F9A7D8D00669D25 /* ShortcutsPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FABDD5BE0F9A7D8D00669D25 /* ShortcutsPrefController.m */; };
+		FABDD5C10F9A7E4C00669D25 /* ShortcutsPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABDD5C00F9A7E4C00669D25 /* ShortcutsPrefPane.xib */; };
 		FAC04D7B0F8E67DE00449A01 /* TweetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC04D7A0F8E67DE00449A01 /* TweetManager.m */; };
 		FAC2BEC80ECCD69500265115 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BEC70ECCD69500265115 /* MenuController.m */; };
 		FAC2BECB0ECCD6B200265115 /* TweetHUDWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BECA0ECCD6B200265115 /* TweetHUDWindowController.m */; };
@@ -90,6 +93,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FABDD5BA0F9A7D6000669D25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FABDD5960F9A7CC400669D25 /* Shortcuts */;
+			remoteInfo = Shortcuts;
+		};
 		FAC952DC0F93ED670011FFE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -138,6 +148,7 @@
 			dstPath = "../Preference Panes";
 			dstSubfolderSpec = 7;
 			files = (
+				FABDD5A50F9A7D4E00669D25 /* Shortcuts.preferencePane in Copy Preference Panes */,
 				FACC12510EF46D7100D702D1 /* Account.preferencePane in Copy Preference Panes */,
 			);
 			name = "Copy Preference Panes";
@@ -221,6 +232,11 @@
 		FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineWindowController.m; sourceTree = "<group>"; };
 		FAB4CF450F8D565E0005AC0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Warblr.xcdatamodel; sourceTree = "<group>"; };
+		FABDD5970F9A7CC400669D25 /* Shortcuts.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shortcuts.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABDD5980F9A7CC400669D25 /* Shortcuts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shortcuts-Info.plist"; sourceTree = "<group>"; };
+		FABDD5BD0F9A7D8D00669D25 /* ShortcutsPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutsPrefController.h; sourceTree = "<group>"; };
+		FABDD5BE0F9A7D8D00669D25 /* ShortcutsPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortcutsPrefController.m; sourceTree = "<group>"; };
+		FABDD5C00F9A7E4C00669D25 /* ShortcutsPrefPane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShortcutsPrefPane.xib; sourceTree = "<group>"; };
 		FAC04D790F8E67DE00449A01 /* TweetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetManager.h; sourceTree = "<group>"; };
 		FAC04D7A0F8E67DE00449A01 /* TweetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetManager.m; sourceTree = "<group>"; };
 		FAC2BEC60ECCD69500265115 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
@@ -267,6 +283,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FABDD5950F9A7CC400669D25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FACC12470EF46CD300D702D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,6 +309,7 @@
 				8D15AC370486D014006FF6A4 /* Warblr.app */,
 				FACC12490EF46CD300D702D1 /* Account.preferencePane */,
 				FAC952D20F93ECF90011FFE9 /* Default.warblrTheme */,
+				FABDD5970F9A7CC400669D25 /* Shortcuts.preferencePane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -551,6 +575,17 @@
 			name = "Data Models";
 			sourceTree = "<group>";
 		};
+		FABDD58E0F9A7C0900669D25 /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				FABDD5980F9A7CC400669D25 /* Shortcuts-Info.plist */,
+				FABDD5BD0F9A7D8D00669D25 /* ShortcutsPrefController.h */,
+				FABDD5BE0F9A7D8D00669D25 /* ShortcutsPrefController.m */,
+				FABDD5C00F9A7E4C00669D25 /* ShortcutsPrefPane.xib */,
+			);
+			name = Shortcuts;
+			sourceTree = "<group>";
+		};
 		FAC2BEC50ECCD66B00265115 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,6 +621,7 @@
 		FACC11520EF4611E00D702D1 /* Preference Panes */ = {
 			isa = PBXGroup;
 			children = (
+				FABDD58E0F9A7C0900669D25 /* Shortcuts */,
 				FACC124E0EF46D0B00D702D1 /* Account */,
 			);
 			name = "Preference Panes";
@@ -631,12 +667,30 @@
 			dependencies = (
 				FACC127B0EF46F9500D702D1 /* PBXTargetDependency */,
 				FAC952DD0F93ED670011FFE9 /* PBXTargetDependency */,
+				FABDD5BB0F9A7D6000669D25 /* PBXTargetDependency */,
 			);
 			name = Warblr;
 			productInstallPath = "$(HOME)/Applications";
 			productName = Warblr;
 			productReference = 8D15AC370486D014006FF6A4 /* Warblr.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FABDD5960F9A7CC400669D25 /* Shortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABDD59C0F9A7CC800669D25 /* Build configuration list for PBXNativeTarget "Shortcuts" */;
+			buildPhases = (
+				FABDD5930F9A7CC400669D25 /* Resources */,
+				FABDD5940F9A7CC400669D25 /* Sources */,
+				FABDD5950F9A7CC400669D25 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shortcuts;
+			productName = Shortcuts;
+			productReference = FABDD5970F9A7CC400669D25 /* Shortcuts.preferencePane */;
+			productType = "com.apple.product-type.bundle";
 		};
 		FAC952D10F93ECF90011FFE9 /* Default */ = {
 			isa = PBXNativeTarget;
@@ -685,6 +739,7 @@
 				8D15AC270486D014006FF6A4 /* Warblr */,
 				FACC12480EF46CD300D702D1 /* Account */,
 				FAC952D10F93ECF90011FFE9 /* Default */,
+				FABDD5960F9A7CC400669D25 /* Shortcuts */,
 			);
 		};
 /* End PBXProject section */
@@ -699,6 +754,14 @@
 				FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */,
 				FA8C82790ED042F200BF56F9 /* MainMenu.xib in Resources */,
 				FA1326240F9353F700D76C9E /* TimelineWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABDD5930F9A7CC400669D25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABDD5C10F9A7E4C00669D25 /* ShortcutsPrefPane.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,6 +843,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FABDD5940F9A7CC400669D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABDD5BF0F9A7D8D00669D25 /* ShortcutsPrefController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FACC12460EF46CD300D702D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -808,6 +879,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FABDD5BB0F9A7D6000669D25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FABDD5960F9A7CC400669D25 /* Shortcuts */;
+			targetProxy = FABDD5BA0F9A7D6000669D25 /* PBXContainerItemProxy */;
+		};
 		FAC952DD0F93ED670011FFE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FAC952D10F93ECF90011FFE9 /* Default */;
@@ -887,6 +963,56 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = Warblr;
 				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		FABDD59A0F9A7CC700669D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Shortcuts-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Shortcuts;
+				WRAPPER_EXTENSION = preferencePane;
+			};
+			name = Debug;
+		};
+		FABDD59B0F9A7CC700669D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Shortcuts-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Shortcuts;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -1007,6 +1133,15 @@
 			buildConfigurations = (
 				C05733CC08A9546B00998B17 /* Debug */,
 				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FABDD59C0F9A7CC800669D25 /* Build configuration list for PBXNativeTarget "Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABDD59A0F9A7CC700669D25 /* Debug */,
+				FABDD59B0F9A7CC700669D25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
