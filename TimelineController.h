@@ -22,4 +22,6 @@
 
 - (IBAction)getNewTweets:(id)sender;
 
+- (void)openURL:(NSString *)url;
+
 @end

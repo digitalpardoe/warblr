@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <AutoHyperlinks/AutoHyperlinks.h>
 #import "RKLMatchEnumerator.h"
 #import "RegexKitLite.h"
 
@@ -14,9 +15,10 @@
 @interface TemplateProcessor : NSObject {
 	NSString *templatePath;
 	NSDictionary *templateContent;
+	bool URLProcess;
 }
 
-- (TemplateProcessor *)initWithTemplatePath:(NSString *)templatePath content:(NSDictionary *)templateContent;
+- (TemplateProcessor *)initWithTemplatePath:(NSString *)templatePath content:(NSDictionary *)templateContent processURLs:(BOOL)process;
 
 - (NSString *)result;
 

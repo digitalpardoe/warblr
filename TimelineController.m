@@ -90,11 +90,11 @@
 												[[tweet valueForKey:@"user"] valueForKey:@"desc"], @"user.desc",
 												[[tweet valueForKey:@"user"] valueForKey:@"profileImageURL"], @"user.profileImageURL", nil];
 		
-		NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:tweetTemplate content:tweetContent] result];
+		NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:tweetTemplate content:tweetContent processURLs:YES] result];
 		finalContent = [finalContent stringByAppendingString:content];
 	}
 	
-	NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:mainTemplate content:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObject:finalContent] forKeys:[NSArray arrayWithObject:@"content"]]] result];
+	NSString *content = [[[TemplateProcessor alloc] initWithTemplatePath:mainTemplate content:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObject:finalContent] forKeys:[NSArray arrayWithObject:@"content"]] processURLs:NO] result];
 	[[webView mainFrame] loadHTMLString:content baseURL:[NSURL fileURLWithPath:mainTemplate]];
 }
 
@@ -103,11 +103,16 @@
 	[self showTweets];
 }
 
+- (void)openURL:(NSString *)url {
+	NSLog(@"%@", url);
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
+}
+
 + (BOOL)isSelectorExcludedFromWebScript:(SEL)aSelector
 {    
-//	if (aSelector == @selector(showMessage:)) {
-//		return NO;
-//	}
+	if (aSelector == @selector(openURL:)) {
+		return NO;
+	}
 
 	return YES;
 }
