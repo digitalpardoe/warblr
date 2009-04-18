@@ -8,6 +8,9 @@
 
 #import "TemplateProcessor.h"
 
+#define REGEX_TAG @"\\(% [\\p{Letter}\\.\\+]+ %\\)"
+#define REGEX_TAG_CONTENTS @"[\\p{Letter}\\.]+"
+#define REGEX_TAG_PROCESSOR @"\\+[\\p{Letter}\\.]+"
 
 @interface TemplateProcessor (PrivateMethods)
 
@@ -41,18 +44,19 @@
 - (NSString *)processMarkup:(NSString *)input {
 	NSString *processed = input;
 	
-	NSEnumerator *enumerator = [processed matchEnumeratorWithRegex:@"\\(% [\\p{Letter}\\.]+ %\\)"];
+	NSEnumerator *enumerator = [processed matchEnumeratorWithRegex:REGEX_TAG];
 	NSString *tag;
 	while ( tag = [enumerator nextObject] ) {
-		NSString *tagContent = [tag stringByMatching:@"[\\p{Letter}\\.]+"];
+		NSString *tagContent = [tag stringByMatching:REGEX_TAG_CONTENTS];
 		NSString *appendString = [templateContent valueForKey:tagContent];
+		
 		if (!appendString) {
 			NSLog(@"Key not found, please check template.");
 			processed = [processed stringByReplacingOccurrencesOfString:tag withString:@"KEY_NOT_FOUND"];
 		} else {
 			processed = [processed stringByReplacingOccurrencesOfString:tag withString:appendString];
 			
-			if ([tagContent isEqualToString:@"body"]) {
+			if ([tag stringByMatching:REGEX_TAG_PROCESSOR] && [[[tag stringByMatching:REGEX_TAG_PROCESSOR] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"+"]] isEqualToString:@"linkify"]) {
 				AHHyperlinkScanner *hyperlinkScanner = [AHHyperlinkScanner hyperlinkScannerWithString:processed];
 				NSArray *urls = [hyperlinkScanner allURIs];
 				
