@@ -13,14 +13,10 @@
 
 #pragma mark ShortcutRecroder delegate methods
 
-- (BOOL)shortcutRecorder:(SRRecorderControl *)aRecorder isKeyCode:(signed short)keyCode andFlagsTaken:(unsigned int)flags reason:(NSString **)aReason {
-	return NO;
-}
-
 - (void)shortcutRecorder:(SRRecorderControl *)aRecorder keyComboDidChange:(KeyCombo)newKeyCombo {
 	NSLog(@"Recorder control: %@", aRecorder);
-	NSLog(@"Key combo code: %i", newKeyCombo.code);
-	NSLog(@"Key combo flags: %i", newKeyCombo.flags);
+	NSLog(@"Key combo code: %i", [aRecorder keyCombo].code);
+	NSLog(@"Key combo flags: %i", [aRecorder cocoaToCarbonFlags: [aRecorder keyCombo].flags]);
 }
 
 #pragma mark PrefsController methods
