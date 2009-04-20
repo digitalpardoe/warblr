@@ -27,10 +27,10 @@
 }
 
 - (IBAction)tweet:(id)sender {	
-//	MGTwitterEngine *twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
-//	[twitterEngine setUsername:[[AccountDetails instance] currentUsername] password:[[AccountDetails instance] currentPassword]];
-//	[twitterEngine setClientName:APP_NAME version:APP_VERSION URL:APP_URL token:APP_TOKEN];
-//	[twitterEngine sendUpdate:[messageArea string]];
+	MGTwitterEngine *twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
+	[twitterEngine setUsername:[[AccountDetails instance] currentUsername] password:[[AccountDetails instance] currentPassword]];
+	[twitterEngine setClientName:APP_NAME version:APP_VERSION URL:APP_URL token:APP_TOKEN];
+	[twitterEngine sendUpdate:[messageArea string]];
 	[[TweetHUDWindowController sharedController] close];
 	[messageArea setString:@""];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];

@@ -8,10 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SS_PreferencePaneProtocol.h"
+#import "SRRecorderControl.h"
 
 
 @interface ShortcutsPrefController : NSObject <SS_PreferencePaneProtocol> {
 	IBOutlet NSView *prefsView;
+	IBOutlet SRRecorderControl *tweetHUDRecorder;
+	IBOutlet SRRecorderControl *timelineRecorder;
 }
 
 @end
