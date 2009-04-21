@@ -94,6 +94,7 @@
 		FACC12510EF46D7100D702D1 /* Account.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FACC12490EF46CD300D702D1 /* Account.preferencePane */; };
 		FACC12650EF46DF000D702D1 /* AccountPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACC12640EF46DF000D702D1 /* AccountPrefController.m */; };
 		FACC12730EF46EA800D702D1 /* AccountPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC12720EF46EA800D702D1 /* AccountPrefPane.xib */; };
+		FACEFD530F9E4F96008A88C5 /* DPHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = FACEFD520F9E4F96008A88C5 /* DPHotKey.m */; };
 		FAD4D9A90F99321D00D008DA /* RKLMatchEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4D9A80F99321D00D008DA /* RKLMatchEnumerator.m */; };
 		FAD978BF0EF5875200A0A924 /* AccountDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD978BE0EF5875200A0A924 /* AccountDetails.m */; };
 		FAD978D10EF58E2200A0A924 /* AccountDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD978BE0EF5875200A0A924 /* AccountDetails.m */; };
@@ -281,6 +282,8 @@
 		FACC12630EF46DF000D702D1 /* AccountPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountPrefController.h; sourceTree = "<group>"; };
 		FACC12640EF46DF000D702D1 /* AccountPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountPrefController.m; sourceTree = "<group>"; };
 		FACC12720EF46EA800D702D1 /* AccountPrefPane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountPrefPane.xib; sourceTree = "<group>"; };
+		FACEFD510F9E4F96008A88C5 /* DPHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHotKey.h; sourceTree = "<group>"; };
+		FACEFD520F9E4F96008A88C5 /* DPHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHotKey.m; sourceTree = "<group>"; };
 		FAD4D9A70F99321D00D008DA /* RKLMatchEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKLMatchEnumerator.h; sourceTree = "<group>"; };
 		FAD4D9A80F99321D00D008DA /* RKLMatchEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKLMatchEnumerator.m; sourceTree = "<group>"; };
 		FAD978BD0EF5875200A0A924 /* AccountDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountDetails.h; sourceTree = "<group>"; };
@@ -409,6 +412,7 @@
 		FA00BBBA0ECCEF0D00D99FE2 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				FACEFD5A0F9E521A008A88C5 /* Hot Keys */,
 				FA00BBBB0ECCEF2100D99FE2 /* DPGrowl.h */,
 				FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */,
 				FA00BBBD0ECCEF2100D99FE2 /* DPLoginItem.h */,
@@ -687,6 +691,15 @@
 			name = Account;
 			sourceTree = "<group>";
 		};
+		FACEFD5A0F9E521A008A88C5 /* Hot Keys */ = {
+			isa = PBXGroup;
+			children = (
+				FACEFD510F9E4F96008A88C5 /* DPHotKey.h */,
+				FACEFD520F9E4F96008A88C5 /* DPHotKey.m */,
+			);
+			name = "Hot Keys";
+			sourceTree = "<group>";
+		};
 		FAD4D94C0F992EEA00D008DA /* Enumerator */ = {
 			isa = PBXGroup;
 			children = (
@@ -890,6 +903,7 @@
 				FA9685660F96239900572E01 /* TemplateProcessor.m in Sources */,
 				FA513BA70F98E22C00659410 /* RegexKitLite.m in Sources */,
 				FAD4D9A90F99321D00D008DA /* RKLMatchEnumerator.m in Sources */,
+				FACEFD530F9E4F96008A88C5 /* DPHotKey.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
