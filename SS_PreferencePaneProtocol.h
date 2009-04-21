@@ -46,5 +46,9 @@
 - (BOOL)allowsHorizontalResizing;
 - (BOOL)allowsVerticalResizing;
 
+	// setCallbackClass allows a class to be set that a preference pane is able to interact with.
+
+- (void)setCallbackClass:(id)theClass;
+
 
 @end

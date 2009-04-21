@@ -246,6 +246,7 @@
                     while (aPane = [enumerator nextObject]) {
                         [panesOrder addObject:[aPane paneName]];
                         [preferencePanes setObject:aPane forKey:[aPane paneName]];
+						[aPane setCallbackClass:[self callbackClass]];
                     }
                 } else {
                     [self debugLog:[NSString stringWithFormat:@"Did not load bundle: %@ because its Principal Class is either not an NSObject subclass, or does not conform to the PreferencePane Protocol.", paneBundle]];
@@ -453,6 +454,16 @@ float ToolbarHeightForWindow(NSWindow *window)
     toolbarSizeMode = sizeMode;
 }
 #endif
+
+- (id)callbackClass
+{
+	return callbackClass;
+}
+
+- (void)setCallbackClass:(id)theClass
+{
+	callbackClass = theClass;
+}
 
 
 - (void)prefsToolbarItemClicked:(NSToolbarItem*)item

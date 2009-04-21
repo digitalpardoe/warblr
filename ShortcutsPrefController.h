@@ -15,6 +15,8 @@
 	IBOutlet NSView *prefsView;
 	IBOutlet SRRecorderControl *tweetHUDRecorder;
 	IBOutlet SRRecorderControl *timelineRecorder;
+	
+	id callbackClass;
 }
 
 @end

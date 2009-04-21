@@ -23,6 +23,8 @@
     BOOL alwaysOpensCentered;
     
     BOOL debug;
+	
+	id callbackClass;
 }
 
 // Convenience constructors
@@ -72,5 +74,8 @@ float ToolbarHeightForWindow(NSWindow *window);
 - (NSToolbarSizeMode)toolbarSizeMode;
 - (void)setToolbarSizeMode:(NSToolbarSizeMode)sizeMode;
 #endif
+
+- (id)callbackClass;
+- (void)setCallbackClass:(id)theClass;
 
 @end

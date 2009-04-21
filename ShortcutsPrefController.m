@@ -59,8 +59,15 @@
     return NO;
 }
 
+- (void)setCallbackClass:(id)theClass {
+	callbackClass = theClass;
+}
+
 - (void)dealloc {
 	[prefsView release];
+	[tweetHUDRecorder release];
+	[timelineRecorder release];
+	[callbackClass release];
 	[super dealloc];
 }
 

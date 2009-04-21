@@ -20,6 +20,8 @@
 	IBOutlet NSProgressIndicator *progressIndicator;
 	IBOutlet NSTextField *progressText;
 	IBOutlet NSTextField *resultText;
+	
+	id callbackClass;
 }
 
 - (IBAction)login:(id)sender;

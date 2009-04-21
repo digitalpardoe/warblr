@@ -91,6 +91,10 @@
     return NO;
 }
 
+- (void)setCallbackClass:(id)theClass {
+	callbackClass = theClass;
+}
+
 - (void)dealloc {
 	[prefsView release];
 	[usernameField release];
@@ -98,6 +102,7 @@
 	[progressIndicator release];
 	[progressText release];
 	[resultText release];
+	[callbackClass release];
 	[super dealloc];
 }
 
