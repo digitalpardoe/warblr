@@ -24,6 +24,8 @@
 - (IBAction)showPreferences:(id)sender;
 - (IBAction)showTimeline:(id)sender;
 
+- (void)updateHotKeys;
+
 OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent, void *userData);
 
 @end

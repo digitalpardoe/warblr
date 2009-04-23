@@ -62,12 +62,11 @@
 	
 	if (!prefs) {
 		NSString *pathToPanes = [NSString stringWithFormat:@"%@/../Preference Panes", [[NSBundle mainBundle] resourcePath]];
-		prefs = [[SS_PrefsController alloc] initWithPanesSearchPath:pathToPanes];
+		prefs = [[SS_PrefsController alloc] initWithPanesSearchPath:pathToPanes callback:self];
 		
 		[prefs setAlwaysShowsToolbar:YES];
 		[prefs setDebug:NO];
 		[prefs setAlwaysOpensCentered:YES];
-		[prefs setCallbackClass:self];
 		[prefs setPanesOrder:[NSArray arrayWithObjects:@"Account", @"Shortcuts",nil]];
 	}
     
@@ -76,6 +75,10 @@
 
 - (IBAction)showTimeline:(id)sender {
 	[[TimelineWindowController sharedController] show];
+}
+
+- (void)updateHotKeys {
+	NSLog(@"The callback works.");
 }
 
 // Method that actually handles the hot keys.

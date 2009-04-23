@@ -28,16 +28,15 @@
 }
 
 // Convenience constructors
-+ (id)preferencesWithPanesSearchPath:(NSString*)path bundleExtension:(NSString *)ext;
-+ (id)preferencesWithBundleExtension:(NSString *)ext;
-+ (id)preferencesWithPanesSearchPath:(NSString*)path;
++ (id)preferencesWithPanesSearchPath:(NSString*)path bundleExtension:(NSString *)ext callback:(id)theClass;
++ (id)preferencesWithBundleExtension:(NSString *)ext callback:(id)theClass;
++ (id)preferencesWithPanesSearchPath:(NSString*)path callback:(id)theClass;
 + (id)preferences;
 
 // Designated initializer
-- (id)initWithPanesSearchPath:(NSString*)path bundleExtension:(NSString *)ext;
-
-- (id)initWithBundleExtension:(NSString *)ext;
-- (id)initWithPanesSearchPath:(NSString*)path;
+- (id)initWithPanesSearchPath:(NSString*)path bundleExtension:(NSString *)ext callback:(id)theClass;
+- (id)initWithBundleExtension:(NSString *)ext callback:(id)theClass;
+- (id)initWithPanesSearchPath:(NSString*)path callback:(id)theClass;
 
 - (void)showPreferencesWindow;
 - (void)createPreferencesWindowAndDisplay:(BOOL)shouldDisplay;
@@ -74,8 +73,5 @@ float ToolbarHeightForWindow(NSWindow *window);
 - (NSToolbarSizeMode)toolbarSizeMode;
 - (void)setToolbarSizeMode:(NSToolbarSizeMode)sizeMode;
 #endif
-
-- (id)callbackClass;
-- (void)setCallbackClass:(id)theClass;
 
 @end

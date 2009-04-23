@@ -16,21 +16,21 @@
 }
 
 
-+ (id)preferencesWithPanesSearchPath:(NSString*)path bundleExtension:(NSString *)ext
++ (id)preferencesWithPanesSearchPath:(NSString*)path bundleExtension:(NSString *)ext callback:(id)theClass
 {
-    return [[[SS_PrefsController alloc] initWithPanesSearchPath:path bundleExtension:ext] autorelease];
+    return [[[SS_PrefsController alloc] initWithPanesSearchPath:path bundleExtension:ext callback:theClass] autorelease];
 }
 
 
-+ (id)preferencesWithBundleExtension:(NSString *)ext
++ (id)preferencesWithBundleExtension:(NSString *)ext callback:(id)theClass
 {
-    return [[[SS_PrefsController alloc] initWithBundleExtension:ext] autorelease];
+    return [[[SS_PrefsController alloc] initWithBundleExtension:ext callback:theClass] autorelease];
 }
 
 
-+ (id)preferencesWithPanesSearchPath:(NSString*)path
++ (id)preferencesWithPanesSearchPath:(NSString*)path callback:(id)theClass
 {
-    return [[[SS_PrefsController alloc] initWithPanesSearchPath:path] autorelease];
+    return [[[SS_PrefsController alloc] initWithPanesSearchPath:path callback:theClass] autorelease];
 }
 
 
@@ -42,24 +42,24 @@
 
 - (id)init
 {
-    return [self initWithPanesSearchPath:nil bundleExtension:nil];
+    return [self initWithPanesSearchPath:nil bundleExtension:nil callback:nil];
 }
 
 
-- (id)initWithPanesSearchPath:(NSString*)path
+- (id)initWithPanesSearchPath:(NSString*)path callback:(id)theClass
 {
-    return [self initWithPanesSearchPath:path bundleExtension:nil];
+    return [self initWithPanesSearchPath:path bundleExtension:nil callback:theClass];
 }
 
 
-- (id)initWithBundleExtension:(NSString *)ext
+- (id)initWithBundleExtension:(NSString *)ext callback:(id)theClass
 {
-    return [self initWithPanesSearchPath:nil bundleExtension:ext];
+    return [self initWithPanesSearchPath:nil bundleExtension:ext callback:theClass];
 }
 
 
 // Designated initializer
-- (id)initWithPanesSearchPath:(NSString*)path bundleExtension:(NSString *)ext
+- (id)initWithPanesSearchPath:(NSString*)path bundleExtension:(NSString *)ext callback:(id)theClass
 {
     if (self = [super init]) {
         [self setDebug:NO];
@@ -79,6 +79,8 @@
         } else {
             bundleExtension = [ext retain];
         }
+		
+		callbackClass = theClass;
         
         if (!path || [path isEqualToString:@""]) {
             searchPath = [[NSString alloc] initWithString:[[NSBundle mainBundle] resourcePath]];
@@ -123,6 +125,9 @@
     if (searchPath) {
         [searchPath release];
     }
+	if (callbackClass) {
+		[callbackClass release];
+	}
     [super dealloc];
 }
 
@@ -246,7 +251,7 @@
                     while (aPane = [enumerator nextObject]) {
                         [panesOrder addObject:[aPane paneName]];
                         [preferencePanes setObject:aPane forKey:[aPane paneName]];
-						[aPane setCallbackClass:[self callbackClass]];
+						[aPane setCallbackClass:callbackClass];
                     }
                 } else {
                     [self debugLog:[NSString stringWithFormat:@"Did not load bundle: %@ because its Principal Class is either not an NSObject subclass, or does not conform to the PreferencePane Protocol.", paneBundle]];

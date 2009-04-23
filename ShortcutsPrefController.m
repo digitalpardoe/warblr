@@ -17,6 +17,10 @@
 	NSLog(@"Recorder control: %@", aRecorder);
 	NSLog(@"Key combo code: %i", [aRecorder keyCombo].code);
 	NSLog(@"Key combo flags: %i", [aRecorder cocoaToCarbonFlags: [aRecorder keyCombo].flags]);
+	
+	if ([callbackClass respondsToSelector:@selector(updateHotKeys)]) {
+		[callbackClass updateHotKeys];
+	}
 }
 
 #pragma mark PrefsController methods
