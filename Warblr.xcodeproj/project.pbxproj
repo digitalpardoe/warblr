@@ -10,7 +10,6 @@
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		FA00BBB90ECCEEFD00D99FE2 /* SS_PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBB80ECCEEFD00D99FE2 /* SS_PrefsController.m */; };
-		FA00BBBF0ECCEF2100D99FE2 /* DPGrowl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */; };
 		FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */; };
 		FA09BD9D0F8F961E00A6C0DE /* DPCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA09BD9C0F8F961E00A6C0DE /* DPCoreData.m */; };
 		FA1325980F934C8C00D76C9E /* DPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1325970F934C8C00D76C9E /* DPUtility.m */; };
@@ -43,7 +42,6 @@
 		FAA9B3B60F939E3500838141 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA9B3B50F939E3500838141 /* WebKit.framework */; };
 		FAA9B3BC0F93A0CA00838141 /* TimelineController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B3BB0F93A0CA00838141 /* TimelineController.m */; };
 		FAA9B3BF0F93A10100838141 /* TimelineWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */; };
-		FAB1ADB00F9A8D030018507C /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1ADA50F9A8D030018507C /* CTGradient.m */; };
 		FAB1ADB10F9A8D030018507C /* SRCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1ADA70F9A8D030018507C /* SRCommon.m */; };
 		FAB1ADB20F9A8D030018507C /* SRKeyCodeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1ADA90F9A8D030018507C /* SRKeyCodeTransformer.m */; };
 		FAB1ADB30F9A8D030018507C /* SRRecorderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1ADAB0F9A8D030018507C /* SRRecorderCell.m */; };
@@ -63,10 +61,8 @@
 		FAC2BECB0ECCD6B200265115 /* TweetHUDWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BECA0ECCD6B200265115 /* TweetHUDWindowController.m */; };
 		FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */; };
 		FAC2BF180ECCE72B00265115 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */; };
-		FAC2BF190ECCE72C00265115 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF160ECCE72B00265115 /* Growl.framework */; };
 		FAC2BF1A0ECCE72C00265115 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF170ECCE72B00265115 /* Sparkle.framework */; };
 		FAC2BF680ECCE75600265115 /* BGHUDAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */; };
-		FAC2BF690ECCE75600265115 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF160ECCE72B00265115 /* Growl.framework */; };
 		FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF170ECCE72B00265115 /* Sparkle.framework */; };
 		FAC952D70F93ED470011FFE9 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FAC952C30F93EC710011FFE9 /* index.html */; };
 		FAC952D80F93ED470011FFE9 /* tweet.html in Resources */ = {isa = PBXBuildFile; fileRef = FAC952C50F93EC800011FFE9 /* tweet.html */; };
@@ -136,7 +132,6 @@
 			files = (
 				FA5AA94B0EF9A8A900391976 /* AutoHyperlinks.framework in Copy Frameworks */,
 				FAC2BF680ECCE75600265115 /* BGHUDAppKit.framework in Copy Frameworks */,
-				FAC2BF690ECCE75600265115 /* Growl.framework in Copy Frameworks */,
 				FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -178,8 +173,6 @@
 		FA00BBB60ECCEEFD00D99FE2 /* SS_PreferencePaneProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PreferencePaneProtocol.h; sourceTree = "<group>"; };
 		FA00BBB70ECCEEFD00D99FE2 /* SS_PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PrefsController.h; sourceTree = "<group>"; };
 		FA00BBB80ECCEEFD00D99FE2 /* SS_PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SS_PrefsController.m; sourceTree = "<group>"; };
-		FA00BBBB0ECCEF2100D99FE2 /* DPGrowl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPGrowl.h; sourceTree = "<group>"; };
-		FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGrowl.m; sourceTree = "<group>"; };
 		FA00BBBD0ECCEF2100D99FE2 /* DPLoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLoginItem.h; sourceTree = "<group>"; };
 		FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLoginItem.m; sourceTree = "<group>"; };
 		FA09BD9B0F8F961E00A6C0DE /* DPCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCoreData.h; sourceTree = "<group>"; };
@@ -241,8 +234,6 @@
 		FAA9B3BB0F93A0CA00838141 /* TimelineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineController.m; sourceTree = "<group>"; };
 		FAA9B3BD0F93A10100838141 /* TimelineWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineWindowController.h; sourceTree = "<group>"; };
 		FAA9B3BE0F93A10100838141 /* TimelineWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineWindowController.m; sourceTree = "<group>"; };
-		FAB1ADA40F9A8D030018507C /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient.h; sourceTree = "<group>"; };
-		FAB1ADA50F9A8D030018507C /* CTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGradient.m; sourceTree = "<group>"; };
 		FAB1ADA60F9A8D030018507C /* SRCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommon.h; sourceTree = "<group>"; };
 		FAB1ADA70F9A8D030018507C /* SRCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommon.m; sourceTree = "<group>"; };
 		FAB1ADA80F9A8D030018507C /* SRKeyCodeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKeyCodeTransformer.h; sourceTree = "<group>"; };
@@ -270,7 +261,6 @@
 		FAC2BECA0ECCD6B200265115 /* TweetHUDWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetHUDWindowController.m; sourceTree = "<group>"; };
 		FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetHUD.xib; sourceTree = "<group>"; };
 		FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
-		FAC2BF160ECCE72B00265115 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		FAC2BF170ECCE72B00265115 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		FAC952C30F93EC710011FFE9 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FAC952C50F93EC800011FFE9 /* tweet.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tweet.html; sourceTree = "<group>"; };
@@ -301,7 +291,6 @@
 				FA8E1CCE0ECA2CB8003D74C4 /* Security.framework in Frameworks */,
 				FAE052760ECA2EB00088D9AC /* libxml2.dylib in Frameworks */,
 				FAC2BF180ECCE72B00265115 /* BGHUDAppKit.framework in Frameworks */,
-				FAC2BF190ECCE72C00265115 /* Growl.framework in Frameworks */,
 				FAC2BF1A0ECCE72C00265115 /* Sparkle.framework in Frameworks */,
 				FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */,
 				FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */,
@@ -389,7 +378,6 @@
 				FAB4CF450F8D565E0005AC0B /* CoreData.framework */,
 				FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */,
 				FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */,
-				FAC2BF160ECCE72B00265115 /* Growl.framework */,
 				FAC2BF170ECCE72B00265115 /* Sparkle.framework */,
 				FAE052750ECA2EB00088D9AC /* libxml2.dylib */,
 				FA8E1CCB0ECA2CB7003D74C4 /* Carbon.framework */,
@@ -413,8 +401,6 @@
 			isa = PBXGroup;
 			children = (
 				FACEFD5A0F9E521A008A88C5 /* Hot Keys */,
-				FA00BBBB0ECCEF2100D99FE2 /* DPGrowl.h */,
-				FA00BBBC0ECCEF2100D99FE2 /* DPGrowl.m */,
 				FA00BBBD0ECCEF2100D99FE2 /* DPLoginItem.h */,
 				FA00BBBE0ECCEF2100D99FE2 /* DPLoginItem.m */,
 				FA1325960F934C8C00D76C9E /* DPUtility.h */,
@@ -603,8 +589,6 @@
 			isa = PBXGroup;
 			children = (
 				FAB1ADBD0F9A8D9C0018507C /* ShortcutRecorder.strings */,
-				FAB1ADA40F9A8D030018507C /* CTGradient.h */,
-				FAB1ADA50F9A8D030018507C /* CTGradient.m */,
 				FAB1ADA60F9A8D030018507C /* SRCommon.h */,
 				FAB1ADA70F9A8D030018507C /* SRCommon.m */,
 				FAB1ADA80F9A8D030018507C /* SRKeyCodeTransformer.h */,
@@ -890,7 +874,6 @@
 				FAC2BEC80ECCD69500265115 /* MenuController.m in Sources */,
 				FAC2BECB0ECCD6B200265115 /* TweetHUDWindowController.m in Sources */,
 				FA00BBB90ECCEEFD00D99FE2 /* SS_PrefsController.m in Sources */,
-				FA00BBBF0ECCEF2100D99FE2 /* DPGrowl.m in Sources */,
 				FA00BBC00ECCEF2100D99FE2 /* DPLoginItem.m in Sources */,
 				FA908E9B0ECD5D720057CC67 /* TweetHUDController.m in Sources */,
 				FAD978BF0EF5875200A0A924 /* AccountDetails.m in Sources */,
@@ -912,7 +895,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABDD5BF0F9A7D8D00669D25 /* ShortcutsPrefController.m in Sources */,
-				FAB1ADB00F9A8D030018507C /* CTGradient.m in Sources */,
 				FAB1ADB10F9A8D030018507C /* SRCommon.m in Sources */,
 				FAB1ADB20F9A8D030018507C /* SRKeyCodeTransformer.m in Sources */,
 				FAB1ADB30F9A8D030018507C /* SRRecorderCell.m in Sources */,
@@ -1009,13 +991,13 @@
 		C05733CC08A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = Warblr;
 				SDKROOT = macosx10.6;
@@ -1025,11 +1007,12 @@
 		C05733CD08A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = Warblr;
 				SDKROOT = macosx10.6;
