@@ -3,3 +3,4 @@ build
 *.perspectivev3
 *.mode2v3
 .DS_Store
+*.mode1v3

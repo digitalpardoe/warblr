@@ -1,8 +1,8 @@
 //
-//  BGHUDAppKit.h
+//  NGHUDComboBoxCell.h
 //  BGHUDAppKit
 //
-//  Created by BinaryGod on 5/25/08.
+//  Created by Alan Rogers on 10/11/08.
 //
 //  Copyright (c) 2008, Tim Davis (BinaryMethod.com, binary.god@gmail.com)
 //  All rights reserved.
@@ -32,25 +32,18 @@
 //	ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 //	POSSIBILITY OF SUCH DAMAGE.
 
-
-#import "BGHUDScroller.h"
-#import "BGHUDButtonCell.h"
-#import "BGHUDSliderCell.h"
-#import "BGHUDScrollView.h"
-#import "BGHUDPopUpButtonCell.h"
-#import "BGHUDTextFieldCell.h"
-#import "BGHUDProgressIndicator.h"
-#import "BGHUDTokenFieldCell.h"
-#import "BGHUDSecureTextFieldCell.h"
-#import "BGHUDOutlineView.h"
-#import "BGHUDTableView.h"
+#import <Cocoa/Cocoa.h>
 #import "BGThemeManager.h"
-#import "BGHUDTableCornerView.h"
-#import "BGHUDSearchFieldCell.h"
-#import "BGHUDSegmentedCell.h"
-#import "BGHUDColorWell.h"
-#import "BGHUDLabel.h"
-#import "BGHUDBox.h"
-#import "BGHUDView.h"
-#import "BGHUDComboBoxCell.h"
-#import "BGHUDStepperCell.h"
+
+@interface BGHUDComboBoxCell : NSComboBoxCell {
+	
+	BOOL fillsBackground;
+	NSString *themeKey;
+}
+
+@property (retain) NSString *themeKey;
+
+- (void)drawArrowsInRect:(NSRect) frame;
+-(void)drawButtonInRect:(NSRect) cellFrame;
+
+@end
