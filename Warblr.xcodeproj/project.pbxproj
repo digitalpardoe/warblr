@@ -60,9 +60,7 @@
 		FAC2BEC80ECCD69500265115 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BEC70ECCD69500265115 /* MenuController.m */; };
 		FAC2BECB0ECCD6B200265115 /* TweetHUDWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC2BECA0ECCD6B200265115 /* TweetHUDWindowController.m */; };
 		FAC2BEDA0ECCDD2B00265115 /* TweetHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */; };
-		FAC2BF180ECCE72B00265115 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */; };
 		FAC2BF1A0ECCE72C00265115 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF170ECCE72B00265115 /* Sparkle.framework */; };
-		FAC2BF680ECCE75600265115 /* BGHUDAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */; };
 		FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2BF170ECCE72B00265115 /* Sparkle.framework */; };
 		FAC952D70F93ED470011FFE9 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FAC952C30F93EC710011FFE9 /* index.html */; };
 		FAC952D80F93ED470011FFE9 /* tweet.html in Resources */ = {isa = PBXBuildFile; fileRef = FAC952C50F93EC800011FFE9 /* tweet.html */; };
@@ -131,7 +129,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FA5AA94B0EF9A8A900391976 /* AutoHyperlinks.framework in Copy Frameworks */,
-				FAC2BF680ECCE75600265115 /* BGHUDAppKit.framework in Copy Frameworks */,
 				FAC2BF6A0ECCE75600265115 /* Sparkle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -260,7 +257,6 @@
 		FAC2BEC90ECCD6B200265115 /* TweetHUDWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetHUDWindowController.h; sourceTree = "<group>"; };
 		FAC2BECA0ECCD6B200265115 /* TweetHUDWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetHUDWindowController.m; sourceTree = "<group>"; };
 		FAC2BED90ECCDD2B00265115 /* TweetHUD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetHUD.xib; sourceTree = "<group>"; };
-		FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
 		FAC2BF170ECCE72B00265115 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		FAC952C30F93EC710011FFE9 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FAC952C50F93EC800011FFE9 /* tweet.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tweet.html; sourceTree = "<group>"; };
@@ -290,7 +286,6 @@
 				FA8E1CCD0ECA2CB7003D74C4 /* Carbon.framework in Frameworks */,
 				FA8E1CCE0ECA2CB8003D74C4 /* Security.framework in Frameworks */,
 				FAE052760ECA2EB00088D9AC /* libxml2.dylib in Frameworks */,
-				FAC2BF180ECCE72B00265115 /* BGHUDAppKit.framework in Frameworks */,
 				FAC2BF1A0ECCE72C00265115 /* Sparkle.framework in Frameworks */,
 				FA5AA9400EF9A80500391976 /* AutoHyperlinks.framework in Frameworks */,
 				FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */,
@@ -377,7 +372,6 @@
 				FAA9B3B50F939E3500838141 /* WebKit.framework */,
 				FAB4CF450F8D565E0005AC0B /* CoreData.framework */,
 				FA5AA93F0EF9A80500391976 /* AutoHyperlinks.framework */,
-				FAC2BF150ECCE72B00265115 /* BGHUDAppKit.framework */,
 				FAC2BF170ECCE72B00265115 /* Sparkle.framework */,
 				FAE052750ECA2EB00088D9AC /* libxml2.dylib */,
 				FA8E1CCB0ECA2CB7003D74C4 /* Carbon.framework */,
