@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <BGHUDAppKit/BGHUDAppKit.h>
 #import <AutoHyperlinks/AutoHyperlinks.h>
 #import "TweetHUDWindowController.h"
 #import "MGTwitterEngine.h"
@@ -16,7 +15,7 @@
 
 @interface TweetHUDController : NSObject {
 	IBOutlet NSTextView *messageArea;
-	IBOutlet BGHUDLabel *characterCount;
+	IBOutlet NSTextField *characterCount;
 	IBOutlet NSButton *closeButton;
 	IBOutlet NSButton *tweetButton;
 }

@@ -15,7 +15,7 @@
 	[[[TweetHUDWindowController sharedController] window] center];
 	[characterCount setStringValue:[NSString stringWithFormat:@"0/140"]];
 	[messageArea setFont:[NSFont fontWithName:@"Lucida Grande" size:14]];
-	[messageArea setTextColor:[NSColor whiteColor]];	
+	[messageArea setTextColor:[NSColor blackColor]];	
 	[messageArea setRichText:NO];
 }
 
