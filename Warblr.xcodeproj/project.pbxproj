@@ -53,7 +53,7 @@
 		FAB1AE9C0F9A8E0C0018507C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1AE9B0F9A8E0C0018507C /* CoreServices.framework */; };
 		FAB4CF460F8D565E0005AC0B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4CF450F8D565E0005AC0B /* CoreData.framework */; };
 		FABB185D0F8FF1BD003AF1DB /* Warblr.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */; };
-		FABDD5A50F9A7D4E00669D25 /* Shortcuts.bundle in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FABDD5970F9A7CC400669D25 /* Shortcuts.bundle */; };
+		FABDD5A50F9A7D4E00669D25 /* Shortcuts.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FABDD5970F9A7CC400669D25 /* Shortcuts.preferencePane */; };
 		FABDD5BF0F9A7D8D00669D25 /* ShortcutsPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FABDD5BE0F9A7D8D00669D25 /* ShortcutsPrefController.m */; };
 		FABDD5C10F9A7E4C00669D25 /* ShortcutsPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABDD5C00F9A7E4C00669D25 /* ShortcutsPrefPane.xib */; };
 		FAC04D7B0F8E67DE00449A01 /* TweetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC04D7A0F8E67DE00449A01 /* TweetManager.m */; };
@@ -65,7 +65,7 @@
 		FAC952D70F93ED470011FFE9 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FAC952C30F93EC710011FFE9 /* index.html */; };
 		FAC952D80F93ED470011FFE9 /* tweet.html in Resources */ = {isa = PBXBuildFile; fileRef = FAC952C50F93EC800011FFE9 /* tweet.html */; };
 		FAC952D90F93ED470011FFE9 /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = FAC952C70F93EC8D0011FFE9 /* main.css */; };
-		FAC952E10F93ED730011FFE9 /* Default.bundle in Copy Themes */ = {isa = PBXBuildFile; fileRef = FAC952D20F93ECF90011FFE9 /* Default.bundle */; };
+		FAC952E10F93ED730011FFE9 /* Default.warblrTheme in Copy Themes */ = {isa = PBXBuildFile; fileRef = FAC952D20F93ECF90011FFE9 /* Default.warblrTheme */; };
 		FACA988F0EF522B20085F34F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E1CCB0ECA2CB7003D74C4 /* Carbon.framework */; };
 		FACA98900EF522B20085F34F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E1CCC0ECA2CB7003D74C4 /* Security.framework */; };
 		FACA98930EF522BF0085F34F /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8E1F170ECA2D2E003D74C4 /* EMKeychainItem.m */; };
@@ -140,7 +140,7 @@
 			dstPath = ../Themes;
 			dstSubfolderSpec = 7;
 			files = (
-				FAC952E10F93ED730011FFE9 /* Default.bundle in Copy Themes */,
+				FAC952E10F93ED730011FFE9 /* Default.warblrTheme in Copy Themes */,
 			);
 			name = "Copy Themes";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +151,7 @@
 			dstPath = "../Preference Panes";
 			dstSubfolderSpec = 7;
 			files = (
-				FABDD5A50F9A7D4E00669D25 /* Shortcuts.bundle in Copy Preference Panes */,
+				FABDD5A50F9A7D4E00669D25 /* Shortcuts.preferencePane in Copy Preference Panes */,
 				FACC12510EF46D7100D702D1 /* Account.preferencePane in Copy Preference Panes */,
 			);
 			name = "Copy Preference Panes";
@@ -245,7 +245,7 @@
 		FAB1AE9B0F9A8E0C0018507C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		FAB4CF450F8D565E0005AC0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		FABB185C0F8FF1BD003AF1DB /* Warblr.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Warblr.xcdatamodel; sourceTree = "<group>"; };
-		FABDD5970F9A7CC400669D25 /* Shortcuts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shortcuts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABDD5970F9A7CC400669D25 /* Shortcuts.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shortcuts.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABDD5980F9A7CC400669D25 /* Shortcuts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shortcuts-Info.plist"; sourceTree = "<group>"; };
 		FABDD5BD0F9A7D8D00669D25 /* ShortcutsPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutsPrefController.h; sourceTree = "<group>"; };
 		FABDD5BE0F9A7D8D00669D25 /* ShortcutsPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortcutsPrefController.m; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 		FAC952C30F93EC710011FFE9 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FAC952C50F93EC800011FFE9 /* tweet.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tweet.html; sourceTree = "<group>"; };
 		FAC952C70F93EC8D0011FFE9 /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
-		FAC952D20F93ECF90011FFE9 /* Default.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Default.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC952D20F93ECF90011FFE9 /* Default.warblrTheme */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Default.warblrTheme; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC952D30F93ECF90011FFE9 /* Default-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Default-Info.plist"; sourceTree = "<group>"; };
 		FACC12490EF46CD300D702D1 /* Account.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Account.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACC124A0EF46CD300D702D1 /* Account-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Account-Info.plist"; sourceTree = "<group>"; };
@@ -322,8 +322,8 @@
 			children = (
 				8D15AC370486D014006FF6A4 /* Warblr.app */,
 				FACC12490EF46CD300D702D1 /* Account.preferencePane */,
-				FAC952D20F93ECF90011FFE9 /* Default.bundle */,
-				FABDD5970F9A7CC400669D25 /* Shortcuts.bundle */,
+				FAC952D20F93ECF90011FFE9 /* Default.warblrTheme */,
+				FABDD5970F9A7CC400669D25 /* Shortcuts.preferencePane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -729,7 +729,7 @@
 			);
 			name = Shortcuts;
 			productName = Shortcuts;
-			productReference = FABDD5970F9A7CC400669D25 /* Shortcuts.bundle */;
+			productReference = FABDD5970F9A7CC400669D25 /* Shortcuts.preferencePane */;
 			productType = "com.apple.product-type.bundle";
 		};
 		FAC952D10F93ECF90011FFE9 /* Default */ = {
@@ -744,7 +744,7 @@
 			);
 			name = Default;
 			productName = Default;
-			productReference = FAC952D20F93ECF90011FFE9 /* Default.bundle */;
+			productReference = FAC952D20F93ECF90011FFE9 /* Default.warblrTheme */;
 			productType = "com.apple.product-type.bundle";
 		};
 		FACC12480EF46CD300D702D1 /* Account */ = {
@@ -771,7 +771,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "Warblr" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* Warblr */;
 			projectDirPath = "";
 			projectRoot = "";
