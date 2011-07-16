@@ -1,5 +1,6 @@
 Warblr
 ======
+A little bit of a broken Twitter client.
 
 About
 -----
